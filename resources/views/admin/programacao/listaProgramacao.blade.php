@@ -14,11 +14,11 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                        <a href="{{url ('/inserirProgramacao')}}" class="btn btn-warning btn-lg" title="Inserir um novo Devocional">Cadastrar Novo</a>
+                        <a href="{{url ('/inserirProgramacao')}}" class="btn btn-warning btn-lg" title="Inserir uma nova programação">Cadastrar Novo</a>
                         </div>
                          <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dtDevocional">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dtProgramacao">
                             </table>
                         </div>     
                     </div>
@@ -38,17 +38,19 @@
 				 
                 var dtColumnsLink = function() {
                     var columns = [
-                        {"sTitle": "TÍTULO", "width": "25%", "sName": "titulo", "mData": "titulo"},
-                        {"sTitle": "TEXTO", "width": "50%", "sName": "texto", "mData": "texto"},
-                        {"sTitle": "ATUALIZAÇÃO", "width": "15%", "sName": "dhs_atualizacao", "mData": "dhs_atualizacao"},
-                        {"sTitle": "OPÇÕES", "width": "10%","searchable": false, "orderable":  false, "mData": function(data){
+                        {"sTitle": "DIA", "width": "15%", "sName": "dia_programacao", "mData": "dia_programacao"},
+                        {"sTitle": "TEXTO PROGRAMAÇÃO", "width": "40%", "sName": "texto_programacao", "mData": "texto_programacao"},
+                        {"sTitle": "PRIORIDADE", "width": "15%", "sName": "prioridade", "mData": "prioridade"},
+                        {"sTitle": "CADASTRO", "width": "15%", "sName": "dhs_cadastro", "mData": "dhs_cadastro"},
+                        {"sTitle": "OPÇÕES", "width": "15%","searchable": false, "orderable":  false, "mData": function(data){
 
-                                var button  = '<a title="Alterar" href="{{ url("/admin/devocional/alterar-devocional") }}/'+ data.id_devocional +'" class="btn btn-success mgn-btn-dt"><i class="fa fa-pencil-square-o"></i></a>';
+                                var button  = '<a title="Alterar" href="{{ url("/admin/programacao/alterar-programacao") }}/'+ data.id_programacao +'" class="btn btn-success mgn-btn-dt"><i class="fa fa-pencil-square-o"></i></a>';
 	                                if(data.dhs_exclusao_logica == null){
-	                                	button  += ' <a title="Inativar" href="{{ url("/admin/devocional/inativar-devocional") }}/'+ data.id_devocional +'" class="btn btn-primary mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
+	                                	button  += ' <a title="Inativar" href="{{ url("/admin/programacao/inativar-programacao") }}/'+ data.id_programacao +'" class="btn btn-primary mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
 	                                }else{
-                                	button  += ' <a title="Ativar" href="{{ url("/admin/devocional/ativar-devocional") }}/'+ data.id_devocional +'" class="btn btn-warning mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
+                                	button  += ' <a title="Ativar" href="{{ url("/admin/programacao/ativar-programacao") }}/'+ data.id_programacao +'" class="btn btn-warning mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
                                 }
+	                                button  += ' <a title="Excluir" href="{{ url("/admin/programacao/excluir-programacao") }}/'+ data.id_programacao +'" class="btn btn-danger mgn-btn-dt"><i class="fa fa-trash"></i></a>';
                                 return button;
                         	}
                     
@@ -61,8 +63,8 @@
                 
               $(document).ready(function() { 
                 dtTable({ 
-                    id_tabela : 'dtDevocional',
-                    url_data : '/admin/devocional/lista-devocional.json',
+                    id_tabela : 'dtProgramacao',
+                    url_data : '/admin/programacao/lista-programacao.json',
                     colunas: dtColumnsLink
            		 });  
 	

@@ -76,10 +76,9 @@
             <li >
               <div class="info-1">
                 <div class="left"><div class="txt-widget">
-                	<h4>DOMINGO - CULTO EVANGÉLICO</h4>
-                	<h4>DOMINGO - ESCOLA BÍBLICA DOMINICAL</h4>
-                	<h4>QUARTA-FEIRA - PLANEJANDO 2018</h4>
-                	<h4>SEXTA-FEIRA - CULTO DOS JOVENS</h4>
+                	@foreach ($progra as $programacao)
+                		<h4>{{strtoupper($programacao->dia_programacao)}} - {{strtoupper($programacao->texto_programacao)}}</h4>
+                	@endforeach
                 	</div>
                 </div>
               </div>

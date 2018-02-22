@@ -3,7 +3,7 @@
 	@section('content')
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Inserir Programação</h1>
+                    <h1 class="page-header">Alterar Programação</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -19,14 +19,16 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <form role="form" action="{{ url('/admin/programacao/inserir-programacao') }}" method="post">
+                                    <form role="form" action="{{ url('/admin/programacao/altera-programacao') }}" method="post">
                                     {{ csrf_field() }} 
                                         <input type="hidden" class="form-control" name="id_usuario" value="{{ Auth::user()->id_usuario }}"> 
-                                       
+                                        <input type="hidden" class="form-control" name="id_programacao" value="{{ $programacao->id_programacao }}"> 
+                                        
                                         <div class="form-group{{ $errors->has('dia_programacao') ? ' has-error' : '' }}">
                                             <label>Dia da Semana</label>
                                             <label for="dia_programacao">
 	                                            <select class="form-control" name="dia_programacao" id="dia_programacao">
+	                                            	<option value="{{ $programacao->dia_programacao }}">{{ $programacao->dia_programacao }}</option>
 	                                            	<option value="Domingo">Domingo</option>
 												    <option value="Segunda-Feira">Segunda-Feira</option>
 												    <option value="Terça-Feira">Terça-Feira</option>
@@ -45,7 +47,7 @@
                                         
                                         <div class="form-group{{ $errors->has('texto_programacao') ? ' has-error' : '' }}">
                                             <label>Programação</label>
-                                            <input class="form-control" name="texto_programacao" maxlength="150" placeholder="Entre com o texto da programação" value="{{ old('texto_programacao') }}" required="required">
+                                            <input class="form-control" name="texto_programacao" maxlength="150" placeholder="Entre com o texto da programação" value="{{ $programacao->texto_programacao }}" required="required">
                                         	@if ($errors->has('texto_programacao'))
                                                 <span class="help-block">
                                                     <strong>{{ $errors->first('texto_programacao') }}</strong>
@@ -57,6 +59,7 @@
                                             <label>Dia da Semana</label>
                                             <label for="prioridade">
 	                                            <select class="form-control" name="prioridade" id="prioridade">
+												    <option value="{{ $programacao->prioridade }}">{{ $programacao->prioridade }}</option>
 												    <option value="1">1</option>
 												    <option value="2">2</option>
 												    <option value="3">3</option>
@@ -76,7 +79,7 @@
                                             @endif
                                         </div>
         
-                                        <button type="submit" class="btn btn-default">Inserir</button>
+                                        <button type="submit" class="btn btn-default">Alterar</button>
                                         <a class="btn btn-default" href="{{ url('/listaProgramacao') }}" >Cancelar</a>
                                     </form>
                                 </div>

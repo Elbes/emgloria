@@ -447,7 +447,7 @@ Route::group(['prefix' => '/admin/devocional'], function () {
 	]);
 });
 
-	//ROTAS DO DEVOCIONAL
+	//ROTAS DA PROGRAMAÇÃO
 	
 	Route::any('/listaProgramacao', [
 			'as' => 'admin.programacao.listaProgramacao',
@@ -459,34 +459,38 @@ Route::group(['prefix' => '/admin/devocional'], function () {
 			'uses' => 'Admin\ProgramacaoController@getInserir'
 	]);
 	
-	Route::group(['prefix' => '/admin/devocional'], function () {
+	Route::group(['prefix' => '/admin/programacao'], function () {
 	
 		//Inserção
-		Route::post('/inserir-devocional', [
-				'uses' => 'Admin\DevocionalController@inserirDevocional'
+		Route::post('/inserir-programacao', [
+				'uses' => 'Admin\ProgramacaoController@inserirProgramacao'
 		]);
 		//Listar em DataTable
-		Route::any('/lista-devocional.json', [
-				'as' => 'admin.devocional.lista-devocional.json',
-				'uses' => 'Admin\DevocionalController@getListaDevocionalJson'
+		Route::any('/lista-programacao.json', [
+				'as' => 'admin.programacao.lista-programacao.json',
+				'uses' => 'Admin\ProgramacaoController@getListaProgramacaoJson'
 		]);
 	
-		Route::any('/inativar-devocional/{id_devocional?}', [
-				'uses' => 'Admin\DevocionalController@inativarDevocional'
+		Route::any('/inativar-programacao/{id_programacao?}', [
+				'uses' => 'Admin\ProgramacaoController@inativarProgramacao'
 		]);
 	
-		Route::any('/ativar-devocional/{id_devocional?}', [
-				'uses' => 'Admin\DevocionalController@ativarDevocional'
+		Route::any('/ativar-programacao/{id_programacao?}', [
+				'uses' => 'Admin\ProgramacaoController@ativarProgramacao'
 		]);
 	
-		Route::any('/alterar-devocional/{id_devocional?}', [
-				'as' => 'admin.devocional.alterar-devocional',
-				'uses' => 'Admin\DevocionalController@getAlterarDevocional'
+		Route::any('/alterar-programacao/{id_programacao?}', [
+				'as' => 'admin.programacao.alterar-programacao',
+				'uses' => 'Admin\ProgramacaoController@getAlterarProgramacao'
 		]);
 	
-		Route::any('/altera-devocional', [
-				'as' => 'admin.devocional.altera-devocional',
-				'uses' => 'Admin\DevocionalController@alterarDevocional'
+		Route::any('/altera-programacao', [
+				'as' => 'admin.programacao.altera-programacao',
+				'uses' => 'Admin\ProgramacaoController@alterarProgramacao'
+		]);
+		
+		Route::any('/excluir-programacao/{id_programacao?}', [
+				'uses' => 'Admin\ProgramacaoController@excluirProgramacao'
 		]);
 	});
 	

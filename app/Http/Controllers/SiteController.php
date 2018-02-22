@@ -24,8 +24,10 @@ class SiteController extends Controller
 		$dev = new \App\tb_devocional();
 		$devAtivo = $dev->getDevocionalAtivos()->first();
 		
+		$programacao = new \App\tb_programacao();
+		$progra = $programacao->getProgramacaoAtivos();
 		
-		return view('/index' , compact('minAtivo', 'imagens', 'banners', 'devAtivo'));
+		return view('/index' , compact('minAtivo', 'imagens', 'banners', 'devAtivo', 'progra'));
 	}
 	
 	

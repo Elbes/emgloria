@@ -103,7 +103,7 @@ CREATE TABLE `tb_galeria` (
 
 LOCK TABLES `tb_galeria` WRITE;
 /*!40000 ALTER TABLE `tb_galeria` DISABLE KEYS */;
-INSERT INTO `tb_galeria` VALUES (13,'1518529690_img-4.jpg','Amor que move','asdsa','2018-02-13 11:48:10','2018-02-13 11:49:37',NULL),(14,'1518529727_img-3.jpg','Geral','adasd','2018-02-13 11:48:47','2018-02-13 11:48:47',NULL),(15,'1518529741_img-2.jpg','Geral','sda','2018-02-13 11:49:01','2018-02-13 11:49:01',NULL),(16,'1518530483_gallery-img-7.jpg','Geral','sdada','2018-02-13 12:01:23','2018-02-13 12:01:23',NULL);
+INSERT INTO `tb_galeria` VALUES (13,'1518529690_img-4.jpg','Amor que move','asdsa','2018-02-13 11:48:10','2018-02-13 11:49:37',NULL),(14,'1518529727_img-3.jpg','Geral','adasd','2018-02-13 11:48:47','2018-02-13 11:48:47',NULL),(15,'1518529741_img-2.jpg','Geral','sda','2018-02-13 11:49:01','2018-02-13 11:49:01',NULL),(16,'1518530483_gallery-img-7.jpg','Amor que move','sdada','2018-02-13 12:01:23','2018-02-22 20:02:25',NULL);
 /*!40000 ALTER TABLE `tb_galeria` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -166,6 +166,36 @@ LOCK TABLES `tb_perfil` WRITE;
 /*!40000 ALTER TABLE `tb_perfil` DISABLE KEYS */;
 INSERT INTO `tb_perfil` VALUES (1,'Administrador Geral','ADMG','2017-12-13 00:00:00',NULL,NULL);
 /*!40000 ALTER TABLE `tb_perfil` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_programacao`
+--
+
+DROP TABLE IF EXISTS `tb_programacao`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_programacao` (
+  `id_programacao` int(11) NOT NULL AUTO_INCREMENT,
+  `dia_programacao` varchar(45) DEFAULT NULL,
+  `texto_programacao` varchar(150) DEFAULT NULL,
+  `prioridade` int(11) DEFAULT NULL,
+  `id_usuario_cadastro` int(11) DEFAULT NULL,
+  `dhs_cadastro` timestamp NULL DEFAULT NULL,
+  `dhs_atualizacao` timestamp NULL DEFAULT NULL,
+  `dhs_exclusao_logica` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id_programacao`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_programacao`
+--
+
+LOCK TABLES `tb_programacao` WRITE;
+/*!40000 ALTER TABLE `tb_programacao` DISABLE KEYS */;
+INSERT INTO `tb_programacao` VALUES (1,'Domingo','CULTO EVANGELÍSTICO',1,NULL,'2018-02-22 18:54:17','2018-02-22 19:58:53',NULL),(2,'Domingo','ESCOLA BÍBLICA DOMINICAL',2,NULL,'2018-02-22 19:00:10','2018-02-22 19:52:21',NULL),(3,'Sexta-Feira','CULTO DOS JOVENS',3,NULL,'2018-02-22 19:00:36','2018-02-22 19:44:02',NULL);
+/*!40000 ALTER TABLE `tb_programacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -239,4 +269,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-13 19:50:31
+-- Dump completed on 2018-02-22 23:43:31
