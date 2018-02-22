@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/resources/views/admin
+END
+layoutAdmin.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/resources/views/admin/layoutAdmin.blade.php
+END
+testeHomeAdmin.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/resources/views/admin/testeHomeAdmin.blade.php
+END
+login.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/resources/views/admin/login.blade.php
+END
+acessoNegado.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/resources/views/admin/acessoNegado.blade.php
+END
+alterarConteudo.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/7/intranet-ses/resources/views/admin/alterarConteudo.blade.php
+END
+menuAdmin.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sismarcacao-farm/!svn/ver/8/intranet-ses/resources/views/admin/menuAdmin.blade.php
+END
+meusConteudos.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sismarcacao-farm/!svn/ver/7/intranet-ses/resources/views/admin/meusConteudos.blade.php
+END
+conteudoPagina.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/7/intranet-ses/resources/views/admin/conteudoPagina.blade.php
+END
+headerAdmin.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/resources/views/admin/headerAdmin.blade.php
+END
+homeAdmin.blade.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/resources/views/admin/homeAdmin.blade.php
+END

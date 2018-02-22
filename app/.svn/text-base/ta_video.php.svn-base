@@ -1,0 +1,64 @@
+<?php
+
+namespace App;
+
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
+use Yajra\Datatables\Facades\Datatables;
+use Illuminate\Database\Eloquent\SoftDeletes;
+//use Illuminate\Notifications\Notifiable;
+
+class ta_video extends Model
+{
+	use SoftDeletes;
+	//use Notifiable;
+	
+    protected $table = 'ta_video';
+    protected $primaryKey = 'id_video';
+
+    protected $fillable = [];
+    protected $hidden   = [];
+    protected $softDelete = true;
+
+    const CREATED_AT = 'dhs_cadastro';
+    const UPDATED_AT = 'dhs_atualizacao';
+    const DELETED_AT = 'dhs_exclusao_logica';
+
+    //regras para validaÃ§Ã£o de dados
+    public $rules = [
+    
+    ];
+    
+    public $messages = [
+
+    ];
+    
+    public function getDtVideo(){
+    	$objReturn = DB::table('ta_video')
+    	->get();
+
+    	return Datatables::collection($objReturn)
+        ->addColumn('dhs_cadastro', function($model){
+    		return date('d/m/Y', strtotime($model->dhs_cadastro));
+    	})
+    	->make(true);
+    }
+    
+    public function deleteVideo($id_video){
+    	return DB::table('ta_video')
+    	-> where('id_video',$id_video)
+    	-> delete();
+    }
+    
+    public function getTodosVideos(){
+    	return DB::table('ta_video')
+    	->orderBy('dhs_cadastro', 'desc')->whereNull('ta_video.dhs_exclusao_logica')
+        ->get();
+    }
+    
+    public function getVideosAeI($id_video){
+    	return DB::table('ta_video')-> where('id_video',$id_video)
+    	->get();
+    }
+
+}

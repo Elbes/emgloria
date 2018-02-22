@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed
+END
+ActivationStrategyInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ActivationStrategyInterface.php
+END
+ChannelLevelActivationStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php
+END
+ErrorLevelActivationStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php
+END

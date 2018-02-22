@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts
+END
+matchers_imports.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts/matchers_imports.txt
+END
+matchers_footer.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts/matchers_footer.txt
+END
+functions_imports.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts/functions_imports.txt
+END
+functions_footer.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts/functions_footer.txt
+END
+file_header.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts/file_header.txt
+END
+matchers_header.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts/matchers_header.txt
+END
+functions_header.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/generator/parts/functions_header.txt
+END

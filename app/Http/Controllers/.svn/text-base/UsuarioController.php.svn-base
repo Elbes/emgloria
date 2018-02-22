@@ -1,0 +1,99 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
+
+class UsuarioController extends Controller
+{
+
+    public function getInserir()
+    {   
+    	$usuario = \App\ta_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
+//     	$setor = $usuario->setor;
+    	
+    	return view('usuario.cadastro', compact('usuario'));
+    }
+    
+    
+    public function inserirUsuario(Request $request)
+    {
+    	$usuario = new \App\ta_usuarios();
+    	$usuario->email = $request->input('email');
+    	$usuario->matricula = $request->input('matricula');
+    	$usuario->senha = Hash::make($request->input('senha'));
+    	$usuario->nome = $request->input('nome');
+    	$usuario->id_setor = $request->input('id_setor');
+    	$usuario->dhs_exclusao_logica = Carbon::now();
+
+    	if($usuario->save()){
+    		Session::flash('success', 'Usuário inserido com sucesso!!!');
+    		return Redirect::to('/cadastro-usuario');
+    	}else{
+    		Session::flash('error', 'Erro ao tentar inserir o Usuario!!!\nTente Novamente.');
+    		return Redirect::to('/cadastro-usuario');
+    	}
+    }
+    
+    public function getListaUsuario()
+    {
+    	$usuario = \App\ta_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
+//     	$setor = $usuario->setor;
+    	
+    	return view('usuario.listaUsuario', compact('usuario'));
+    
+    }
+    
+    public function getListaUsuarioJson()
+    {
+    	$usuario = new \App\ta_usuarios();
+    	return $usuario->getDtUsuario();
+    
+    }
+    
+    public function excluirUsuario($id_usuario )
+    {
+    
+    	$usuario = \App\ta_usuarios::find( $id_usuario );
+    
+    	if($usuario->forceDelete()){
+    		Session::flash('success', 'Usuário '.$usuario->nome.' excluído com sucesso!!!');
+    	}else{
+    		Session::flash('error', ' Erro ao tentar excluir o Usuário '.$usuario->nome.' !!!');
+    	}
+    	return Redirect::to('/listaUsuario');
+    }
+    
+    public function inativarUsuario ($id_usuario )
+    {
+    
+    	$usuario = \App\ta_usuarios::where('id_usuario', $id_usuario );
+    
+    	if($usuario->delete()){
+    		Session::flash('success', 'Desativado com sucesso!!!');
+    	}else{
+    		Session::flash('error', 'Erro ao tentar desativar Usuario!!!');
+    	}
+    	return Redirect::to('/listaUsuario');
+    
+    }
+    
+    public function ativarUsuario($id_usuario )
+    {
+    	$usuario = \App\ta_usuarios::where('id_usuario', $id_usuario );
+    	 
+    	if($usuario->restore()){
+    		Session::flash('success', 'Ativado com sucesso!!!');
+    	}else{
+    		Session::flash('error', 'Erro ao tentar ativar Usuário!!!');
+    	}
+    	return Redirect::to('/listaUsuario');
+    }
+
+}

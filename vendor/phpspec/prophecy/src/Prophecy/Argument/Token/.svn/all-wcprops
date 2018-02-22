@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token
+END
+IdenticalValueToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/IdenticalValueToken.php
+END
+LogicalNotToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalNotToken.php
+END
+CallbackToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/CallbackToken.php
+END
+LogicalAndToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/LogicalAndToken.php
+END
+TokenInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TokenInterface.php
+END
+ArrayEntryToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEntryToken.php
+END
+ExactValueToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ExactValueToken.php
+END
+StringContainsToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/StringContainsToken.php
+END
+ObjectStateToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ObjectStateToken.php
+END
+AnyValuesToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValuesToken.php
+END
+ArrayEveryEntryToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayEveryEntryToken.php
+END
+TypeToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/TypeToken.php
+END
+AnyValueToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php
+END
+ApproximateValueToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ApproximateValueToken.php
+END
+ArrayCountToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/src/Prophecy/Argument/Token/ArrayCountToken.php
+END

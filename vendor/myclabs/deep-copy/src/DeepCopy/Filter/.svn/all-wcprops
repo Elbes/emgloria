@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter
+END
+KeepFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/KeepFilter.php
+END
+SetNullFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/SetNullFilter.php
+END
+ReplaceFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/ReplaceFilter.php
+END
+Filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Filter.php
+END

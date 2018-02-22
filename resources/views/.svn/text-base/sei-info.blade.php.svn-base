@@ -1,0 +1,93 @@
+
+@extends('layoutIntranet')
+
+@section('content')
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="page-header"> Sistema Eletrônico de Informações - SEI </h2>
+			</div>
+			<p style="color: black;">O Sistema Eletrônico de Informações (SEI), desenvolvido pelo
+				Tribunal Regional Federal da 4ª Região (TRF4), é um sistema de
+				gestão de processos e documentos arquivísticos eletrônicos, com
+				interface amigável e práticas inovadoras de trabalho. Uma das suas
+				principais características é a libertação do papel como suporte
+				físico para documentos institucionais e o compartilhamento do
+				conhecimento com atualização e comunicação de novos eventos em tempo
+				real.
+			</p>
+			<p>Para acessar o sistema
+                       <a href="#" target="1" onclick="window.open('https://sei.df.gov.br/','Pagina',
+                         'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=200, WIDTH=1200, HEIGHT=900');">
+	                    	CLIQUE AQUI</a>.
+	        </p>
+		</div>
+		<hr>
+		<div class="row">
+
+			<div class="col-lg-12">
+
+				<ul id="myTab" class="nav nav-tabs nav-justified">
+					<li class="active" title="Manuais do Sistema"><a href="#manuais" data-toggle="tab"><i
+							class="fa fa-database"></i> Manuais</a></li>
+					<li class="" title="Vídeos do Sistema"><a href="#videos" data-toggle="tab"><i
+							class="fa fa-film fa-1x"></i> Vídeos</a></li>
+				</ul>
+
+				<div id="myTabContent" class="tab-content">
+					<div class="tab-pane fade active in" id="manuais">
+
+						<br />
+						<div class="col-md-2" style="text-align: center;">
+							<p><a href="{{ url('/') }}/documentos/sei/manual_usuario_sei.pdf" title="Manual completo em PDF">Manual Completo</a></p>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="videos">
+
+						<div class="col-md-6">
+							<p><video controls width="100%">
+									<source
+										src="{{ url('/') }}/videos/sei/Curso SEI - Vídeo Completo.mp4"
+										type="video/mp4" />
+								</video>
+							</p>
+							<p><b>Curso SEI - Curso Completo</b></p>
+						</div>
+
+						<div class="col-md-6">
+							<p><video controls width="100%">
+									<source
+										src="{{ url('/') }}/videos/sei/Curso SEI Parte I - Apresentação do curso SEI.mp4"
+										type="video/mp4" />
+								</video>
+							</p>
+							<p><b>Curso SEI Parte I - Apresentação do curso SEI</b></p>
+						</div>
+						
+						<div class="col-md-6">
+							<p><video controls width="100%">
+									<source
+										src="{{ url('/') }}/videos/sei/Curso SEI Parte II - Estrutura do SEI.mp4"
+										type="video/mp4" />
+								</video>
+							</p>
+							<p><b>Curso SEI Parte II - Estrutura do SEI</b></p>
+						</div>
+						
+						<div class="col-md-6">
+							<p><video controls width="100%">
+									<source
+										src="{{ url('/') }}/videos/sei/Curso SEI Parte III - Operações Básicas.mp4"
+										type="video/mp4" />
+								</video>
+							</p>
+							<p><b>Curso SEI Parte II - Estrutura do SEI</b></p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<hr>
+@endsection
+

@@ -1,0 +1,36 @@
+igreja batista em glória
+Hostgator
+Endereço de e-mail (login): elbes2009@gmail.com
+Senha: emgloriasite
+
+
+Produtos/Serviços: Plano M
+Domínios: emgloria.com
+Valor do Primeiro Pagamento: R$ 26,99
+Valor recorrente: R$ 26,99
+Ciclo de Pagamento: Mensal
+
+Registro de Domínio: Registro
+Domínios: emgloria.com
+Valor do Primeiro Pagamento: R$ 26,99
+Valor recorrente: R$ 44,99
+Periodo de registro: 1 Anos(s)
+
+Valor de pagamento hoje: R$ 53,98
+
+
+Informações sobre a sua fatura:
+Método de pagamento: Boleto
+Número da Fatura: 6926220
+Valor: R$53,98
+Data de vencimento: 20/01/2018
+ 
+Serviços vinculados:
+Plano M - emgloria.com (15/01/2018 - 14/02/2018) R$26,99
+Registro de Domínio - emgloria.com - 1 Ano(s) (15/01/2018 - 14/01/2019) R$26,99
+
+Sub Total: R$53,98
+Crédito: R$0,00
+Total: R$53,98
+
+mysqldump -uroot emgloria > /home/vagrant/Code/emgloria/public/bkp.emgloria.sql

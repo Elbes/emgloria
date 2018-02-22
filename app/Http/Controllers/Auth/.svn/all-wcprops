@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/app/Http/Controllers/Auth
+END
+ResetPasswordController.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/app/Http/Controllers/Auth/ResetPasswordController.php
+END
+LoginController.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sismarcacao-farm/!svn/ver/8/intranet-ses/app/Http/Controllers/Auth/LoginController.php
+END
+ForgotPasswordController.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/app/Http/Controllers/Auth/ForgotPasswordController.php
+END
+RegisterController.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/app/Http/Controllers/Auth/RegisterController.php
+END

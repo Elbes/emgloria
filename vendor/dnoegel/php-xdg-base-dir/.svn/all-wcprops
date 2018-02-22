@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/dnoegel/php-xdg-base-dir
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/dnoegel/php-xdg-base-dir/composer.json
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/dnoegel/php-xdg-base-dir/LICENSE
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/dnoegel/php-xdg-base-dir/.gitignore
+END
+phpunit.xml.dist
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/dnoegel/php-xdg-base-dir/phpunit.xml.dist
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/dnoegel/php-xdg-base-dir/README.md
+END

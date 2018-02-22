@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests
+END
+NumericComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/NumericComparatorTest.php
+END
+ScalarComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/ScalarComparatorTest.php
+END
+ObjectComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/ObjectComparatorTest.php
+END
+SplObjectStorageComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/SplObjectStorageComparatorTest.php
+END
+DoubleComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/DoubleComparatorTest.php
+END
+ArrayComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/ArrayComparatorTest.php
+END
+FactoryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/FactoryTest.php
+END
+autoload.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/autoload.php
+END
+MockObjectComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/MockObjectComparatorTest.php
+END
+TypeComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/TypeComparatorTest.php
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/bootstrap.php
+END
+DOMNodeComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/DOMNodeComparatorTest.php
+END
+ResourceComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/ResourceComparatorTest.php
+END
+DateTimeComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/DateTimeComparatorTest.php
+END
+ExceptionComparatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/tests/ExceptionComparatorTest.php
+END

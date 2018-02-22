@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth
+END
+PlainAuthenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/PlainAuthenticator.php
+END
+CramMd5Authenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/CramMd5Authenticator.php
+END
+LoginAuthenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php
+END
+NTLMAuthenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/NTLMAuthenticator.php
+END
+XOAuth2Authenticator.php
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/database/migrations
+END
+2017_07_07_081330_create_banner.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/8/intranet-ses/database/migrations/2017_07_07_081330_create_banner.php
+END
+2017_06_26_091052_create_table_log_acesso.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/database/migrations/2017_06_26_091052_create_table_log_acesso.php
+END
+2017_07_07_081250_create_video.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/database/migrations/2017_07_07_081250_create_video.php
+END
+2017_07_07_075527_create_setor.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/10/intranet-ses/database/migrations/2017_07_07_075527_create_setor.php
+END
+2017_07_07_083048_create_paginas.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/10/intranet-ses/database/migrations/2017_07_07_083048_create_paginas.php
+END
+2017_07_07_085643_create_conteudo_pagina.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/database/migrations/2017_07_07_085643_create_conteudo_pagina.php
+END
+2017_07_07_075038_create_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/10/intranet-ses/database/migrations/2017_07_07_075038_create_menu.php
+END
+2017_07_07_081045_create_usuarios.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/10/intranet-ses/database/migrations/2017_07_07_081045_create_usuarios.php
+END
+2017_06_21_113618_recuperar-senha.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/database/migrations/2017_06_21_113618_recuperar-senha.php
+END
+2017_07_07_081416_create_link.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/database/migrations/2017_07_07_081416_create_link.php
+END

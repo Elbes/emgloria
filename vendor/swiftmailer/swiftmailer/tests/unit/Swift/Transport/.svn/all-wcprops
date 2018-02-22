@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport
+END
+SendmailTransportTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/SendmailTransportTest.php
+END
+MailTransportTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/MailTransportTest.php
+END
+FailoverTransportTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/FailoverTransportTest.php
+END
+EsmtpTransportTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/EsmtpTransportTest.php
+END
+StreamBufferTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/StreamBufferTest.php
+END
+AbstractSmtpEventSupportTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/AbstractSmtpEventSupportTest.php
+END
+LoadBalancedTransportTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/LoadBalancedTransportTest.php
+END
+AbstractSmtpTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/AbstractSmtpTest.php
+END

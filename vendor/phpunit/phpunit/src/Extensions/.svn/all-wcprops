@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Extensions
+END
+RepeatedTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Extensions/RepeatedTest.php
+END
+TicketListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Extensions/TicketListener.php
+END
+TestDecorator.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Extensions/TestDecorator.php
+END
+PhptTestSuite.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Extensions/PhptTestSuite.php
+END
+GroupTestSuite.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Extensions/GroupTestSuite.php
+END
+PhptTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Extensions/PhptTestCase.php
+END

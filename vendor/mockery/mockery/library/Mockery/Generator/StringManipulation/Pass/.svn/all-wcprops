@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass
+END
+ClassPass.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php
+END
+ClassNamePass.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php
+END
+MethodDefinitionPass.php
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php
+END
+RemoveBuiltinMethodsThatAreFinalPass.php
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveBuiltinMethodsThatAreFinalPass.php
+END
+InstanceMockPass.php
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InstanceMockPass.php
+END
+Pass.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/Pass.php
+END
+CallTypeHintPass.php
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php
+END
+InterfacePass.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php
+END
+RemoveUnserializeForInternalSerializableClassesPass.php
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveUnserializeForInternalSerializableClassesPass.php
+END

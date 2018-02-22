@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters
+END
+HitReporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HitReporter.php
+END
+HtmlReporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php
+END

@@ -1,0 +1,13 @@
+{"playlist":
+    [
+	{
+	    "0": {"src":"junk/em-teu-altar.mp3", "type":"audio/mp3"},
+	    "1": {"src":"junk/em-teu-altar.ogg", "type":"audio/ogg"},
+	    "config": {
+		"title": "An Educated Simpleton - Copy One",
+		"poster": "#"
+	    }
+	}
+
+    ]
+}

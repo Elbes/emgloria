@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text
+END
+IsEqualIgnoringCaseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/IsEqualIgnoringCaseTest.php
+END
+StringEndsWithTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringEndsWithTest.php
+END
+IsEqualIgnoringWhiteSpaceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/IsEqualIgnoringWhiteSpaceTest.php
+END
+StringContainsIgnoringCaseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringContainsIgnoringCaseTest.php
+END
+IsEmptyStringTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/IsEmptyStringTest.php
+END
+MatchesPatternTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/MatchesPatternTest.php
+END
+StringStartsWithTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringStartsWithTest.php
+END
+StringContainsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringContainsTest.php
+END
+StringContainsInOrderTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Text/StringContainsInOrderTest.php
+END

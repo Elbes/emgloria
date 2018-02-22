@@ -1,0 +1,557 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI
+END
+phpt-args.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phpt-args.phpt
+END
+filter-dataprovider-by-regexp-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-regexp-isolation.phpt
+END
+filter-dataprovider-by-regexp.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-regexp.phpt
+END
+help2.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/help2.phpt
+END
+forward-compatibility.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/forward-compatibility.phpt
+END
+testdox-exclude-group.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/testdox-exclude-group.phpt
+END
+teamcity.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/teamcity.phpt
+END
+filter-dataprovider-by-string-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-string-isolation.phpt
+END
+filter-dataprovider-by-string.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-string.phpt
+END
+dependencies-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dependencies-isolation.phpt
+END
+filter-dataprovider-by-only-regexp.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-regexp.phpt
+END
+log-json-post-66021.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/log-json-post-66021.phpt
+END
+testdox-xml.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/testdox-xml.phpt
+END
+report-useless-tests-incomplete.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/report-useless-tests-incomplete.phpt
+END
+phpt-stdin.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phpt-stdin.phpt
+END
+group-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/group-isolation.phpt
+END
+report-useless-tests.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/report-useless-tests.phpt
+END
+filter-no-results.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-no-results.phpt
+END
+filter-dataprovider-by-only-string.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-string.phpt
+END
+phar-extension.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phar-extension.phpt
+END
+log-junit.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/log-junit.phpt
+END
+dependencies2.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dependencies2.phpt
+END
+phpt-stderr.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phpt-stderr.phpt
+END
+testdox-text.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/testdox-text.phpt
+END
+ini-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/ini-isolation.phpt
+END
+repeat.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/repeat.phpt
+END
+concrete-test-class.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/concrete-test-class.phpt
+END
+stop-on-warning-via-config.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/stop-on-warning-via-config.phpt
+END
+abstract-test-class.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/abstract-test-class.phpt
+END
+dependencies-clone.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dependencies-clone.phpt
+END
+default.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/default.phpt
+END
+code-coverage-ignore.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/code-coverage-ignore.phpt
+END
+mycommand.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/mycommand.phpt
+END
+filter-dataprovider-by-only-range-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-range-isolation.phpt
+END
+filter-class-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-class-isolation.phpt
+END
+list-groups.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/list-groups.phpt
+END
+colors-always.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/colors-always.phpt
+END
+phar-extension-suppressed.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phar-extension-suppressed.phpt
+END
+test-suffix-single.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/test-suffix-single.phpt
+END
+exception-stack.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/exception-stack.phpt
+END
+phpt-env.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phpt-env.phpt
+END
+empty-testcase.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/empty-testcase.phpt
+END
+filter-dataprovider-by-range-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-range-isolation.phpt
+END
+dataprovider-debug.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dataprovider-debug.phpt
+END
+dependencies3-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dependencies3-isolation.phpt
+END
+filter-dataprovider-by-range.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-range.phpt
+END
+dependencies3.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dependencies3.phpt
+END
+failure-reverse-list.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/failure-reverse-list.phpt
+END
+test-suffix-multiple.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/test-suffix-multiple.phpt
+END
+filter-dataprovider-by-classname-and-range-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-classname-and-range-isolation.phpt
+END
+dataprovider-testdox.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dataprovider-testdox.phpt
+END
+phpt-xfail.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phpt-xfail.phpt
+END
+filter-dataprovider-by-classname-and-range.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-classname-and-range.phpt
+END
+stop-on-warning-via-cli.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/stop-on-warning-via-cli.phpt
+END
+filter-dataprovider-by-only-regexp-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-regexp-isolation.phpt
+END
+disable-code-coverage-ignore.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/disable-code-coverage-ignore.phpt
+END
+debug.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/debug.phpt
+END
+dependencies.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dependencies.phpt
+END
+testdox.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/testdox.phpt
+END
+report-useless-tests-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/report-useless-tests-isolation.phpt
+END
+group.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/group.phpt
+END
+filter-dataprovider-by-only-string-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-string-isolation.phpt
+END
+filter-dataprovider-by-number-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-number-isolation.phpt
+END
+filter-dataprovider-by-number.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-number.phpt
+END
+assertion.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/assertion.phpt
+END
+dependencies2-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dependencies2-isolation.phpt
+END
+filter-method-case-sensitive-no-result.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-method-case-sensitive-no-result.phpt
+END
+filter-method-case-insensitive.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-method-case-insensitive.phpt
+END
+custom-printer-debug.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/custom-printer-debug.phpt
+END
+exclude-group-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/exclude-group-isolation.phpt
+END
+default-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/default-isolation.phpt
+END
+exclude-group.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/exclude-group.phpt
+END
+tap.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/tap.phpt
+END
+testdox-group.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/testdox-group.phpt
+END
+list-suites.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/list-suites.phpt
+END
+failure-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/failure-isolation.phpt
+END
+fatal-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/fatal-isolation.phpt
+END
+failure.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/failure.phpt
+END
+help.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/help.phpt
+END
+filter-dataprovider-by-only-range.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-only-range.phpt
+END
+filter-class.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-class.phpt
+END
+phpt-external.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/phpt-external.phpt
+END
+testdox-html.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/testdox-html.phpt
+END
+options-after-arguments.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/options-after-arguments.phpt
+END
+custom-printer-verbose.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/custom-printer-verbose.phpt
+END
+log-teamcity.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/log-teamcity.phpt
+END
+output-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/output-isolation.phpt
+END
+dataprovider-log-xml-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml-isolation.phpt
+END
+dataprovider-log-xml.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/dataprovider-log-xml.phpt
+END
+filter-method-isolation.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-method-isolation.phpt
+END
+filter-method.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/filter-method.phpt
+END
+log-tap.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/log-tap.phpt
+END

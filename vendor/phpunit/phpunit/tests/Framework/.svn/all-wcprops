@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework
+END
+SuiteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/SuiteTest.php
+END
+TestCaseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/TestCaseTest.php
+END
+TestImplementorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/TestImplementorTest.php
+END
+BaseTestListenerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/BaseTestListenerTest.php
+END
+AssertTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/AssertTest.php
+END
+ConstraintTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/ConstraintTest.php
+END
+TestListenerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/TestListenerTest.php
+END
+TestFailureTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Framework/TestFailureTest.php
+END

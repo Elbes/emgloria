@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime
+END
+AttachmentAcceptanceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/AttachmentAcceptanceTest.php
+END
+EmbeddedFileAcceptanceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/EmbeddedFileAcceptanceTest.php
+END
+MimePartAcceptanceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/MimePartAcceptanceTest.php
+END
+SimpleMessageAcceptanceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/SimpleMessageAcceptanceTest.php
+END

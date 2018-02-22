@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/tests
+END
+CreatesApplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/tests/CreatesApplication.php
+END
+TestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/tests/TestCase.php
+END
+2017_06_08_165308_criar_usuario.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/tests/2017_06_08_165308_criar_usuario.php
+END
+2017_06_08_171919_resetar_senha.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/tests/2017_06_08_171919_resetar_senha.php
+END
+inserirBanner.blade-datatable.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/tests/inserirBanner.blade-datatable.php
+END

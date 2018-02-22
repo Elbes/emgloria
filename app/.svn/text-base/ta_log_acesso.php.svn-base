@@ -1,0 +1,38 @@
+<?php
+
+namespace App;
+
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
+use Yajra\Datatables\Facades\Datatables;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class ta_log_acesso extends Model
+{
+	use SoftDeletes;
+
+    protected $table = 'ta_log_acesso';
+    protected $primaryKey = 'id_log';
+
+    protected $fillable = [ ];
+    
+    //const CREATED_AT = 'created_at';
+
+    const CREATED_AT = 'dhs_cadastro';
+    const UPDATED_AT = 'dhs_atualizacao';
+    const DELETED_AT = 'dhs_exclusao_logica';
+
+    public function getLog(){
+    	$objReturn = DB::table('ta_log')
+    			->get();
+    
+    			return Datatables::of($objReturn)
+    			->make(true);
+    }
+    
+    public function getContador(){
+    	return DB::table('ta_log_acesso')->count();
+    }
+
+
+}

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src
+END
+RequestInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src/RequestInterface.php
+END
+StreamInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src/StreamInterface.php
+END
+UploadedFileInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src/UploadedFileInterface.php
+END
+ResponseInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src/ResponseInterface.php
+END
+ServerRequestInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src/ServerRequestInterface.php
+END
+UriInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src/UriInterface.php
+END
+MessageInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/psr/http-message/src/MessageInterface.php
+END

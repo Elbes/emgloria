@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src
+END
+NumericComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/NumericComparator.php
+END
+ScalarComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/ScalarComparator.php
+END
+ObjectComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/ObjectComparator.php
+END
+SplObjectStorageComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/SplObjectStorageComparator.php
+END
+DoubleComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/DoubleComparator.php
+END
+ArrayComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/ArrayComparator.php
+END
+Factory.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/Factory.php
+END
+Comparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/Comparator.php
+END
+MockObjectComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/MockObjectComparator.php
+END
+TypeComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/TypeComparator.php
+END
+DOMNodeComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/DOMNodeComparator.php
+END
+ResourceComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/ResourceComparator.php
+END
+ComparisonFailure.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/ComparisonFailure.php
+END
+DateTimeComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/DateTimeComparator.php
+END
+ExceptionComparator.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/comparator/src/ExceptionComparator.php
+END

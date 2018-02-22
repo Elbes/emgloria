@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture
+END
+BlacklistedChildClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/BlacklistedChildClass.php
+END
+BlacklistedImplementor.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/BlacklistedImplementor.php
+END
+SnapshotDomDocument.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/SnapshotDomDocument.php
+END
+BlacklistedInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/BlacklistedInterface.php
+END
+SnapshotTrait.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/SnapshotTrait.php
+END
+SnapshotClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/SnapshotClass.php
+END
+BlacklistedClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/BlacklistedClass.php
+END
+SnapshotFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/global-state/tests/_fixture/SnapshotFunctions.php
+END

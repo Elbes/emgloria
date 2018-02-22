@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/tests/Monolog
+END
+PsrLogCompatTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/tests/Monolog/PsrLogCompatTest.php
+END
+TestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/tests/Monolog/TestCase.php
+END
+LoggerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/tests/Monolog/LoggerTest.php
+END
+ErrorHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/tests/Monolog/ErrorHandlerTest.php
+END
+RegistryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/monolog/monolog/tests/Monolog/RegistryTest.php
+END

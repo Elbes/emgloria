@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util
+END
+InvalidArgumentHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/InvalidArgumentHelper.php
+END
+XML.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/XML.php
+END
+GlobalState.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/GlobalState.php
+END
+Getopt.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Getopt.php
+END
+TestSuiteIterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/TestSuiteIterator.php
+END
+String.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/String.php
+END
+Fileloader.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Fileloader.php
+END
+Configuration.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Configuration.php
+END
+Blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Blacklist.php
+END
+Regex.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Regex.php
+END
+ConfigurationGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/ConfigurationGenerator.php
+END
+Test.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Test.php
+END
+Type.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Type.php
+END
+Printer.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Printer.php
+END
+Filesystem.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Filesystem.php
+END
+Filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/Filter.php
+END
+PHP.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/PHP.php
+END
+ErrorHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Util/ErrorHandler.php
+END

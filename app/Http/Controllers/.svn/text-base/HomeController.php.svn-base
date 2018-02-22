@@ -1,0 +1,46 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\ta_log_acesso;
+
+class HomeController extends Controller
+{
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+   
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index(Request $request)
+    {
+    	 $log = new \App\ta_log_acesso();
+    	 $log->ip_acesso = $request->ip();
+    	 $log->save();
+    	 
+    	 $banner = new \App\ta_banner;
+    	 $banners = $banner->getTodosBanners();
+    	 
+    	 $link = new \App\ta_link;
+    	 $links = $link->getTodosLinks();
+    	 
+    	 $video = new \App\ta_video;
+    	 $videos = $video->getTodosVideos();
+    	 
+    	 $menu = new \App\ta_menu;
+//     	 $menu_principal = $menu->with('subMenu')->get();
+    	 
+    	 $menu_principal = $menu->with('setores.pagina')->get();
+    	 return view('/home', compact('banners', 'links', 'videos', 'menu_principal'));       
+        
+    }
+
+ 
+}

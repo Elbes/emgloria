@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth
+END
+PlainAuthenticatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/PlainAuthenticatorTest.php
+END
+CramMd5AuthenticatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/CramMd5AuthenticatorTest.php
+END
+LoginAuthenticatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/LoginAuthenticatorTest.php
+END
+NTLMAuthenticatorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php
+END

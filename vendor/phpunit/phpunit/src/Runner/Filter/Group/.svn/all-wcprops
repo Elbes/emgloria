@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Runner/Filter/Group
+END
+Exclude.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Runner/Filter/Group/Exclude.php
+END
+Include.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/src/Runner/Filter/Group/Include.php
+END

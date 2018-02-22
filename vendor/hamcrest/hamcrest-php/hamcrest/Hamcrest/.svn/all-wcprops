@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest
+END
+FeatureMatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/FeatureMatcher.php
+END
+MatcherAssert.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/MatcherAssert.php
+END
+Matchers.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matchers.php
+END
+StringDescription.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/StringDescription.php
+END
+Util.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php
+END
+NullDescription.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/NullDescription.php
+END
+BaseMatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/BaseMatcher.php
+END
+BaseDescription.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/BaseDescription.php
+END
+AssertionError.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/AssertionError.php
+END
+SelfDescribing.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/SelfDescribing.php
+END
+Matcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php
+END
+Description.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Description.php
+END
+TypeSafeMatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeMatcher.php
+END
+DiagnosingMatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/DiagnosingMatcher.php
+END
+TypeSafeDiagnosingMatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeDiagnosingMatcher.php
+END

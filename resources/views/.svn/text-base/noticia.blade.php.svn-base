@@ -1,0 +1,109 @@
+@section( 'dependencyCss' )
+<link rel="stylesheet"
+	href="{{ url('/') }}/layout/css/bootstrap-theme.min.css">
+@endsection @extends('layoutIntranet') @section('content')
+
+<div class="row">
+	<div class="col-lg-12">
+		<h2 class="page-header">Notícias !!</h2>
+	     <?php
+			foreach ( $conteudo as $pagina )
+			{
+				echo nl2br ( $pagina->pagina_conteudo );
+			}
+		?>
+     </div>
+</div>
+<hr>
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-4">
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+
+					<span class="glyphicon glyphicon-list-alt"></span><b>Technology
+						News</b>
+				</div>
+
+				<div class="panel-body">
+
+					<div class="row">
+
+						<div class="col-xs-12">
+
+							<ul class="news-demo-down-auto">
+
+								<li class="news-item">Python new version is released..<a
+									href="#">Read more...</a></li>
+
+								<li class="news-item">Get ready for Bootstrap 4.... <br />Compare
+									with Bootstrap 3 <a href="#">Read more...</a></li>
+
+								<li class="news-item">New forms in Bootstrap.. <a href="#">Read
+										more...</a></li>
+
+								<li class="news-item">PHP date ... <a href="#">Read more...</a></li>
+
+								<li class="news-item">Read about Java update ... <a href="#">Read
+										more...</a></li>
+
+								<li class="news-item">HTML 5... <a href="#">Read more...</a></li>
+
+								<li class="news-item">HTML 5... <a href="#">Read more...</a></li>
+								<li class="news-item">HTML 5... <a href="#">Read more...</a></li>
+								<li class="news-item">HTML 5... <a href="#">Read more...</a></li>
+								<li class="news-item">HTML 5... <a href="#">Read more...</a></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="panel-footer"></div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+@endsection @section( 'dependencyJs' )
+<script src="{{ url('/') }}/layout/js/jquery.bootstrap.newsbox.min.js"
+	type="text/javascript"></script>
+<script type="text/javascript">
+
+
+$(function () {
+
+   $(".news-demo-down-auto").bootstrapNews({
+
+        newsPerPage: 1,
+
+        autoplay: true,
+
+        pauseOnHover: true,
+
+        navigation: false,
+
+        direction: 'down',
+
+        newsTickerInterval: 1500,
+
+        
+
+    });
+
+});
+
+</script>
+
+
+@endsection
+

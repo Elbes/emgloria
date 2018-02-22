@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine
+END
+DoctrineCollectionFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineCollectionFilter.php
+END
+DoctrineProxyFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineProxyFilter.php
+END
+DoctrineEmptyCollectionFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/myclabs/deep-copy/src/DeepCopy/Filter/Doctrine/DoctrineEmptyCollectionFilter.php
+END

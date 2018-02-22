@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/bin
+END
+php-parse
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/bin/php-parse
+END
+debug
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/bin/debug
+END
+psysh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/bin/psysh
+END
+phpunit
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/bin/phpunit
+END

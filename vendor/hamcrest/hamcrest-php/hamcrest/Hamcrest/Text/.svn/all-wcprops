@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text
+END
+IsEqualIgnoringCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringCase.php
+END
+StringEndsWith.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringEndsWith.php
+END
+IsEqualIgnoringWhiteSpace.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringWhiteSpace.php
+END
+StringContainsIgnoringCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsIgnoringCase.php
+END
+IsEmptyString.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEmptyString.php
+END
+MatchesPattern.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/MatchesPattern.php
+END
+StringStartsWith.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringStartsWith.php
+END
+SubstringMatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/SubstringMatcher.php
+END
+StringContains.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContains.php
+END
+StringContainsInOrder.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsInOrder.php
+END

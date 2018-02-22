@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/_files
+END
+phpt-env.expected.txt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/_files/phpt-env.expected.txt
+END
+phpt_external.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/_files/phpt_external.php
+END
+expect_external.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/TextUI/_files/expect_external.txt
+END

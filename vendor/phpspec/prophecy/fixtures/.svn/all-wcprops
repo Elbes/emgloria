@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures
+END
+WithFinalVirtuallyPrivateMethod.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithFinalVirtuallyPrivateMethod.php
+END
+WithCallableArgument.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithCallableArgument.php
+END
+WithArguments.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithArguments.php
+END
+SpecialMethods.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/SpecialMethods.php
+END
+WithProtectedAbstractMethod.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithProtectedAbstractMethod.php
+END
+WithReferences.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithReferences.php
+END
+ModifierInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/ModifierInterface.php
+END
+FinalClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/FinalClass.php
+END
+EmptyInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/EmptyInterface.php
+END
+WithTypehintedVariadicArgument.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithTypehintedVariadicArgument.php
+END
+WithVariadicArgument.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithVariadicArgument.php
+END
+WithReturnTypehints.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithReturnTypehints.php
+END
+WithVirtuallyPrivateMethod.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithVirtuallyPrivateMethod.php
+END
+WithStaticMethod.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithStaticMethod.php
+END
+Named.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/Named.php
+END
+EmptyClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/EmptyClass.php
+END
+WithFinalMethod.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/WithFinalMethod.php
+END
+OptionalDepsClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/fixtures/OptionalDepsClass.php
+END

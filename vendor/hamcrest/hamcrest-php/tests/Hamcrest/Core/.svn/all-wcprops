@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core
+END
+EveryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/EveryTest.php
+END
+SetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/SetTest.php
+END
+IsNotTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsNotTest.php
+END
+AllOfTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/AllOfTest.php
+END
+CombinableMatcherTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/CombinableMatcherTest.php
+END
+IsCollectionContainingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsCollectionContainingTest.php
+END
+IsTypeOfTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsTypeOfTest.php
+END
+SampleBaseClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/SampleBaseClass.php
+END
+IsEqualTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsEqualTest.php
+END
+HasToStringTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/HasToStringTest.php
+END
+IsNullTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsNullTest.php
+END
+DescribedAsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/DescribedAsTest.php
+END
+IsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsTest.php
+END
+AnyOfTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/AnyOfTest.php
+END
+IsAnythingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsAnythingTest.php
+END
+IsSameTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsSameTest.php
+END
+SampleSubClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/SampleSubClass.php
+END
+IsInstanceOfTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsInstanceOfTest.php
+END
+IsIdenticalTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Core/IsIdenticalTest.php
+END

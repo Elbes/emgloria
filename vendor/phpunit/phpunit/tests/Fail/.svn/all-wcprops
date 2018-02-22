@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Fail
+END
+fail.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpunit/phpunit/tests/Fail/fail.phpt
+END

@@ -1,0 +1,50 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Notifications\Notifiable;
+
+class ta_setor extends Model
+{
+    use SoftDeletes;
+	use Notifiable;
+	
+    protected $table = 'ta_setor';
+    protected $primaryKey = 'id_setor';
+
+    protected $fillable = [];
+    protected $hidden = [];
+    protected $softDelete = true;
+
+    const CREATED_AT = 'dhs_cadastro';
+    const UPDATED_AT = 'dhs_atualizacao';
+    const DELETED_AT = 'dhs_exclusao_logica';
+    
+    
+    public function menus(){
+    	return $this->belongsTo('App\ta_menu', 'id_menu', 'id_menu');
+    }
+    
+    public function usuarios()
+    {
+    	return $this->hasMany('App\ta_usuarios', 'id_setor', 'id_setor');
+    }
+    
+    public function pagina()
+    {
+    	return $this->hasMany('App\ta_paginas', 'id_setor', 'id_setor');
+    }
+    
+    public function getTodosSetores(){
+    	return DB::table('ta_setor')
+    	->get();
+    }
+    
+    public function getSetorUsuario(){
+    	return DB::table('ta_setor')->with('usuarios')
+    	->get();
+    }
+}

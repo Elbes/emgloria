@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/jakub-onderka/php-console-color
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/jakub-onderka/php-console-color/composer.json
+END
+example.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/jakub-onderka/php-console-color/example.php
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/jakub-onderka/php-console-color/.gitignore
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/jakub-onderka/php-console-color/.travis.yml
+END
+phpunit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/jakub-onderka/php-console-color/phpunit.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/jakub-onderka/php-console-color/build.xml
+END

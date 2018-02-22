@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/view.php
+END
+constants.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/constants.php
+END
+lfm.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/lfm.php
+END
+app.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/app.php
+END
+broadcasting.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/broadcasting.php
+END
+auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/auth.php
+END
+mail.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/mail.php
+END
+cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/cache.php
+END
+services.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/services.php
+END
+session.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/session.php
+END
+database.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sismarcacao-farm/!svn/ver/8/intranet-ses/config/database.php
+END
+datatables.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/datatables.php
+END
+queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/queue.php
+END
+filesystems.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/config/filesystems.php
+END

@@ -1,0 +1,6 @@
+DirectoryIndex paginafacil.php default.html index.php index.html index.htm
+
+RewriteEngine on
+RewriteRule !\.(js|gif|jpg|png|css|txt|swf)$ public/index.php [L]
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]

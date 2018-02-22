@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/vlucas/phpdotenv/src/Exception
+END
+ValidationException.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php
+END
+ExceptionInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/vlucas/phpdotenv/src/Exception/ExceptionInterface.php
+END
+InvalidCallbackException.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/vlucas/phpdotenv/src/Exception/InvalidCallbackException.php
+END
+InvalidPathException.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php
+END
+InvalidFileException.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php
+END

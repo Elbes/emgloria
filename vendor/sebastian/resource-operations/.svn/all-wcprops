@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/resource-operations
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/resource-operations/composer.json
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/resource-operations/LICENSE
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/resource-operations/.gitignore
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/resource-operations/README.md
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/sebastian/resource-operations/build.xml
+END

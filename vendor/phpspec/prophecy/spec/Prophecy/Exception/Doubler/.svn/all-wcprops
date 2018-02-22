@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler
+END
+ClassMirrorExceptionSpec.php
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/ClassMirrorExceptionSpec.php
+END
+ClassNotFoundExceptionSpec.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/ClassNotFoundExceptionSpec.php
+END
+ClassCreatorExceptionSpec.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/ClassCreatorExceptionSpec.php
+END
+DoubleExceptionSpec.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/DoubleExceptionSpec.php
+END
+InterfaceNotFoundExceptionSpec.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/InterfaceNotFoundExceptionSpec.php
+END
+MethodNotExtendableExceptionSpec.php
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/MethodNotExtendableExceptionSpec.php
+END
+MethodNotFoundExceptionSpec.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/sismarcacao-farm/!svn/ver/2/intranet-ses/vendor/phpspec/prophecy/spec/Prophecy/Exception/Doubler/MethodNotFoundExceptionSpec.php
+END

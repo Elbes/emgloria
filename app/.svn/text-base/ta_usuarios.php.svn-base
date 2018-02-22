@@ -1,0 +1,90 @@
+<?php
+
+namespace App;
+
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
+use Yajra\Datatables\Facades\Datatables;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class ta_usuarios extends Authenticatable 
+{
+	/** * Overrides the method to ignore the remember token. */
+	public function setAttribute($key, $value)
+	{ $isRememberTokenAttribute = $key == $this->getRememberTokenName();
+		if (!$isRememberTokenAttribute)
+		{
+			parent::setAttribute($key, $value);
+		} 
+	}
+	
+	
+	use SoftDeletes;
+	use Notifiable;
+	
+    protected $table = 'ta_usuarios';
+    protected $primaryKey = 'id_usuario';
+
+    protected $fillable = [];
+    protected $hidden = array('senha', 'remember_token');
+    protected $softDelete = true;
+
+    const CREATED_AT = 'dhs_cadastro';
+    const UPDATED_AT = 'dhs_atualizacao';
+    const DELETED_AT = 'dhs_exclusao_logica';
+	
+	public function setor()
+    {
+    	return $this->belongsTo('App\ta_setor', 'id_setor', 'id_setor');
+    }
+    
+    //regras para validação de dados
+    public $rules = [
+    		
+    ];
+    
+    public $messages = [
+    ];
+    
+    //Retorna todos os usuários ativos  
+    public function getTodosUsuarios(){
+    	return DB::table('ta_usuarios')->whereNull('ta_usuarios.dhs_exclusao_logica') 
+    					->get();
+    }
+    
+    public function getUsuarioEmail($email){
+    	return DB::table('ta_usuarios')->where('email', $email)
+    	->get();
+    }
+    
+    public function getUsuarioId($id_usuario){
+    	return DB::table('ta_usuarios')->where('id_usuario', $id_usuario)
+    	->get();
+    }
+    
+    
+    //Rerorna usuários ativos e inativos para Datatable
+    public function getDtUsuario(){
+    	$objReturn = $this::with('setor')->withTrashed('dhs_exclusao_logica') 
+    	->get();
+    	
+    	return Datatables::collection($objReturn)
+        ->addColumn('dhs_cadastro', function($model){
+    		return date('d/m/Y', strtotime($model->dhs_cadastro));
+    	})
+    	->addColumn('dhs_atualizacao', function($model){
+    		return date('d/m/Y', strtotime($model->dhs_atualizacao));
+    	})
+    	->make(true);
+    	
+    	/* $objReturn = DB::table('ta_usuarios')
+    	->get();
+    
+    	return Datatables::of($objReturn)
+    	->make(true); */
+    }
+    
+    
+}
