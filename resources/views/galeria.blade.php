@@ -54,7 +54,7 @@
 <script src="{{ url('/layout/') }}/js/paginacao/highlight.pack.js"></script>
 <script src="{{ url('/layout/') }}/js/paginacao/tabifier.js"></script>
 <script src="{{ url('/layout/') }}/js/paginacao/js.js"></script>
-<script src="{{ url('/layout/') }}/js/paginacao/jPages.js"></script>
+<script src="{{ url('/layout/') }}/js/paginacao/jPages.min.js"></script>
  <script type="text/javascript">
 
   var _gaq = _gaq || [];

@@ -1,8 +1,29 @@
 @extends('layout.layoutSite')
 @section('dependencyCss')
 
-<link rel="stylesheet" href="{{ url('/layout/') }}/css/jPages.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="{{ url('/layout/') }}/css/animate.css" type="text/css" media="all"/>
+<!-- CSS Fancybox -->
+    <link rel="stylesheet" type="text/css" href="{{ url('/layout/') }}/fancybox/dist/jquery.fancybox.css">
+
+    <style type="text/css">
+    /* body{ font-family:Arial, Helvetica, sans-serif } */
+    li{
+        list-style:none;
+        display:inline;
+        float:left;
+        left: 10px;
+    }
+    li p{
+        text-align:center;
+    }
+    .thumb{
+        cursor:pointer;
+        position:relative;
+        border:#FFF solid 3px;
+        border-radius:264px;
+        height:264px;
+        width:264px;
+    }
+    </style>
 	
 @endsection
 @section('content')
@@ -22,92 +43,51 @@
 	   
 	   <article class="banner-bottom-slide">
 
-        <!-- big image -->
-        <div id="img" class="animated"><div class="img-holder"><img src="{{ url('/imagens/galeria/') }}/{{ $img_primeira->nome_imagem }}" alt="image" class="img-responsive imagem-amor"/></div></div>
-
-        <!-- item container -->
-        <ul id="thumbs" class="clearfix">
-            @foreach ($imagens as $imagem)
-            <li class="img-holder"><div class="img-holder"><img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="image" class="img-responsive imagem-amor"/></div></li>
-            @endforeach
-        </ul>
-
-        <!-- navigation holder -->
-        <div class="holder"></div>
-
-        <!-- custom buttons -->
-        <div id="btns">
-            <span class="prev"></span>
-            <span class="next"></span>
+     <ul>   
+        <!-- exemplo com legenda -->
+    <li>
+        <div class="thumb" style="background: url('{{ url('/imagens/galeria/') }}/1518529690_img-4.jpg') no-repeat;">
+            <a href="{{ url('/layout/images') }}/1.png" data-fancybox data-caption="Legenda da foto 1"></a>
+            <a href="{{ url('/layout/images') }}/2.png" data-fancybox data-caption="Legenda da foto 2"></a>
+            <a href="{{ url('/layout/images') }}/3.png" data-fancybox data-caption="Legenda da foto 3"></a>
         </div>
+        <p>Imagens</p>
+    </li>
+    
+    <!-- exemplo sem legenda -->
+    <li>
+    	<div class="thumb" style="background: url('{{ url('/layout/images') }}/3.png') no-repeat;">
+            <a href="fotos/carros/1.jpg" data-fancybox></a>
+            <a href="fotos/carros/2.jpg" data-fancybox></a>
+            <a href="fotos/carros/3.jpg" data-fancybox></a>
+		</div>
+        <p>Carros</p>
+    </li>
+</ul>
 
 
   	   </article>
 	   
-<!--       <section class="grid-holder">
-        <section class="grid">
-          <article class="column c-one-third">
-            <div class="img-holder slide-1"> <a href="gallery-singlepost.html"><img src="{{ url('/layout/') }}/images/img-4.jpg" alt="image" class="img-responsive imagem-amor"/></a> </div>
-          </article>
-          <article class="column c-one-third">
-            <div class="img-holder slide-1"> <a href="gallery-singlepost.html"><img src="{{ url('/layout/') }}/images/img-2.jpg" alt="image" class="img-responsive imagem-amor"/></a> </div>
-          </article>
-          <article class="column c-one-third">
-            <div class="img-holder slide-1"> <a href="gallery-singlepost.html"><img src="{{ url('/layout/') }}/images/gallery-img-7.jpg" alt="image" class="img-responsive imagem-amor"/></a> </div>
-          </article>
-        </section>
-      </section>
-       -->
-    
 
     </div>
 
 @endsection
 @section('dependencyJs')
-<script src="{{ url('/layout/') }}/js/paginacao/jPages.js"></script>
-<script src="{{ url('/layout/') }}/js/paginacao/jquery-1.8.2.min.js"></script>
-<script src="{{ url('/layout/') }}/js/paginacao/highlight.pack.js"></script>
-<script src="{{ url('/layout/') }}/js/paginacao/tabifier.js"></script>
-<script src="{{ url('/layout/') }}/js/paginacao/js.js"></script>
-<script src="{{ url('/layout/') }}/js/paginacao/jPages.js"></script>
- <script type="text/javascript">
+<!-- JQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- JS Fancybox -->
+<script type="text/javascript" src="{{ url('/layout/') }}/fancybox/dist/jquery.fancybox.js"></script>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28718218-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  </script>
-  
-    <script>
-  $(function() {
-
-    /* initiate plugin */
-    $("div.holder").jPages({
-      containerID : "thumbs",
-      perPage     : 4,
-      previous    : ".prev",
-      next        : ".next",
-      links       : "blank",
-      direction   : "auto",
-      animation   : "fadeInUp"
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".thumb").click(function() {
+            var hrefs = new Array();
+            $.fancybox.open(
+                $(this).find("[data-fancybox]").each(function(){
+                    hrefs.push($(this).attr('href'));
+                })
+            );
+        });
     });
-
-    $("ul#thumbs li").click(function(){
-      $(this).addClass("selected")
-      .siblings()
-      .removeClass("selected");
-
-      var img = $(this).children().clone().addClass("animated fadeInDown");
-      $("div#img").html( img );
-
-    });
-
-  });
-  </script>
+</script>
 @endsection
