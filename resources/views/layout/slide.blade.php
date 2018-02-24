@@ -11,11 +11,13 @@
             <a class="btn-next" href="#">próximo</a> </div>
           <div class="pagination">
             <ul>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+            @foreach ($banners as $banner)
+            	@if (!isset($banner->dhs_exclusao_logica))
+              		<li class=""><a href="#"></a></li>
+              	@endif
+            @endforeach
+              
+              
             </ul>
           </div>
         </div>
