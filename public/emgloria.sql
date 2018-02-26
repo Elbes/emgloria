@@ -107,6 +107,23 @@ INSERT INTO `tb_galeria` VALUES (13,'1518529690_img-4.jpg','Amor que move','asds
 /*!40000 ALTER TABLE `tb_galeria` ENABLE KEYS */;
 UNLOCK TABLES;
 
+
+DROP TABLE IF EXISTS `tb_video`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_video` (
+  `id_video` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_video` varchar(60) DEFAULT NULL,
+  `tipo_video` varchar(45) DEFAULT NULL,
+  `obs_video` varchar(250) DEFAULT NULL,
+  `dhs_cadastro` timestamp NULL DEFAULT NULL,
+  `dhs_atualizacao` timestamp NULL DEFAULT NULL,
+  `dhs_exclusao_logica` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id_video`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
 --
 -- Table structure for table `tb_ministerio`
 --

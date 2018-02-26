@@ -3512,13 +3512,13 @@ ul.list-link li {
 
 .banner-bottom-slide {
 	overflow:hidden;
-	width:100%;
+	max-width:75%;
 	margin-bottom:30px;
 	padding:0 0 0 22%;
 }
 
- ul#thumbs { list-style: none; margin: 0px; padding:0px; margin-top: 10px; }
-  ul#thumbs li { float: left; margin-right: 10px; cursor:pointer; }
+ ul#thumbs { list-style: none; margin: 0px; padding:0 0 0 0; margin-top: 10px; max-width:80%;}
+  ul#thumbs li { text-align:center; margin-right: 10px; cursor:pointer; }
   ul#thumbs li img { height: 130px; width:190px; vertical-align: top; }
   ul#thumbs li.selected { outline: 3px solid #FF4242; }
 

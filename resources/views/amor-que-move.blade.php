@@ -61,28 +61,27 @@
 	   
 	   <article class="banner-bottom-slide">
 
-     <ul id="thumbs" class="clearfix">   
-        <!-- exemplo com legenda -->
-	    <li>
-	        <div class="thumb imagem-amor" style="background: url('{{ url('/imagens/galeria/') }}/{{ $img_primeira->nome_imagem }}') no-repeat;">
-	             @foreach ($imagens as $imagem)
-	                 <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-fancybox data-caption="Legenda da foto 1"></a>
-	             @endforeach
-	        </div>
-	        <p>Imagens</p>
-	    </li>
-	    
-	    <!-- exemplo sem legenda -->
-	    <li>
-	        <div class="thumb2 imagem-amor" style="background: url('{{ url('/imagens/galeria/') }}/{{ $img_primeira->nome_imagem }}') no-repeat;">
-	             @foreach ($imagens as $imagem)
-	                 <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-fancybox data-caption="Legenda da foto 1"></a>
-	             @endforeach
-	        </div>
-	        <p>Vídeos</p>
-	    </li>
-	</ul>
-
+		     <ul id="thumbs" class="clearfix">   
+		        <!-- exemplo com legenda -->
+			    <li>
+			        <div class="thumb imagem-amor" style="background: url('{{ url('/imagens/galeria/') }}/{{ $img_primeira->nome_imagem }}') no-repeat;">
+			             @foreach ($imagens as $imagem)
+			                 <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-fancybox data-caption="Legenda da foto 1"></a>
+			             @endforeach
+			        </div>
+			        <p>Imagens</p>
+			    </li>
+			    
+			    <!-- exemplo sem legenda -->
+			    <li>
+			        <div class="thumb2 imagem-amor" style="background: url('{{ url('/imagens/galeria/') }}/{{ $img_primeira->nome_imagem }}') no-repeat;">
+			             @foreach ($imagens as $imagem)
+			                 <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-fancybox data-caption="Legenda da foto 1"></a>
+			             @endforeach
+			        </div>
+			        <p>Vídeos</p>
+			    </li>
+			</ul>
 
   	   </article>
 	   
