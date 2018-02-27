@@ -16,29 +16,37 @@
                         </li>
                         
                         <li>
-                            <a href="{{ url('/listaBanner') }}" ><i class="fa fa-edit fa-fw"></i> Banners Superiores</a>
+                            <a href="{{ url('/listaBanner') }}" ><i class="fa fa-files-o fa-fw"></i> Banners Superiores</a>
                         </li>
                         
                          <li>
-                            <a href="{{ url('/listaDevocional') }}" ><i class="fa fa-files-o fa-fw"></i> Devocional</a>
+                            <a href="{{ url('/listaDevocional') }}" ><i class="fa fa-edit fa-fw"></i> Devocional</a>
                         </li>
                         
                         <li>
-                            <a href="{{ url('/listaMissaoVisao') }}" ><i class="fa fa-files-o fa-fw"></i> Sobre a Igreja</a>
+                            <a href="{{ url('/listaMissaoVisao') }}" ><i class="fa fa-bar-chart-o fa-fw"></i> Sobre a Igreja</a>
                         </li>
                         
                         <li>
-                            <a href="{{ url('/listaMinisterio') }}" ><i class="fa fa-files-o fa-fw"></i> Ministérios</a>
+                            <a href="{{ url('/listaMinisterio') }}" ><i class="fa fa-wrench fa-fw"></i> Ministérios</a>
                         </li>
                         
                         <li>
-                            <a href="{{ url('/listaProgramacao') }}" ><i class="fa fa-files-o fa-fw"></i> Programação</a>
+                            <a href="{{ url('/listaProgramacao') }}" ><i class="fa fa-table fa-fw"></i> Programação</a>
+                        </li>
+                         <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Galeria<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{ url('/listaGaleria') }}" > Imagens</a>
+                                </li>
+                                <li>
+                                    <a href="{{ url('/listaVideo') }}" > Vídeos</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
                         </li>
                         
-                        <li>
-                            <a href="{{ url('/listaGaleria') }}" ><i class="fa fa-files-o fa-fw"></i> Galeria</a>
-                        </li>
-                        <li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

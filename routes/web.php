@@ -332,15 +332,25 @@ Route::any('/inserirGaleria', [
 		'as' => 'admin.galeria.inserirGaleria',
 		'uses' => 'Admin\GaleriaController@getInserir'
 ]);
+
+Route::any('/listaVideo', [
+		'as' => 'admin.galeria.listaVideo',
+		'uses' => 'Admin\VideoController@getListaVideo'
+]);
+
+Route::any('/inserirVideo', [
+		'as' => 'admin.galeria.inserirVideo',
+		'uses' => 'Admin\VideoController@getInserir'
+]);
 	
 Route::group(['prefix' => '/admin/galeria'], function () {
 	
-		//Inserção
+		//INSERÇÃO DE IMAGEM
 		Route::post('/inserir-galeria', [
 				'uses' => 'Admin\GaleriaController@inserirGaleria'
 		]);
 	
-		//Listar MINISTÉRIO em DataTable
+		//Listar IMAGENS em DataTable
 		Route::any('/lista-galeria.json', [
 				'as' => 'admin.galeria.lista-galeria.json',
 				'uses' => 'Admin\GaleriaController@getListaGaleriaJson'
@@ -366,6 +376,17 @@ Route::group(['prefix' => '/admin/galeria'], function () {
 		Route::any('/altera-galeria', [
 				'as' => 'admin.galeria.altera-galeria',
 				'uses' => 'Admin\GaleriaController@alterarGaleria'
+		]);
+		
+		//Listar VÍDEOS em DataTable
+		Route::any('/lista-video.json', [
+				'as' => 'admin.galeria.lista-video.json',
+				'uses' => 'Admin\VideoController@getListaVideoJson'
+		]);
+		
+		//INSERÇÃO DE VÍDEO
+		Route::post('/inserir-video', [
+				'uses' => 'Admin\VideoController@inserirVideo'
 		]);
 	});
 
