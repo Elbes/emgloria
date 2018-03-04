@@ -62,10 +62,14 @@ class SiteController extends Controller
 		$imagens = $galeria->getGaleriaAmor();
 		$img_primeira = $galeria->getAmorPrimeira();
 		
+		$video = new \App\tb_video();
+		$videos = $video->getVideAmor();
+		$video_primeiro = $video->getVideoAmorPrimeira();
+		
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/amor-que-move', compact('minAtivo', 'imagens', 'img_primeira', 'banners'));
+		return view('/amor-que-move', compact('minAtivo', 'imagens', 'img_primeira', 'videos', 'video_primeiro', 'banners'));
 	}
 	
 	public function getMinisterios($id_ministerio){

@@ -3,7 +3,7 @@ return [
 
 		'SYS_TITLE' => ('IBG - IGREJA BATISTA EM GLÓRIA'),
 		
-		'SYS_TITLE_ADM' => ('Administração - Batista em Glória'),
+		'SYS_TITLE_ADM' => ('ADMINISTRAÇÃO - IGREJA BATISTA EM GLÓRIA'),
 
 		/*  EMAIL PARA SUPORTE - LOG DE ERROS */
 		'LOG_ERROS' => [

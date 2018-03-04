@@ -1702,6 +1702,16 @@ ul.social-networks li a:hover {
 	background: #fff;
 }
 
+.video-holder {
+	position:relative;
+	margin:0 0 20px 0;
+}
+.video-holder video {
+	border: 4px solid rgba(255, 255, 255, .8);
+	width:100%;
+	margin-bottom:-7px;
+}
+
 .slide-1:before, .slide-1:after {
 	z-index: -1;
 	position: absolute;
@@ -3517,7 +3527,14 @@ ul.list-link li {
 	padding:0 0 0 22%;
 }
 
- ul#thumbs { list-style: none; margin: 0px; padding:0 0 0 0; margin-top: 10px; max-width:80%;}
+.video-galeria {
+	overflow:hidden;
+	max-width:90%;
+	margin-bottom:30px;
+	padding:0 0 0 22%;
+}
+
+ ul#thumbs { list-style: none; margin: 0px; padding:0 0 0 125px; margin-top: 10px; max-width:80%;}
   ul#thumbs li { text-align:center; margin-right: 10px; cursor:pointer; }
   ul#thumbs li img { height: 130px; width:190px; vertical-align: top; }
   ul#thumbs li.selected { outline: 3px solid #FF4242; }

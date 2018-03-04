@@ -73,43 +73,43 @@ class VideoController extends Controller
     return Redirect::to('/listaVideo');
     }
     
-    //LISTA DADOS DA IMAGEM NA VIEW PARA ALTERAR
-    public function getAlterarGaleria($id_galeria)
+    //LISTA DADOS DO VÍDEO NA VIEW PARA ALTERAR
+    public function getAlterarVideo($id_video)
     {
     	$usuario = \App\ta_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
     	
     	$perfil = new \App\tb_perfil();
     	$perfis = $perfil->getTodosPerfis();
     	
-    	$galeria = \App\tb_galeria::withTrashed()->find( $id_galeria );
+    	$video = \App\tb_video::withTrashed()->find( $id_video );
     	
-    	if ($galeria == null) {
+    	if ($video == null) {
     		// Está inativo no banco de dados =P
-    		Session::flash('warning', 'Imagem não encontrada!!!');
-    		return Redirect::to('/listaGaleria');
+    		Session::flash('warning', 'Vídeo não encontrada!!!');
+    		return Redirect::to('/listaVideo');
     	}else{
-    		return view('admin.galeria.alterarGaleria', compact('galeria', 'usuario', 'perfis'));
+    		return view('admin.galeria.alterarVideo', compact('video', 'usuario', 'perfis'));
     	}
     	
     }
     
-    //FUNÇÃO PARA ALTERA DADOS DA IMAGEM
-    public function alterarGaleria(Request $request){
+    //FUNÇÃO PARA ALTERA DADOS DO VÍDEO
+    public function alterarVideo(Request $request){
     	
-    	$galeria = \App\tb_galeria::withTrashed()->find( $request->input('id_galeria') );
-    	$galeria->tipo_imagem =  $request->input('tipo_imagem');
-    	$galeria->obs_imagem =  $request->input('obs_imagem');
+    	$video = \App\tb_video::withTrashed()->find( $request->input('id_video') );
+    	$video->tipo_video =  $request->input('tipo_video');
+    	$video->obs_video =  $request->input('obs_video');
     	
-    	if($galeria->save()){
+    	if($video->save()){
     		Session::flash('success', 'Alterado com sucesso!!!');
     	}else{
     		Session::flash('error', 'Erro ao tentar alterar!!!\nTente Novamente.');
     	}
-    	return Redirect::to('/listaGaleria');
+    	return Redirect::to('/listaVideo');
     }
     
     
-    //LISTAR BANNER NA DATATABLE
+    //LISTAR VÍDEO NA DATATABLE
     public function getListaVideoJson()
     {
     	$video = new \App\tb_video();
@@ -117,45 +117,46 @@ class VideoController extends Controller
     		
     }
 
-    //EXCLUIR IMAGEM DEFINITIVAMENTE
-    public function excluirGaleria($id_galeria )
+    //EXCLUIR VÍDEO DEFINITIVAMENTE
+    public function excluirVideo($id_video )
     {  
-    	$galeria = \App\tb_galeria::withTrashed()->find( $id_galeria )->get()->first();
-        if($galeria->forceDelete()){
-        	unlink(public_path('/imagens/galeria/'.$galeria->nome_imagem));
-        	Session::flash('success', 'Imagem '.$galeria->nome_imagem.' excluída com sucesso!!!');
+    	$video = \App\tb_video::withTrashed()->find( $id_video)->get()->first();
+       
+        if($video->forceDelete()){
+        	unlink(public_path('/videos/galeria/'.$video->nome_video));
+        	Session::flash('success', 'Vídeo '.$video->nome_video.' excluído com sucesso!!!');
         }else{
-            Session::flash('error', ' Erro ao tentar excluir imagem '.$galeria->nome_imagem.' !!!');
+            Session::flash('error', ' Erro ao tentar excluir vídeo '.$video->nome_video.' !!!');
         }
-        return Redirect::to('/listaGaleria');
+        return Redirect::to('/listaVideo');
     }
     
-    //INATIVAR IMAGEM - EXCLUSÃO LÓGICA
-    public function inativarGaleria($id_galeria)
+    //INATIVAR VÍDEO - EXCLUSÃO LÓGICA
+    public function inativarVideo($id_video)
     {
     
-    	$galeria = \App\tb_galeria::find( $id_galeria );
+    	$video = \App\tb_video::find( $id_video );
     
-    	if($galeria->delete()){
+    	if($video->delete()){
     		Session::flash('success', 'Desativado com sucesso!!!');
     	}else{
     		Session::flash('error', 'Erro ao tentar desativar!!!');
     	}
-    	return Redirect::to('/listaGaleria');
+    	return Redirect::to('/listaVideo');
     
     }
     
-    //REATIVAR IMAGEM DA EXCLUSÃO LÓGICA
-    public function ativarGaleria($id_galeria )
+    //REATIVAR VÍDEO DA EXCLUSÃO LÓGICA
+    public function ativarVideo($id_video )
     {
-    	$galeria = \App\tb_galeria::where('id_galeria', $id_galeria );
+    	$video = \App\tb_video::where('id_video', $id_video );
     	
-    	if($galeria->restore()){
+    	if($video->restore()){
     		Session::flash('success', 'Ativado com sucesso!!!');
     	}else{
     		Session::flash('error', 'Erro ao tentar ativar!!!');
     	}
-    	return Redirect::to('/listaGaleria');
+    	return Redirect::to('/listaVideo');
     }
     
 

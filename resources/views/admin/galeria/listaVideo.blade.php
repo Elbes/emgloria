@@ -45,7 +45,7 @@
                         {"sTitle": "VÍDEO","width": "37%", "sName": "id_video", "mData": function(data) {                                
                             var video = "";
                             if(data.nome_video.length > 0){
-                            	 video = '<div style="text-align:center;"> <video controls width="80%" > <source src="{{ url("/") }}/videos/galeria/'+ data.video +'" /></video></div>';
+                            	 video = '<div style="text-align:center;"> <video controls width="80%" > <source src="{{ url("/") }}/videos/galeria/'+ data.nome_video +'" /></video></div>';
                             }
 
                             return video;
@@ -53,13 +53,13 @@
                     },
                         {"sTitle": "OPÇÕES", "width": "15%","searchable": false, "orderable":  false, "mData": function(data){
 
-                                var button  = '<a title="Alterar" href="{{ url("/admin/galeria/alterar-galeria") }}/'+ data.id_galeria +'" class="btn btn-success mgn-btn-dt"><i class="fa fa-pencil-square-o"></i></a>';
+                                var button  = '<a title="Alterar" href="{{ url("/admin/galeria/alterar-video") }}/'+ data.id_video +'" class="btn btn-success mgn-btn-dt"><i class="fa fa-pencil-square-o"></i></a>';
                                 if(data.dhs_exclusao_logica == null){
-                                	button  += ' <a title="Inativar" href="{{ url("/admin/galeria/inativar-galeria") }}/'+ data.id_galeria +'" class="btn btn-primary mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
+                                	button  += ' <a title="Inativar" href="{{ url("/admin/galeria/inativar-video") }}/'+ data.id_video +'" class="btn btn-primary mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
                                 }else{
-                                	button  += ' <a title="Ativar" href="{{ url("/admin/galeria/ativar-galeria") }}/'+ data.id_galeria +'" class="btn btn-warning mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
+                                	button  += ' <a title="Ativar" href="{{ url("/admin/galeria/ativar-video") }}/'+ data.id_video +'" class="btn btn-warning mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
                                 }
-                                button  += ' <a title="Excluir" href="{{ url("/admin/galeria/excluir-galeria") }}/'+ data.id_galeria +'" class="btn btn-danger mgn-btn-dt"><i class="fa fa-trash"></i></a>';
+                                button  += ' <a title="Excluir" href="{{ url("/admin/galeria/excluir-video") }}/'+ data.id_video +'" class="btn btn-danger mgn-btn-dt"><i class="fa fa-trash"></i></a>';
                                 return button;
                         	}
                     

@@ -68,9 +68,9 @@ class tb_video extends Model
     	->get()->first();
     }
     
-    public function getVideomor(){
+    public function getVideAmor(){
     	return DB::table('tb_video')
-    	->whereNull('tb_video.dhs_exclusa_logica')->where('tb_video.tipo_video', 'Amor que move')
+    	->whereNull('tb_video.dhs_exclusao_logica')->where('tb_video.tipo_video', 'Amor que move')
     	->get();
     }
     

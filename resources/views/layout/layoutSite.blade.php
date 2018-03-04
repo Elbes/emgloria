@@ -11,14 +11,8 @@
 	<!-- Basic Page Needs -->
 	<meta charset="utf-8">
 	<title> {{ Config::get( 'constants.SYS_TITLE' )  }} </title>
-	<meta name="description" content>
-	<meta name="author" content>
-	<link rel="icon" type="image/png" href="{{ url('/layout/') }}/images/favicon.png">
-	<meta name="description" content>
-	<meta name="author" content>
-	<link rel="icon" type="image/png" href="{{ url('/layout/') }}/images/favicon.png">
-	<meta name="description" content>
-	<meta name="author" content>
+	<meta name="description" content="Site Igreja Batista em Glória">
+	<meta name="author" content="Elbes Alves">
 	<link rel="icon" type="image/png" href="{{ url('/layout/') }}/images/favicon.png">
 	<!-- CSS Style -->
 	<link rel="stylesheet" href="{{ url('/layout/') }}/css/all2.css" type="text/css" media="all">

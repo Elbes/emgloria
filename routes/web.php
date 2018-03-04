@@ -388,6 +388,28 @@ Route::group(['prefix' => '/admin/galeria'], function () {
 		Route::post('/inserir-video', [
 				'uses' => 'Admin\VideoController@inserirVideo'
 		]);
+		
+		Route::any('/excluir-video/{id_video?}', [
+				'uses' => 'Admin\VideoController@excluirVideo'
+		]);
+		
+		Route::any('/inativar-video/{id_video?}', [
+				'uses' => 'Admin\VideoController@inativarVideo'
+		]);
+		
+		Route::any('/ativar-video/{id_video?}', [
+				'uses' => 'Admin\VideoController@ativarVideo'
+		]);
+		
+		Route::any('/alterar-video/{id_video?}', [
+				'as' => 'admin.galeria.alterar-video',
+				'uses' => 'Admin\VideoController@getAlterarVideo'
+		]);
+		
+		Route::any('/altera-video', [
+				'as' => 'admin.galeria.altera-video',
+				'uses' => 'Admin\VideoController@alterarVideo'
+		]);
 	});
 
 
