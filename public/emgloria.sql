@@ -107,23 +107,6 @@ INSERT INTO `tb_galeria` VALUES (13,'1518529690_img-4.jpg','Amor que move','asds
 /*!40000 ALTER TABLE `tb_galeria` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
-DROP TABLE IF EXISTS `tb_video`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `tb_video` (
-  `id_video` int(11) NOT NULL AUTO_INCREMENT,
-  `nome_video` varchar(60) DEFAULT NULL,
-  `tipo_video` varchar(45) DEFAULT NULL,
-  `obs_video` varchar(250) DEFAULT NULL,
-  `dhs_cadastro` timestamp NULL DEFAULT NULL,
-  `dhs_atualizacao` timestamp NULL DEFAULT NULL,
-  `dhs_exclusao_logica` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id_video`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
-
 --
 -- Table structure for table `tb_ministerio`
 --
@@ -276,6 +259,35 @@ LOCK TABLES `tb_usuarios` WRITE;
 INSERT INTO `tb_usuarios` VALUES (5,'Elbes',NULL,'elbes2009@gmail.com','$2y$10$KDxAQLZQrMLqvcHhzHoIvueJVcl4bqQsEpxldNcp1SAOjhaEsSW2C',1,'2017-12-14 08:50:06','2017-12-14 08:50:06',NULL);
 /*!40000 ALTER TABLE `tb_usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_video`
+--
+
+DROP TABLE IF EXISTS `tb_video`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_video` (
+  `id_video` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_video` varchar(60) DEFAULT NULL,
+  `tipo_video` varchar(45) DEFAULT NULL,
+  `obs_video` varchar(250) DEFAULT NULL,
+  `dhs_cadastro` timestamp NULL DEFAULT NULL,
+  `dhs_atualizacao` timestamp NULL DEFAULT NULL,
+  `dhs_exclusao_logica` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id_video`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_video`
+--
+
+LOCK TABLES `tb_video` WRITE;
+/*!40000 ALTER TABLE `tb_video` DISABLE KEYS */;
+INSERT INTO `tb_video` VALUES (18,'1520105518_papo_de_saude.mp4','Amor que move','video 1','2018-03-03 16:31:58','2018-03-03 16:38:22',NULL),(19,'1520114131_papo_de_saude.mp4','Amor que move','cd','2018-03-03 18:55:32','2018-03-03 18:55:32',NULL),(20,'1520115110_papo_de_saude.mp4','Amor que move','dsadasd','2018-03-03 19:11:50','2018-03-03 19:11:50',NULL),(21,'1520115194_papo_de_saude.mp4','Amor que move','sdsd','2018-03-03 19:13:14','2018-03-03 19:13:49',NULL);
+/*!40000 ALTER TABLE `tb_video` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -286,4 +298,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-22 23:43:31
+-- Dump completed on 2018-03-04  2:21:44
