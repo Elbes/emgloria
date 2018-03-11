@@ -30,7 +30,8 @@ class ProgramacaoController extends Controller
     public function inserirProgramacao(Request $request)
     {   
         $programacao = new \App\tb_programacao();
-        $programacao->dia_programacao =  $request->input('dia_programacao'); 
+        $programacao->dia_programacao =  $request->input('dia_programacao');
+        $programacao->hora_programacao =  $request->input('hora_programacao');
         $programacao->texto_programacao =  $request->input('texto_programacao');
         $programacao->prioridade =  $request->input('prioridade');
              
@@ -67,7 +68,8 @@ class ProgramacaoController extends Controller
     	
     	$programacao = \App\tb_programacao::withTrashed()->find( $request->input('id_programacao'));
     	
-        $programacao->dia_programacao =  $request->input('dia_programacao'); 
+        $programacao->dia_programacao =  $request->input('dia_programacao');
+        $programacao->hora_programacao =  $request->input('hora_programacao');
         $programacao->texto_programacao =  $request->input('texto_programacao');
         $programacao->prioridade =  $request->input('prioridade');
     	

@@ -43,6 +43,16 @@
                                             @endif
                                         </div>
                                         
+                                        <div class="form-group{{ $errors->has('hora_programacao') ? ' has-error' : '' }}">
+                                            <label>Hora</label>
+                                            <input type="time" class="form-control" name="hora_programacao" maxlength="5" placeholder="Entre com a hora da programação" value="{{ old('hora_programacao') }}" required="required">
+                                        	@if ($errors->has('hora_programacao'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('hora_programacao') }}</strong>
+                                                </span>
+                                            @endif
+                                        </div>
+                                        
                                         <div class="form-group{{ $errors->has('texto_programacao') ? ' has-error' : '' }}">
                                             <label>Programação</label>
                                             <input class="form-control" name="texto_programacao" maxlength="150" placeholder="Entre com o texto da programação" value="{{ old('texto_programacao') }}" required="required">

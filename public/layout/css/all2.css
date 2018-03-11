@@ -118,6 +118,10 @@ input, select, textarea {
 .c-one-third {
 	width: 300px;
 }
+
+.c-one-third-progra {
+	width: 380px;
+}
 /*------ #4 column--------- */
 
 .c-one-fourth {
@@ -137,6 +141,10 @@ input, select, textarea {
 
 .c-three-fourth {
 	width:630px;
+}
+
+.c-three-fourth-progra {
+	width:550px;
 }
 /*------ #3-5 column End--------- */
 
@@ -705,7 +713,7 @@ ul.post-slide li {
 	overflow: hidden;
 	position: relative;
 	width: 651px;
-	background-image: url('../images/programacao.png');
+	/* background-image: url('../images/programacao.png'); */
 }
 
 .img-details ul {
@@ -728,7 +736,7 @@ ul.post-slide li {
 	bottom:0;
 	width:100%;
 	height:100%;
-	background-color: rgba(255, 255, 255, .7) !important; 
+	background-color: rgba(255, 255, 255, .7) !important;
 	padding:1%;
 	
 }
@@ -737,7 +745,16 @@ ul.post-slide li {
 	color:#000;
 	font-size:12px;
 	font-family: 'droid_sans,regular';
-	width:430px;
+	width:300px;
+	line-height:15px;
+	
+}
+.info-1 .right {
+	padding:1% 100%;
+	color:#000;
+	font-size:12px;
+	font-family: 'droid_sans,regular';
+	width:250px;
 	line-height:15px;
 	
 }
@@ -1522,11 +1539,11 @@ ul.social-networks li a:hover {
 	width:960px !important
 }
 #timedetail {
-	width:620px;
+	width:580px;
 	height:250px;
 	overflow: hidden;
 	margin:0;
-	padding:0;
+	padding:0 0 0 30px;
 }
 .style-2 #timedetail {
 	width:960px;
@@ -1644,6 +1661,18 @@ ul.social-networks li a:hover {
 	line-height: 24px;
 	overflow:hidden;
 	color:#333;
+	margin-bottom:30px;
+}
+
+.txt-program {
+	border-bottom:0px dotted #ada8a4;
+	border-top:0px dotted #ada8a4;
+	padding:10px 0 10px 5px;
+	font-family: 'droid_sans,regular';
+	font-size: 18px;
+	line-height: 24px;
+	overflow:hidden;
+	color:#fff;
 	margin-bottom:30px;
 }
 .txt-widget p {

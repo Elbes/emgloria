@@ -38,8 +38,9 @@
 				 
                 var dtColumnsLink = function() {
                     var columns = [
-                        {"sTitle": "DIA", "width": "15%", "sName": "dia_programacao", "mData": "dia_programacao"},
-                        {"sTitle": "TEXTO PROGRAMAÇÃO", "width": "40%", "sName": "texto_programacao", "mData": "texto_programacao"},
+                        {"sTitle": "DIA", "width": "10%", "sName": "dia_programacao", "mData": "dia_programacao"},
+                        {"sTitle": "HORA", "width": "10%", "sName": "hora_programacao", "mData": "hora_programacao"},
+                        {"sTitle": "TEXTO PROGRAMAÇÃO", "width": "35%", "sName": "texto_programacao", "mData": "texto_programacao"},
                         {"sTitle": "PRIORIDADE", "width": "15%", "sName": "prioridade", "mData": "prioridade"},
                         {"sTitle": "CADASTRO", "width": "15%", "sName": "dhs_cadastro", "mData": "dhs_cadastro"},
                         {"sTitle": "OPÇÕES", "width": "15%","searchable": false, "orderable":  false, "mData": function(data){
