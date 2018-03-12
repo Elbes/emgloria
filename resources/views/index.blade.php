@@ -74,28 +74,18 @@
                   <li><a href="#1900">2008</a></li>
                   <li><a href="#1930">2009</a></li>
                   <li><a href="#1944">2010</a></li>
-                  <li><a href="#1950">2011</a></li>
-                  <li><a href="#1971">2012</a></li>
                 </ul>
                 <ul id="timedetail">
                   <li id="20050">
-                    <h1>2008</h1>
+                    <h1>PALAVRA DO PASTOR 1</h1><p></p>
                     <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
                   </li>
                   <li id="2006">
-                    <h1>2009</h1>
+                    <h1>PALAVRA DO PASTOR 2</h1>
                     <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
                   </li>
                   <li id="2007">
-                    <h1>2010</h1>
-                    <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
-                  </li>
-                  <li id="2008">
-                    <h1>2011</h1>
-                    <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
-                  </li>
-                  <li id="2009">
-                    <h1>2012</h1>
+                    <h1>PALAVRA DO PASTOR 3</h1>
                     <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
                   </li>
                 </ul>
@@ -137,12 +127,12 @@
               </div>
             </li>
           </ul>
-        </div> -->
+        </div>
         
-    </article>
+    </article> -->
     
       
-      <section class="grid-holder">
+      <!-- <section class="grid-holder">
         <section class="grid">
           <div class="heading-holder">
             <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">GALERIA</span><em class="h-right"></em></span></h3>
@@ -155,8 +145,52 @@
           <a href="{{ url('/galeria-gloria') }}" class="btn-a">Galeria completa</a>
         </section>
       </section>
-      <br />
+      <br /> -->
+      
+      <section class="grid-holder">
+        <section class="grid">
+          <div class="heading-holder">
+            <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">Multimídia</span><em class="h-right"></em></span></h3>
+          </div>
+          <!--Side-bar Style Start-->
+          <article class="column c-one-third-galeria">
+            <div class="about-box">
+            
+              <div class="right-sidebar">
+                <ul class="gallery-list">
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-28.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-29.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-30.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-31.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-32.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-33.jpg" alt="image" /></a></li>
+                </ul>
+              </div>
+             </div>
+          </article>
+          <!--Side-bar Style Start-->
+          <article class="column c-one-third-galeria">
+            <div class="about-box">
+            
+              <div class="right-sidebar">
+                <ul class="gallery-list">
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-28.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-29.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-30.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-31.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-32.jpg" alt="image" /></a></li>
+                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-33.jpg" alt="image" /></a></li>
+                </ul>
+              </div>
+              
+             </div>
+          </article>
+          <!--Side-bar Style End-->
+          <a href="{{ url('/galeria-gloria') }}" class="btn-a">Galeria completa</a>
+        </section>
+      </section>
     </div>
+    <br />
 
 @endsection
 @section( 'dependencyJs' )

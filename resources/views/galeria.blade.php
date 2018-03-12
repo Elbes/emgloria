@@ -20,29 +20,40 @@
 	        <span class="detail">Um pouco dos nossos momentos traduzidos em imagens. Venha conhecer pessoalmente.</span>
 	   </article>
 	   	
-	   <article class="banner-bottom-slide">
+	   <!-- <article class="banner-bottom-slide">
 
-        <!-- big image -->
+        
         <div id="img" class="animated"><div class="img-holder"><img src="{{ url('/imagens/galeria/') }}/{{ $img_primeira->nome_imagem }}" alt="image" class="img-responsive imagem-amor"/></div></div>
 
-        <!-- item container -->
+       
         <ul id="thumbs" class="clearfix">
             @foreach ($imagens as $imagem)
             <li class="img-holder"><div class="img-holder"><img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="image" class="img-responsive imagem-amor"/></div></li>
             @endforeach
         </ul>
 
-        <!-- navigation holder -->
+       
         <div class="holder"></div>
 
-        <!-- custom buttons -->
+       
         <div id="btns">
             <span class="prev"></span>
             <span class="next"></span>
         </div>
 
 
-  	   </article>
+  	   </article> -->
+  	   
+  	   <section class="grid-holder">
+        <section class="grid">
+         
+          @foreach ($imagens as $imagem)
+	          <article class="column c-one-third">
+	            <div class="video-holder slide-1"><img class="video" src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="image" class="img-responsive imagem-amor"/></div>
+	          </article>
+          @endforeach
+        </section>
+      </section>
     
 
     </div>

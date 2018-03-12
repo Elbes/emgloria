@@ -119,6 +119,10 @@ input, select, textarea {
 	width: 300px;
 }
 
+.c-one-third-galeria {
+	max-width: 460px;
+}
+
 .c-one-third-progra {
 	width: 380px;
 }
@@ -1503,6 +1507,7 @@ ul.social-networks li a:hover {
 #timeline-holder {
 	background:#fed6b0;
 	border: 4px solid rgba(255, 255, 255, 0.8);
+	max-height: 290px;
 }
 #timeline {
 	width: 100%;
@@ -1513,13 +1518,13 @@ ul.social-networks li a:hover {
 }
 #dates {
 	width:500px;
-	padding:0;
+	padding:0 0 0 0;
 	overflow: hidden;
 }
 #dates li {
 	list-style: none;
 	float: left;
-	width: 100px;
+	width: 230px;
 	font-size:14px;
 	text-align: center;
 	background: url(../images/biggerdot.png) center 1px no-repeat;
@@ -1586,14 +1591,18 @@ ul.social-networks li a:hover {
 	font-weight:normal;
 	margin:10px 0 7px 0;
 	text-shadow: #000 1px 1px 2px;
-	padding:23px 0 0;
+	padding:-15px 0 0 0;
+	font-style: italic;
+	
 }
 #timedetail li p, .timeline li p {
-	font-size: 12px;
-	margin-right: 70px;
+	font-size: 16px;
+	margin-right: 155px;
+	margin-left: 30px;
 	font-weight: normal;
 	line-height: 22px;
 	color:#484848;
+	text-align: justify;
 }
 #grad_left, #grad_right {
 	width: 100px;
@@ -3300,6 +3309,7 @@ ul.list-link li {
 	background:#ffe8d3;
 	 border: 4px solid rgba(255, 255, 255, 0.8);
 	 margin-bottom:30px;
+	 min-height: 290px;
 }
 .sidebar-h{
 	display:block;
@@ -3403,15 +3413,15 @@ ul.list-link li {
 	margin:0 0 20px -8px;
 	list-style:none;
 	padding:15px 7px 0 7px;
-	width:107%;
+	width:101%;
 	overflow:hidden;
 }
 .gallery-list li {
 	float:left;
 	margin:0 0 9px 9px;
 	border: 4px solid rgba(255, 255, 255, 0.8);
-	height: 60px;
-	width: 54px;
+	height: 140px;
+	width: 132px;
 	overflow:hidden;
 }
 .gallery-list li img {
