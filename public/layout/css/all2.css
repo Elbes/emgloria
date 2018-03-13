@@ -1741,8 +1741,10 @@ ul.social-networks li a:hover {
 }
 
 .video-holder {
-	position:relative;
-	margin:0 0 20px 0;
+	float:left;
+	width:100%;
+	height: 100%;
+
 }
 .video-holder video {
 	border: 4px solid rgba(255, 255, 255, .8);
@@ -3019,6 +3021,8 @@ ul.news-nav li span.share {
 	line-height:18px;
 	color:#656262;
 	border-bottom:0 !important;
+	width: 300px;
+	height: 280px;
 }
 .gallery-box {
 	border: 4px solid rgba(255, 255, 255, 0.8);
@@ -3413,7 +3417,7 @@ ul.list-link li {
 	margin:0 0 20px -8px;
 	list-style:none;
 	padding:15px 7px 0 7px;
-	width:101%;
+	width:100%;
 	overflow:hidden;
 }
 .gallery-list li {
@@ -3427,8 +3431,31 @@ ul.list-link li {
 .gallery-list li img {
 	float:left;
 	width:100%;
+	height: 100%;
 }
 
+.gallery-list-video {
+	margin:0 0 20px -8px;
+	list-style:none;
+	padding:15px 7px 0 7px;
+	width:100%;
+	overflow:hidden;
+}
+.gallery-list-video li {
+	float:left;
+	margin:0 0 9px 9px;
+	border: 4px solid rgba(255, 255, 255, 0.8);
+	height: 140px;
+	width: 205px;
+	overflow:hidden;
+}
+.gallery-list-video li video {
+	float:left;
+	width:100%;
+	height: 100%;
+	position: relative;
+	
+}
 
 #counter {
 	height:100px;

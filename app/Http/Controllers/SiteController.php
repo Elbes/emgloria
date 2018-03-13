@@ -27,7 +27,11 @@ class SiteController extends Controller
 		$programacao = new \App\tb_programacao();
 		$progra = $programacao->getProgramacaoAtivos();
 		
-		return view('/index' , compact('minAtivo', 'imagens', 'banners', 'devAtivo', 'progra'));
+		$video = new \App\tb_video();
+		$videos = $video->getVideAmor();
+		$video_inicio = $video->getVideoGeralInicio();
+		
+		return view('/index' , compact('minAtivo', 'imagens', 'banners', 'devAtivo', 'progra', 'video_inicio'));
 	}
 	
 	

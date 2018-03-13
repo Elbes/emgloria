@@ -158,12 +158,9 @@
             
               <div class="right-sidebar">
                 <ul class="gallery-list">
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-28.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-29.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-30.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-31.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-32.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-33.jpg" alt="image" /></a></li>
+                @foreach ($imagens as $imagem)
+                  <li><a href="{{ url('/galeria-gloria') }}"><img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="image" /></a></li>
+                 @endforeach
                 </ul>
               </div>
              </div>
@@ -173,13 +170,10 @@
             <div class="about-box">
             
               <div class="right-sidebar">
-                <ul class="gallery-list">
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-28.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-29.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-30.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-31.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-32.jpg" alt="image" /></a></li>
-                  <li><a href="#"><img src="{{ url('/layout/') }}/images/ch-33.jpg" alt="image" /></a></li>
+                <ul class="gallery-list-video">
+                @foreach ($video_inicio as $video)
+		            <li><video controls > <source src="{{ url('/videos/galeria/') }}/{{$video->nome_video}}" /></video></li>
+	          @endforeach
                 </ul>
               </div>
               
@@ -194,8 +188,8 @@
 
 @endsection
 @section( 'dependencyJs' )
-<script src="{{ url('/layout/js/') }}/jquery.bootstrap.newsbox.min.js"
-	type="text/javascript"></script>
+<!-- <script src="{{ url('/layout/js/') }}/jquery.bootstrap.newsbox.min.js"
+	type="text/javascript"></script> 
 <script type="text/javascript">
 
 
@@ -221,5 +215,5 @@ $(function () {
 
 });
 
-</script>
+</script>-->2
 @endsection

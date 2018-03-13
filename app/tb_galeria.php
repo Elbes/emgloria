@@ -83,7 +83,7 @@ class tb_galeria extends Model
     public function getGaleriaGeralInicio(){
     	return DB::table('tb_galeria')
     	->whereNull('tb_galeria.dhs_exclusao_logica')->where('tb_galeria.tipo_imagem', 'Geral')
-    	->limit(3)
+    	->limit(6)
     	->get();
     }
 

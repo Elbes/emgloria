@@ -83,7 +83,7 @@ class tb_video extends Model
     public function getVideoGeralInicio(){
     	return DB::table('tb_video')
     	->whereNull('tb_video.dhs_exclusao_logica')->where('tb_video.tipo_video', 'Geral')
-    	->limit(3)
+    	->limit(4)
     	->get();
     }
 
