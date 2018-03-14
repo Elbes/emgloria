@@ -61,8 +61,8 @@
 	margin:0;
 }
 .lightbox .item img.pic {
-	width: 100%;
-	height: auto;
+	/* max-width: 300px; */
+	height: 126px;
 	border:0;
 }
 .readmorebtn.medium.black, .readmorebtn.small.black, .readmorebtn.large.black, .toggle-view li h3.black, .dropcap.black {

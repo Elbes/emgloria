@@ -1,9 +1,7 @@
 @extends('layout.layoutSite')
 @section('dependencyCss')
 <!-- Start JavaScript -->
-<link rel="stylesheet" href="{{ url('/layout/') }}/css/javascri.css" type="text/css" media="all">
-<!-- gallery CSS -->
-<link rel="stylesheet" href="{{ url('/layout/') }}/css/prettyPhoto.css" type="text/css" media="all">
+
 <!-- Start Player CSS -->
 @endsection
 @section('content')
@@ -24,7 +22,7 @@
 	   	<section class="grid-holder">
         <section class="grid">
          
-          <article class="column c-three-fourth">
+          <article class="column c-three-fourth-galeria">
             <section class="grid-holder">
               <section class="grid lightbox gallery" id="catagory-item-holder">
               
@@ -35,8 +33,8 @@
                     
                     <!-- hover effect --> 
                     
-                    <strong class="gallery-titel"><a href="gallery-singlepost.html">Our Churches</a></strong>
-                    <p>Sit amet, consectetur adipiscing </p>
+                    <!-- <strong class="gallery-titel"><a href="gallery-singlepost.html">Our Churches</a></strong>
+                    <p>Sit amet, consectetur adipiscing </p> -->
                     <strong></strong>
                   </div>
                   

@@ -147,6 +147,10 @@ input, select, textarea {
 	width:630px;
 }
 
+.c-three-fourth-galeria {
+	width:100%;
+	padding: 0 0 0 50px;
+}
 .c-three-fourth-progra {
 	width:550px;
 }
@@ -3021,13 +3025,14 @@ ul.news-nav li span.share {
 	line-height:18px;
 	color:#656262;
 	border-bottom:0 !important;
-	width: 300px;
-	height: 280px;
+	/* width: 300px;
+	height: 280px; */
 }
 .gallery-box {
 	border: 4px solid rgba(255, 255, 255, 0.8);
 	background:#fed6b0;
 	padding:8px 8px 3px 8px;
+	height: 130px;
 }
 .gallery-item p {
 	margin:0 0 0 8px;

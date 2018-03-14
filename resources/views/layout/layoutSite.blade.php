@@ -47,7 +47,7 @@
     @yield( 'dependencyCss' )
 </head>
 
-<body onload="calendario();">
+<body >
 	<!--<ul id="sheetswitch">
 	  <li><a href="#" class="default" onClick="changeStyle('default.css');return false;" >black</a></li>
 	  <li><a href="#" class="blue" onClick="changeStyle('blue.css');return false;" >white</a></li>
