@@ -28,8 +28,7 @@ class SiteController extends Controller
 		$progra = $programacao->getProgramacaoAtivos();
 		
 		$video = new \App\tb_video();
-		$videos = $video->getVideAmor();
-		$video_inicio = $video->getVideoGeralInicio();
+		$video_inicio = $video->getVideoInicio();
 		
 		return view('/index' , compact('minAtivo', 'imagens', 'banners', 'devAtivo', 'progra', 'video_inicio'));
 	}
@@ -144,7 +143,10 @@ class SiteController extends Controller
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/galeria', compact('minAtivo', 'imagens', 'img_primeira', 'banners'));
+		$video = new \App\tb_video();
+		$videos = $video->getVideoGeral();
+		
+		return view('/galeria', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos'));
 	}
 	
 	
