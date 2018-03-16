@@ -28,7 +28,7 @@
             <div class="new-box">
               <div class="ch-item ch-img-3">
                 <div class="ch-info">
-                  <h4><a href="{{url('/devocional')}}/{{$devAtivo->id_devocional}}">DEVOCIONAL</a></h4>
+                  <h4><a href="{{url('/pastores')}}/{{$devAtivo->id_devocional}}">PASTORES</a></h4>
                   <p></p>
                 </div>
               </div>

@@ -44,7 +44,11 @@ class SiteController extends Controller
 		
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
-		return view('/sobre-igreja', compact('missaoVisao','minAtivo', 'banners'));
+		
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/sobre-igreja', compact('missaoVisao','minAtivo', 'banners', 'devAtivo'));
 	}
 	
 	public function getPedidosOracao(){
@@ -54,7 +58,10 @@ class SiteController extends Controller
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/pedidos-oracao', compact('minAtivo', 'banners'));
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/pedidos-oracao', compact('minAtivo', 'banners', 'devAtivo'));
 	}
 	
 	public function getAmorQueMove(){
@@ -72,7 +79,10 @@ class SiteController extends Controller
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/amor-que-move', compact('minAtivo', 'imagens', 'img_primeira', 'videos', 'video_primeiro', 'banners'));
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/amor-que-move', compact('minAtivo', 'imagens', 'img_primeira', 'videos', 'video_primeiro', 'banners', 'devAtivo'));
 	}
 	
 	public function getMinisterios($id_ministerio){
@@ -84,7 +94,10 @@ class SiteController extends Controller
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/ministerios', compact('ministerios', 'minDestaque', 'minAtivo', 'banners'));
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/ministerios', compact('ministerios', 'minDestaque', 'minAtivo', 'banners', 'devAtivo'));
 	}
 	
 	public function getContato(){
@@ -94,7 +107,10 @@ class SiteController extends Controller
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/form-contato', compact('minAtivo', 'banners'));
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/form-contato', compact('minAtivo', 'banners', 'devAtivo'));
 	}
 	
 	public function getDevocional($id_devocional){
@@ -106,6 +122,7 @@ class SiteController extends Controller
 		
 		$dev = new \App\tb_devocional();
 		$devocional = $dev->getDevocionalAtivos();
+		
 		$devDestaque = $dev->getDevocionalId($id_devocional);
 		$devAtivo = $dev->getDevocionalAtivos()->first();
 		
@@ -119,7 +136,10 @@ class SiteController extends Controller
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/doacoes', compact('minAtivo', 'banners'));
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/doacoes', compact('minAtivo', 'banners', 'devAtivo'));
 	}
 	
 	public function getCultoOnline(){
@@ -129,7 +149,10 @@ class SiteController extends Controller
 		$banner = new \App\tb_banner();
 		$banners = $banner->getTodosBanners();
 		
-		return view('/culto-online', compact('minAtivo', 'banners'));
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/culto-online', compact('minAtivo', 'banners', 'devAtivo'));
 	}
 	
 	public function getGaleria(){
@@ -146,7 +169,10 @@ class SiteController extends Controller
 		$video = new \App\tb_video();
 		$videos = $video->getVideoGeral();
 		
-		return view('/galeria', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos'));
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		return view('/galeria', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos', 'devAtivo'));
 	}
 	
 	

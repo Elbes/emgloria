@@ -1,45 +1,10 @@
 @extends('layout.layoutSite')
-@section('dependencyCss')
 
-<!-- CSS Fancybox -->
-    <link rel="stylesheet" type="text/css" href="{{ url('/layout/') }}/fancybox/dist/jquery.fancybox.css">
-
-    <style type="text/css">
-    /* body{ font-family:Arial, Helvetica, sans-serif } */
-    li{
-        list-style:none;
-        display:inline;
-        float:left;
-        
-    }
-    li p{
-        text-align:center;
-        color:#000;
-		font-weight:normal;
-		font-family: 'droid_serif,regular';
-		font-size:20px;
-		line-height:30px;
-		min-height:80px;
-		text-transform:uppercase;
-		margin:0;
-    }
-    .thumb{
-        cursor:pointer;
-        position:relative;
-        border:#FFF solid 3px;
-        /* border-radius:264px; */
-        height:192px;
-        width:264px;
-    }
-
-    </style>
-	
-@endsection
 @section('content')
- <!-- Content -->
+     <!-- Content -->
     <div class="content mt0">
       <section class="grid-holder">
-        <section class="grid">
+        <section class="grid-galeria">
           <div class="heading-holder">
             <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">AMOR QUE MOVE</span><em class="h-right"></em></span></h3>
           </div>
@@ -49,54 +14,81 @@
       <article class="banner-bottom">
 	        <span class="detail">O Amor Que Move é um projeto para resgatar vidas da escuridão. Iniciado em 2017 e já está colhendo frutos.</span>
 	   </article>
-	   
-	   <article class="banner-bottom-slide">
+	   <article class="column c-four-fifth">
 
-		     <ul id="thumbs" class="clearfix">   
-		        <!-- exemplo com legenda -->
-			    <li>
-			        <div class="thumb imagem-amor" style="background: url('{{ url('/imagens/galeria/') }}/{{ $img_primeira->nome_imagem }}') no-repeat;">
-			             @foreach ($imagens as $imagem)
-			                 <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-fancybox data-caption="Legenda da foto 1"></a>
-			             @endforeach
-			        </div>
-			        <p>Imagens</p>
-			    </li>
-			</ul>
-  	   </article>
-  	   
-  	   <section class="grid-holder">
-        <section class="grid">
-          <div class="heading-holder">
-            <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">VÍDEOS</span><em class="h-right"></em></span></h3>
+          <div class="f-holder"><strong class="g-heading g-1-heading">FILTRO</strong>
+
+            <ul class="filter g2 group" id="catagory-item-filter">
+            	<li><a href="#" data-value="All">Tudo</a></li>
+            	<li><a href="#" data-value="Videos">Videos</a></li>
+            </ul>
+
           </div>
-          @foreach ($videos as $video)
-	          <article class="column c-one-third">
-	            <div class="video-holder slide-1"><video controls width="50%" > <source src="{{ url('/videos/galeria/') }}/{{$video->nome_video}}" /></video></div>
-	          </article>
-          @endforeach
+
+        </article>
+	   	<section class="grid-holder">
+        <section class="grid-galeria">
+         
+          <article class="column c-three-fourth-galeria">
+            <section class="grid-holder">
+              <section class="grid lightbox gallery" id="catagory-item-holder">
+              
+              @foreach ($imagens as $imagem)
+                <figure class="column c-one-fourth gallery-col All catagory-item">
+                  <div class="item alpha gallery-item">
+                    <div class="caption gallery-box"> <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" rel="prettyPhoto[gallery1]"> <img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="" class="pic"> <span class="hover-effect big zoom"></span></a></div>
+                    
+                    <!-- hover effect --> 
+                    
+                    <!-- <strong class="gallery-titel"><a href="gallery-singlepost.html">Our Churches</a></strong>
+                    <p>Sit amet, consectetur adipiscing </p> -->
+                    <strong></strong>
+                  </div>
+                  
+                  <!-- End --> 
+                  
+                </figure>
+               @endforeach
+               
+              </section>
+            </section>
+            
+           
+            <br clear="all">
+            
+          </article>
+          
+          <article class="column c-three-fourth-galeria">
+          	<section class="grid-holder">
+        		<section class="grid">
+          			<article class="column c-four-fifth"> 
+
+			            <!-- ========================= Light Box & Frame ========================= -->
+			
+			            <ul class="portfolio group">
+							@foreach ($videos as $video)
+				              <li class="g-3 item">
+				
+				                <div class="video-holder slide-1"><video controls > <source src="{{ url('/videos/galeria/') }}/{{$video->nome_video}}" /></video></div>
+				
+				              </li>
+			                @endforeach
+			             </ul>
+           
+          				</article>
+          			<br clear="all">
+
+        		</section>
+      		</section>
+           
+            
+          </article>
         </section>
       </section>
-	   
+
     </div>
 
 @endsection
 @section('dependencyJs')
-<!-- JQuery -->
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
- --><!-- JS Fancybox -->
-<script type="text/javascript" src="{{ url('/layout/') }}/fancybox/dist/jquery.fancybox.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(".thumb").click(function() {
-            var hrefs = new Array();
-            $.fancybox.open(
-                $(this).find("[data-fancybox]").each(function(){
-                    hrefs.push($(this).attr('href'));
-                })
-            );
-        });
-    });
-</script>
 @endsection
