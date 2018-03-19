@@ -33,14 +33,19 @@
 	   	<section class="grid-holder">
         <section class="grid-galeria">
          
-          <article class="column c-three-fourth-galeria">
+          <article class="column c-four-fifth-galery">
+
             <section class="grid-holder">
+
               <section class="grid lightbox gallery" id="catagory-item-holder">
-              
+
+               
               @foreach ($imagens as $imagem)
-                <figure class="column c-one-fourth gallery-col All catagory-item">
+                <figure class="column c-one-third-img-galery Landscape catagory-item">
+
                   <div class="item alpha gallery-item">
-                    <div class="caption gallery-box"> <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" rel="prettyPhoto[gallery1]"> <img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="" class="pic"> <span class="hover-effect big zoom"></span></a></div>
+
+                    <div class="caption gallery-box">  <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" rel="prettyPhoto[gallery1]"> <img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="" class="pic"> <span class="hover-effect big zoom"></span></a></div>
                     
                     <!-- hover effect --> 
                     
@@ -58,8 +63,6 @@
             </section>
             
            
-            <br clear="all">
-            
           </article>
           
           <article class="column c-three-fourth-galeria">
@@ -80,12 +83,11 @@
 			             </ul>
            
           				</article>
-          			<br clear="all">
 
         		</section>
       		</section>
            
-            
+             <br clear="all">
           </article>
         </section>
       </section>

@@ -107,6 +107,11 @@ input, select, textarea {
 	margin-left:-40px;
 	
 }
+
+.grid-galeria-img {
+	margin-left:-40px;
+	
+}
 .grid-holder {
 	overflow:hidden;
 }
@@ -124,7 +129,9 @@ input, select, textarea {
 .c-one-third {
 	width: 300px;
 }
-
+.c-one-third-img-galery {
+	width: 280px;
+}
 .c-one-third-galeria {
 	max-width: 460px;
 }
@@ -164,6 +171,11 @@ input, select, textarea {
 
 .c-four-fifth {
 	width: 960px;
+}
+
+.c-four-fifth-galery {
+	width: 100%;
+	padding: 0 0 0 50px;
 }
 /*------ End CSS for grid -----*/
 
@@ -3034,14 +3046,14 @@ ul.news-nav li span.share {
 	line-height:18px;
 	color:#656262;
 	border-bottom:0 !important;
-	/* width: 300px;
-	height: 280px; */
+	padding: 0 0 0 5px;
 }
 .gallery-box {
 	border: 4px solid rgba(255, 255, 255, 0.8);
 	background:#fed6b0;
 	padding:8px 8px 3px 8px;
-	height: 130px;
+	width: 210px;
+	
 }
 .gallery-item p {
 	margin:0 0 0 8px;
@@ -3079,7 +3091,7 @@ ul.g2 li {
 }
 ul.filter li {
 	padding:0;
-	font-size:15px;
+	font-size:12px;
 	line-height:37px;
 	font-family: 'droid_sans,regular';
 }
@@ -3088,8 +3100,8 @@ ul.filter li a {
 }
 ul.filter li a:hover {
 	text-decoration:none;
-	color:#ff0000;
-	font-size:18px;
+	color:#5b4027;
+	font-size:14px;
 }
 .gallery-titel {
 	font-size:18px;
