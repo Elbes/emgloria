@@ -181,8 +181,7 @@ return [
     	Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
     	Intervention\Image\ImageServiceProvider::class,
     		//Excel
-        Maatwebsite\Excel\ExcelServiceProvider::class,
-       Tohtamysh\LaravelPhpbbBridge\LaravelPhpbbBridgeServiceProvider::class,
+        Tohtamysh\LaravelPhpbbBridge\LaravelPhpbbBridgeServiceProvider::class,
     		
     		
     		
@@ -238,7 +237,7 @@ return [
     	'Datatables' => 'Yajra\Datatables\Facades\Datatables',
     	'Image' => Intervention\Image\Facades\Image::class,
     		//Excel
-    	'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
 
     ],
 
