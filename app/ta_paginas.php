@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-use Yajra\Datatables\Facades\Datatables;
+use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations;
 
@@ -40,7 +40,7 @@ class ta_paginas extends Model
     	$objReturn = DB::table('ta_paginas')
     			->get();
     
-    			return Datatables::of($objReturn)
+    			return DataTables::of($objReturn)
     			->make(true);
     }
     

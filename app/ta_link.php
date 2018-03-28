@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-use Yajra\Datatables\Facades\Datatables;
+use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ta_link extends Model
@@ -42,7 +42,7 @@ class ta_link extends Model
     	$objReturn = DB::table('ta_link')
     			->get();
     
-    			return Datatables::of($objReturn)
+    			return DataTables::of($objReturn)
     			->make(true);
     }
     

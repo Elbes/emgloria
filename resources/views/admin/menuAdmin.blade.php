@@ -16,6 +16,10 @@
                         </li>
                         
                         <li>
+                            <a href="{{ url('/listaPastores') }}" ><i class="fa fa-user fa-fw"></i> Pastores</a>
+                        </li>
+                        
+                        <li>
                             <a href="{{ url('/listaBanner') }}" ><i class="fa fa-files-o fa-fw"></i> Banners Superiores</a>
                         </li>
                         

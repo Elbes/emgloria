@@ -42,6 +42,10 @@ Route::any('/galeria-gloria', [
 		'uses' => 'SiteController@getGaleria'
 ]);
 
+Route::any('/pastores', [
+		'uses' => 'SiteController@getPastores'
+]);
+
 /* ROTAS DE AUTENTICACAO DO SISTEMA*/
 Route::any('/login', [
 		'as' => 'auth.login',
@@ -536,6 +540,33 @@ Route::group(['prefix' => '/admin/devocional'], function () {
 				'uses' => 'Admin\ProgramacaoController@excluirProgramacao'
 		]);
 	});
+	
+		//ROTAS DOS PASTORES
+		
+		Route::any('/listaPastores', [
+				'as' => 'admin.pastores.listaPastores',
+				'uses' => 'Admin\PastoresController@getListaPastor'
+		]);
+		
+		Route::any('/inserirPastores', [
+				'as' => 'admin.pastores.inserirPastores',
+				'uses' => 'Admin\PastoresController@getInserir'
+		]);
+		
+		Route::group(['prefix' => '/admin/pastores'], function () {
+		
+			//Inserção
+			Route::post('/inserir-pastores', [
+					'uses' => 'Admin\PastoresController@inserirPastor'
+			]);
+			//Listar em DataTable
+			Route::any('/lista-pastores.json', [
+					'as' => 'admin.pastores.lista-pastores.json',
+					'uses' => 'Admin\PastoresController@getListaPastorJson'
+			]);
+		
+			
+		});
 	
 	//SETOR
 	//Listar Setor em DataTable

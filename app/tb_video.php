@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-use Yajra\Datatables\Facades\Datatables;
+use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Database\Eloquent\SoftDeletes;
 //use Illuminate\Notifications\Notifiable;
 
@@ -28,7 +28,7 @@ class tb_video extends Model
     	$objReturn = DB::table('tb_video')
     	->get();
 
-    	return Datatables::collection($objReturn)
+    	return DataTables::collection($objReturn)
         ->addColumn('dhs_cadastro', function($model){
     		return date('d/m/Y', strtotime($model->dhs_cadastro));
     	})

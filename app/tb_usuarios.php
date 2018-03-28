@@ -75,7 +75,7 @@ class tb_usuarios extends Authenticatable
     	$objReturn = $this::with('perfil')->withTrashed('dhs_exclusao_logica')->where('id_usuario','<>', Auth::user ()->id_usuario) 
     	->get();
     	
-    	return Datatables::collection($objReturn)
+    	return DataTables::collection($objReturn)
         ->addColumn('dhs_cadastro', function($model){
     		return date('d/m/Y', strtotime($model->dhs_cadastro));
     	})

@@ -6,15 +6,14 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Database\Eloquent\SoftDeletes;
-//use Illuminate\Notifications\Notifiable;
 
-class tb_devocional extends Model
+class tb_pastores extends Model
 {
-	use SoftDeletes;
+use SoftDeletes;
 	//use Notifiable;
 	
-    protected $table = 'tb_devocional';
-    protected $primaryKey = 'id_devocional';
+    protected $table = 'tb_pastores';
+    protected $primaryKey = 'id_pastor';
 
     protected $fillable = [];
     protected $hidden   = [];
@@ -24,8 +23,8 @@ class tb_devocional extends Model
     const UPDATED_AT = 'dhs_atualizacao';
     const DELETED_AT = 'dhs_exclusao_logica';
     
-    public function getDtDevocional(){
-    	$objReturn = DB::table('tb_devocional')
+    public function getDtPastores(){
+    	$objReturn = DB::table('tb_pastores')
     	->get();
 
     	return DataTables::collection($objReturn)
@@ -38,16 +37,21 @@ class tb_devocional extends Model
     	->make(true);
     }
     
-    public function getDevocionalAtivos(){
-    	return DB::table('tb_devocional')
-    	->whereNull('tb_devocional.dhs_exclusao_logica')
+    
+    public function getMinisteriosAtivos(){
+    	return DB::table('tb_ministerio')
+    	->whereNull('tb_ministerio.dhs_exclusao_logica')
+    					->get();
+    }
+    
+    public function getMinisterioId($id_ministerio){
+    	return DB::table('tb_ministerio')->where('id_ministerio', $id_ministerio)
+    	->whereNull('tb_ministerio.dhs_exclusao_logica') 
     	->get();
     }
     
-    public function getDevocionalId($id_devocional){
-    	return DB::table('tb_devocional')->where('id_devocional', $id_devocional)
-    	->whereNull('tb_devocional.dhs_exclusao_logica')
+    public function getMinisterioIdEx($id_ministerio){
+    	return DB::table('tb_ministerio')->where('id_ministerio', $id_ministerio)->withTrashed()
     	->get();
     }
-
 }

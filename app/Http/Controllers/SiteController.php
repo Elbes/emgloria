@@ -175,6 +175,25 @@ class SiteController extends Controller
 		return view('/galeria', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos', 'devAtivo'));
 	}
 	
+	public function getPastores(){
+		$ministerio = new \App\tb_ministerio();
+		$minAtivo = $ministerio->getMinisteriosAtivos()->first();
+	
+		$galeria = new \App\tb_galeria();
+		$imagens = $galeria->getGaleriaGeral();
+		$img_primeira = $galeria->getGaleriaPrimeira();
+	
+		$banner = new \App\tb_banner();
+		$banners = $banner->getTodosBanners();
+	
+		$video = new \App\tb_video();
+		$videos = $video->getVideoGeral();
+	
+		$dev = new \App\tb_devocional();
+		$devAtivo = $dev->getDevocionalAtivos()->first();
+	
+		return view('/pastores', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos', 'devAtivo'));
+	}
 	
     public function guardaContato(Request $request){
     	$usuario = new \App\contato();

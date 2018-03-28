@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-use Yajra\Datatables\Facades\Datatables;
+use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ta_conteudo extends Model
@@ -29,7 +29,7 @@ class ta_conteudo extends Model
     	$objReturn = DB::table('ta_conteudo')->where('id_pagina', $id_pagina)->orderBy('dhs_cadastro', 'desc')
     			->get();
 
-    	return Datatables::collection($objReturn)
+    	return DataTables::collection($objReturn)
         ->addColumn('dhs_cadastro', function($model){
     		return date('d/m/Y H:i:s' , strtotime($model->dhs_cadastro));
     	})
