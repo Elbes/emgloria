@@ -38,20 +38,20 @@ use SoftDeletes;
     }
     
     
-    public function getMinisteriosAtivos(){
-    	return DB::table('tb_ministerio')
-    	->whereNull('tb_ministerio.dhs_exclusao_logica')
+    public function getPastoresAtivos(){
+    	return DB::table('tb_pastores')
+    	->whereNull('tb_pastores.dhs_exclusao_logica')
     					->get();
     }
     
-    public function getMinisterioId($id_ministerio){
-    	return DB::table('tb_ministerio')->where('id_ministerio', $id_ministerio)
-    	->whereNull('tb_ministerio.dhs_exclusao_logica') 
+    public function getPastoresId($id_pastor){
+    	return DB::table('tb_pastores')->where('id_pastor', $id_pastor)
+    	->whereNull('tb_pastores.dhs_exclusao_logica') 
     	->get();
     }
     
-    public function getMinisterioIdEx($id_ministerio){
-    	return DB::table('tb_ministerio')->where('id_ministerio', $id_ministerio)->withTrashed()
+    public function getPastoresIdEx($id_pastor){
+    	return DB::table('tb_pastores')->where('id_pastor', $id_pastor)->withTrashed()
     	->get();
     }
 }
