@@ -38,28 +38,28 @@
 				 
                 var dtColumnsLink = function() {
                     var columns = [
-                        {"sTitle": "NOME PASTOR", "width": "15%", "sName": "nome_pastor", "mData": "nome_ministerio"},
-                        {"sTitle": "FOTO","width": "37%", "sName": "id_pastor", "mData": function(data) {                                
+                        {"sTitle": "NOME PASTOR", "width": "25%", "sName": "nome_pastor", "mData": "nome_pastor"},
+                        {"sTitle": "FOTO","width": "20%", "sName": "id_pastor", "mData": function(data) {                                
                             var img = "";
                             if(data.foto_pastor.length > 0){
-                                img = '<div><img style="width:200px; height:80px;" src="{{ url("/imagens/galeria") }}/'+ data.foto_pastor +'" alt=""></div>';
+                                img = '<div><img style="width:200px; height:80px;" src="{{ url("/imagens/pastores") }}/'+ data.foto_pastor +'" alt=""></div>';
                             }
 
                             return img;
                        	 	}
                   	  	},
-                        {"sTitle": "FUNÇÃO", "width": "100px", "sName": "funcao_pastor", "mData": "funcao_pastor"},
-                        {"sTitle": "OBSERVAÇÃO", "width": "100px", "sName": "obs_pastor", "mData": "obs_pastor"},
-                        {"sTitle": "CADASTRO", "width": "60px", "sName": "dhs_cadastro", "mData": "dhs_cadastro"},
-                        {"sTitle": "OPÇÕES", "width": "155px","searchable": false, "orderable":  false, "mData": function(data){
+                        {"sTitle": "FUNÇÃO", "width": "10%", "sName": "funcao_pastor", "mData": "funcao_pastor"},
+                        {"sTitle": "OBSERVAÇÃO", "width": "25%", "sName": "obs_pastor", "mData": "obs_pastor"},
+                        {"sTitle": "CADASTRO", "width": "10%", "sName": "dhs_cadastro", "mData": "dhs_cadastro"},
+                        {"sTitle": "OPÇÕES", "width": "10%","searchable": false, "orderable":  false, "mData": function(data){
 
-                                var button  = '<a title="Alterar" href="{{ url("/admin/ministerio/alterar-ministerio") }}/'+ data.id_ministerio +'" class="btn btn-success mgn-btn-dt"><i class="fa fa-pencil-square-o"></i></a>';
+                                var button  = '<a title="Alterar" href="{{ url("/admin/pastores/alterar-pastores") }}/'+ data.id_pastor +'" class="btn btn-success mgn-btn-dt"><i class="fa fa-pencil-square-o"></i></a>';
                                 if(data.dhs_exclusao_logica == null){
-                                	button  += ' <a title="Inativar" href="{{ url("/admin/ministerio/inativar-ministerio") }}/'+ data.id_ministerio +'" class="btn btn-primary mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
+                                	button  += ' <a title="Inativar" href="{{ url("/admin/pastores/inativar-pastores") }}/'+ data.id_pastor +'" class="btn btn-primary mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
                                 }else{
-                                	button  += ' <a title="Ativar" href="{{ url("/admin/ministerio/ativar-ministerio") }}/'+ data.id_ministerio +'" class="btn btn-warning mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
+                                	button  += ' <a title="Ativar" href="{{ url("/admin/pastores/ativar-pastores") }}/'+ data.id_pastor +'" class="btn btn-warning mgn-btn-dt"><i class="glyphicon glyphicon-off"></i></a>';
                                 }
-                                button  += ' <a title="Excluir" href="{{ url("/admin/ministerio/excluir-ministerio") }}/'+ data.id_ministerio +'" class="btn btn-danger mgn-btn-dt"><i class="fa fa-trash"></i></a>';
+                                button  += ' <a title="Excluir" href="{{ url("/admin/pastores/excluir-pastores") }}/'+ data.id_pastor +'" class="btn btn-danger mgn-btn-dt"><i class="fa fa-trash"></i></a>';
                                 return button;
                         	}
                     

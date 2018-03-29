@@ -29,7 +29,7 @@
 				@endif -->
 				
 				@if(Request::segment(1) == 'devocional')
-					<li class="active"><a href="{{url('/devocional')}}//{{$devAtivo->id_devocional}}">DEVOCIONAL</a></li>
+					<li class="active"><a href="{{url('/devocional')}}/{{$devAtivo->id_devocional}}">DEVOCIONAL</a></li>
 				@else
 					<li class="fullwidth"><a href="{{url('/devocional')}}/{{$devAtivo->id_devocional}}">DEVOCIONAL</a></li>
 				@endif

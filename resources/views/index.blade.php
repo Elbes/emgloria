@@ -28,7 +28,7 @@
             <div class="new-box">
               <div class="ch-item ch-img-3">
                 <div class="ch-info">
-                  <h4><a href="{{url('/pastores')}}/{{$devAtivo->id_devocional}}">PASTORES</a></h4>
+                  <h4><a href="{{url('/pastores')}}">PASTORES</a></h4>
                   <p></p>
                 </div>
               </div>
@@ -71,23 +71,18 @@
             <div id="timeline-holder">
               <div id="timeline">
                 <ul id="dates">
-                  <li><a href="#1900">2008</a></li>
-                  <li><a href="#1930">2009</a></li>
-                  <li><a href="#1944">2010</a></li>
+                @foreach($dev as $dev_ano)
+                  <li><a href="#1900">{{ date( 'd/m/y', strtotime( $dev_ano->dhs_cadastro )) }}</a></li>
+                @endforeach
                 </ul>
+                
                 <ul id="timedetail">
+                @foreach($dev as $devocional)
                   <li id="20050">
-                    <h1>PALAVRA DO PASTOR 1</h1><p></p>
-                    <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
+                    <h1>{{ $devocional->titulo }}</h1><p></p>
+                    <p>{{ substr($devocional->texto , 0, 200)}} <a href="{{url('/devocional')}}/{{$devocional->id_devocional}}" title="Ver texto completo">...Ler Mais</a></p>
                   </li>
-                  <li id="2006">
-                    <h1>PALAVRA DO PASTOR 2</h1>
-                    <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
-                  </li>
-                  <li id="2007">
-                    <h1>PALAVRA DO PASTOR 3</h1>
-                    <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. </p>
-                  </li>
+                 @endforeach
                 </ul>
                 <a href="#" id="next">+</a> <a href="#" id="prev">-</a> </div>
             </div>

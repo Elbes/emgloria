@@ -26,7 +26,7 @@ Route::any('/form-contato', [
 		'uses' => 'SiteController@getContato'
 ]);
 
-Route::any('/devocional/{id_ministerio}', [
+Route::any('/devocional/{id_devocional}', [
 		'uses' => 'SiteController@getDevocional'
 ]);
 
@@ -563,6 +563,27 @@ Route::group(['prefix' => '/admin/devocional'], function () {
 			Route::any('/lista-pastores.json', [
 					'as' => 'admin.pastores.lista-pastores.json',
 					'uses' => 'Admin\PastoresController@getListaPastorJson'
+			]);
+			Route::any('/inativar-pastores/{id_pastor?}', [
+					'uses' => 'Admin\PastoresController@inativarPastor'
+			]);
+			
+			Route::any('/ativar-pastores/{id_pastor?}', [
+					'uses' => 'Admin\PastoresController@ativarPastor'
+			]);
+			
+			Route::any('/alterar-pastores/{id_pastor?}', [
+					'as' => 'admin.pastores.alterar-pastores',
+					'uses' => 'Admin\PastoresController@getAlterarPastor'
+			]);
+			
+			Route::any('/altera-pastores', [
+					'as' => 'admin.pastores.altera-programacao',
+					'uses' => 'Admin\PastoresController@alterarPastor'
+			]);
+			
+			Route::any('/excluir-pastores/{id_pastor?}', [
+					'uses' => 'Admin\PastoresController@excluirPastor'
 			]);
 		
 			

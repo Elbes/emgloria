@@ -30,7 +30,10 @@ class SiteController extends Controller
 		$video = new \App\tb_video();
 		$video_inicio = $video->getVideoInicio();
 		
-		return view('/index' , compact('minAtivo', 'imagens', 'banners', 'devAtivo', 'progra', 'video_inicio'));
+		$devocional = new \App\tb_devocional();
+		$dev = $devocional->getDevocionalAtivos();
+		
+		return view('/index' , compact('minAtivo', 'imagens', 'banners', 'devAtivo', 'progra', 'video_inicio', 'dev'));
 	}
 	
 	
@@ -191,8 +194,11 @@ class SiteController extends Controller
 	
 		$dev = new \App\tb_devocional();
 		$devAtivo = $dev->getDevocionalAtivos()->first();
+		
+		$pastores = new \App\tb_pastores();
+		$pastor = $pastores->getPastoresAtivos();
 	
-		return view('/pastores', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos', 'devAtivo'));
+		return view('/pastores', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos', 'devAtivo', 'pastor'));
 	}
 	
     public function guardaContato(Request $request){

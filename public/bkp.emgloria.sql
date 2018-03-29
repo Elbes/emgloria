@@ -74,7 +74,7 @@ CREATE TABLE `tb_devocional` (
 
 LOCK TABLES `tb_devocional` WRITE;
 /*!40000 ALTER TABLE `tb_devocional` DISABLE KEYS */;
-INSERT INTO `tb_devocional` VALUES (1,'TíTULO DEVOCINAL 1','Texto devocional 1',NULL,'2018-02-13 16:35:30','2018-02-13 17:16:51',NULL),(2,'TíTULO DEVOCINAL 2','Lorem ipsum aptent diam congue ante curabitur cubilia porttitor, placerat morbi consequat auctor iaculis dictumst tortor integer, vitae dictum nostra morbi dictum consectetur nunc. vitae malesuada ultrices libero nullam porttitor dapibus ut primis rutrum tristique lobortis est ultricies, id elit et bibendum fermentum mollis quam tempor metus tristique lacus pellentesque. laoreet quis sociosqu accumsan massa auctor netus semper hac litora neque elit turpis id etiam urna elementum, tortor sed fermentum odio torquent quisque habitasse sollicitudin feugiat nulla torquent sapien eu facilisis venenatis. ac imperdiet vulputate purus habitasse dolor facilisis erat accumsan fermentum, mauris bibendum nibh laoreet nec cursus gravida volutpat sollicitudin facilisis, quisque laoreet nisi duis sollicitudin risus eget vivamus. \r\n\r\n	Aliquam quisque integer phasellus gravida ut in sed, pharetra quis litora elit vestibulum id, metus porttitor fringilla consequat habitasse etiam sed, nisl tempor convallis adipiscing curae. lobortis himenaeos eget pellentesque consectetur primis nec etiam neque, gravida et nulla leo ac quam elementum sapien mauris, bibendum quisque curabitur fermentum suscipit cursus massa. at ultrices aenean quam dictum aliquet eu fermentum aliquam lacus, mollis himenaeos aliquet condimentum mauris nam vulputate. commodo nullam sapien placerat donec primis purus sem accumsan, orci nulla dictum eu et nibh etiam class mi, etiam fames orci sit magna elementum vulputate. \r\n\r\n	Eget conubia nunc amet taciti phasellus pharetra sapien, adipiscing accumsan rutrum vel id convallis inceptos, potenti at felis gravida egestas at. mollis ac bibendum imperdiet proin aliquet adipiscing maecenas luctus ultrices aliquam, nec congue egestas turpis tempor porttitor primis lorem aliquam turpis, volutpat sem posuere convallis platea ornare vivamus ornare curabitur. urna neque ipsum velit etiam vitae sodales eget aliquam, aenean elementum facilisis ut nulla libero augue, quisque nunc tellus consectetur lobortis imperdiet etiam. magna ligula nullam at nibh dui vulputate, rhoncus habitant etiam magna tristique neque posuere, lorem facilisis eu blandit vehicula. \r\n\r\n	Lacus lectus congue nam aenean sociosqu fringilla, consectetur leo adipiscing orci cras lectus sit, curabitur convallis lorem dapibus semper. lobortis pharetra accumsan morbi nunc hac vehicula sapien laoreet tellus sagittis, habitasse iaculis cubilia in curabitur malesuada ultrices suspendisse urna, at sollicitudin phasellus adipiscing quis nisl suscipit sociosqu volutpat. sollicitudin et justo quisque consequat etiam suscipit mi tortor porttitor suspendisse, sollicitudin metus quisque lacus cursus mattis laoreet erat. mauris aliquam lorem auctor feugiat felis diam non aenean mattis varius, purus mauris curabitur cursus phasellus purus senectus mattis gravida tempor vestibulum, cubilia phasellus tristique vivamus sagittis elementum cursus ligula non. \r\n\r\n	Integer class orci ipsum dictumst consequat cursus enim litora lacus, etiam quisque proin vestibulum semper feugiat vulputate nullam neque adipiscing, nec conubia ut egestas auctor nibh egestas dolor. tristique ante tellus neque nullam pretium potenti donec leo class, taciti pellentesque netus donec ac habitasse dictumst consectetur, ad velit elit ultricies eu ultrices pharetra placerat. tellus primis elit risus donec sapien habitasse molestie mauris ultricies rhoncus, mollis inceptos faucibus vehicula auctor vulputate primis arcu a, augue curae nam ullamcorper per egestas viverra ut morbi. sapien sociosqu nullam massa viverra scelerisque orci quis taciti, consectetur viverra vivamus dictum enim adipiscing risus, blandit dictum platea fames phasellus eros tristique.',NULL,'2018-02-13 16:57:39','2018-02-13 17:32:19',NULL);
+INSERT INTO `tb_devocional` VALUES (1,'A VIDA','at ultrices aenean quam dictum aliquet eu fermentum aliquam lacus, mollis himenaeos aliquet condimentum mauris nam vulputate. commodo nullam sapien placerat donec primis purus sem accumsan, orci nulla dictum eu et nibh etiam class mi, etiam fames orci sit magna elementum vulputate. Eget conubia nunc amet taciti phasellus pharetra sapien, adipiscing accumsan rutrum vel id convallis inceptos, potenti at felis gravida egestas at. mollis ac bibendum imperdiet proin aliquet adipiscing maecenas luctus ultrices aliquam, nec congue egestas turpis tempor porttitor primis lorem aliquam turpis, volutpat sem posuere convallis platea ornare vivamus ornare curabitur. urna neque ipsum velit etiam vitae sodales eget aliquam, aenean elementum facilisis ut nulla libero augue, quisque nunc tellus consectetur lobortis imperdiet etiam. magna ligula nullam at nibh dui vulputate, rhoncus habitant etiam magna tristique neque posuere, lorem facilisis eu blandit vehicula. Lacus lectus congue nam aenean sociosqu fringilla',NULL,'2018-02-13 16:35:30','2018-03-29 12:48:00',NULL),(2,'TíTULO DEVOCINAL 2','Lorem ipsum aptent diam congue ante curabitur cubilia porttitor, placerat morbi consequat auctor iaculis dictumst tortor integer, vitae dictum nostra morbi dictum consectetur nunc. vitae malesuada ultrices libero nullam porttitor dapibus ut primis rutrum tristique lobortis est ultricies, id elit et bibendum fermentum mollis quam tempor metus tristique lacus pellentesque. laoreet quis sociosqu accumsan massa auctor netus semper hac litora neque elit turpis id etiam urna elementum, tortor sed fermentum odio torquent quisque habitasse sollicitudin feugiat nulla torquent sapien eu facilisis venenatis. ac imperdiet vulputate purus habitasse dolor facilisis erat accumsan fermentum, mauris bibendum nibh laoreet nec cursus gravida volutpat sollicitudin facilisis, quisque laoreet nisi duis sollicitudin risus eget vivamus. \r\n\r\n	Aliquam quisque integer phasellus gravida ut in sed, pharetra quis litora elit vestibulum id, metus porttitor fringilla consequat habitasse etiam sed, nisl tempor convallis adipiscing curae. lobortis himenaeos eget pellentesque consectetur primis nec etiam neque, gravida et nulla leo ac quam elementum sapien mauris, bibendum quisque curabitur fermentum suscipit cursus massa. at ultrices aenean quam dictum aliquet eu fermentum aliquam lacus, mollis himenaeos aliquet condimentum mauris nam vulputate. commodo nullam sapien placerat donec primis purus sem accumsan, orci nulla dictum eu et nibh etiam class mi, etiam fames orci sit magna elementum vulputate.',NULL,'2018-02-13 16:57:39','2018-03-29 12:48:56',NULL);
 /*!40000 ALTER TABLE `tb_devocional` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -138,6 +138,36 @@ LOCK TABLES `tb_ministerio` WRITE;
 /*!40000 ALTER TABLE `tb_ministerio` DISABLE KEYS */;
 INSERT INTO `tb_ministerio` VALUES (24,'LOUVOR','<p><strong>csdfsdf</strong></p>',NULL,'dfhdfh','dhdf',5,NULL,'2018-01-05 19:29:58','2018-01-05 19:40:42',NULL);
 /*!40000 ALTER TABLE `tb_ministerio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_pastores`
+--
+
+DROP TABLE IF EXISTS `tb_pastores`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_pastores` (
+  `id_pastor` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_pastor` varchar(100) DEFAULT NULL,
+  `foto_pastor` varchar(150) DEFAULT NULL,
+  `funcao_pastor` varchar(100) DEFAULT NULL,
+  `obs_pastor` varchar(200) DEFAULT NULL,
+  `dhs_cadastro` datetime DEFAULT NULL,
+  `dhs_atualizacao` datetime DEFAULT NULL,
+  `dhs_exclusao_logica` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_pastor`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_pastores`
+--
+
+LOCK TABLES `tb_pastores` WRITE;
+/*!40000 ALTER TABLE `tb_pastores` DISABLE KEYS */;
+INSERT INTO `tb_pastores` VALUES (1,'fsdfsd','1522353607_ch-19.jpg','sdfsdf','dsfsdf','2018-03-29 16:19:15','2018-03-29 17:00:07',NULL);
+/*!40000 ALTER TABLE `tb_pastores` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -286,7 +316,7 @@ CREATE TABLE `tb_video` (
 
 LOCK TABLES `tb_video` WRITE;
 /*!40000 ALTER TABLE `tb_video` DISABLE KEYS */;
-INSERT INTO `tb_video` VALUES (18,'1520961584_papo_de_saude.mp4','Geral',NULL,'2018-03-13 14:19:44','2018-03-13 14:19:44',NULL),(19,'1520961592_papo_de_saude.mp4','Geral',NULL,'2018-03-13 14:19:52','2018-03-13 14:19:52',NULL),(20,'1520961602_Curso SEI Parte I - Apresentação do curso SEI.mp4','Geral',NULL,'2018-03-13 14:20:02','2018-03-13 14:20:02',NULL),(21,'1520961640_Curso SEI Parte II - Estrutura do SEI.mp4','Geral',NULL,'2018-03-13 14:20:40','2018-03-13 14:20:40',NULL);
+INSERT INTO `tb_video` VALUES (18,'1520961584_papo_de_saude.mp4','Geral',NULL,'2018-03-13 14:19:44','2018-03-16 13:53:29',NULL),(19,'1520961592_papo_de_saude.mp4','Amor que move',NULL,'2018-03-13 14:19:52','2018-03-16 16:30:18',NULL),(20,'1520961602_Curso SEI Parte I - Apresentação do curso SEI.mp4','Geral',NULL,'2018-03-13 14:20:02','2018-03-16 16:13:39',NULL),(21,'1520961640_Curso SEI Parte II - Estrutura do SEI.mp4','Geral',NULL,'2018-03-13 14:20:40','2018-03-13 14:20:40',NULL);
 /*!40000 ALTER TABLE `tb_video` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -299,4 +329,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-14 19:08:36
+-- Dump completed on 2018-03-29 20:20:58
