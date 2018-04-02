@@ -62,7 +62,7 @@
                                             <input type="file" name="foto_pastor_nova">
                                         </div>
 
-                                        <button type="submit" class="btn btn-default">Inserir</button>
+                                        <button type="submit" class="btn btn-default">Alterar</button>
                                         <a class="btn btn-default" href="{{ url('/listaPastores') }}" >Cancelar</a>
                                     </form>
                                 </div>

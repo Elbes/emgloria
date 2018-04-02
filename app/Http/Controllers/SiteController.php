@@ -113,7 +113,10 @@ class SiteController extends Controller
 		$dev = new \App\tb_devocional();
 		$devAtivo = $dev->getDevocionalAtivos()->first();
 		
-		return view('/form-contato', compact('minAtivo', 'banners', 'devAtivo'));
+		$programacao = new \App\tb_programacao();
+		$progra = $programacao->getProgramacaoAtivos();
+		
+		return view('/form-contato', compact('minAtivo', 'banners', 'devAtivo', 'progra'));
 	}
 	
 	public function getDevocional($id_devocional){

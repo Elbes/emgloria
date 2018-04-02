@@ -54,21 +54,16 @@
             </div>
           </article>
           <article class="column c-one-third">
-            <div class="about-box">
-            <div class="right-sidebar">
-                <div class="sidebar-h"><strong class="right-heading"><span>PRÓXIMOS EVENTOS</span></strong></div>
-                <ul class="comments">
-                  <li><div class="clock"><span>23</span></div><a href="#" class="worship">Titulo evento</a>
-                    <p>23 de Janeiro - 10:00</p>
-                  </li>
-                  
-                  <li><div class="clock"><span>24</span></div><a href="#" class="worship">Titulo evento</a>
-                    <p>24 de Janeiro - 11:00</p>
-                  </li>
-
+            <div class="about-box"><div class="right-sidebar">
+                <div class="sidebar-h"><strong class="right-heading"><span>PROGRAMAÇÃO</span></strong></div>
+                <ul class="archives-contato">
+                @foreach ($progra as $pr)
+                  <li>{{strtoupper($pr->dia_programacao)}} - {{strtoupper($pr->texto_programacao)}}
+                  <span class="num-post">{{$pr->hora_programacao}} Hs</span></li>
+                @endforeach
                 </ul>
               </div>
-             </div>
+            </div>
           </article>
         </section>
       </section>
