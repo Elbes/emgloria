@@ -8,30 +8,31 @@
           <div class="heading-holder">
             <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">DEVOCIONAL</span><em class="h-right"></em></span></h3>
 				<article class="column c-three-fourth">
-		            <div class="blog-post">
-		              <br class="clear" />
-		              <div class="blog-holder contact">
-		              @foreach ($devDestaque as $devo)
-		              	<h2 class="h-bold">..: {{ $devo->titulo }} :..</h2>
-		                <div class="contact-flied">
-		                  <h3 class="h-bold">{{ $devo->texto }} </h3>
-		                </div>
-		               @endforeach
-		              </div>
-		            </div>
-	          </article>
-	          <article class="column c-one-third">
-	            <div class="about-box">
-	            <div class="right-sidebar">
-	                <div class="sidebar-h"><strong class="right-heading"><span>ANTERIORES</span></strong></div>
-	                <ul class="comments">
-	                 @foreach ($devocional as $dev)
-         	        	<li><div class="worship"><a href="{{url('/devocional')}}/{{strtolower($dev->id_devocional)}}" class="worship">{{ $dev->titulo }} </a></div></li>
+					@foreach ($devDestaque as $devo)
+			      	  <div class="blog-post prayer">
+			              <br class="clear" />
+			              <div class="prayer-box">
+			                <h4 class="prayer-heading">{{ mb_strtoupper($devo->titulo) }}</h4>
+			                <hr >
+			                <p>{{ $devo->texto }}</p>
+			              </div>
+		               </div>
 		             @endforeach
+	          	</article>
+
+	          <!-- Menu Devocional -->
+	           <article class="column c-one-third">
+	            <div class="about-box"><div class="right-sidebar">
+	                <div class="sidebar-h"><strong class="right-heading"><span>LISTA</span></strong></div>
+	                <ul class="archives">
+	                @foreach ($devocional as $dev)
+	                  <li><div class="worship"><a href="{{url('/devocional')}}/{{strtolower($dev->id_devocional)}}" class="worship">{{ $dev->titulo }} </a></div></li>
+	                @endforeach
 	                </ul>
 	              </div>
-	             </div>
+	            </div>
 	          </article>
+          	<!-- Fim Menu Ministérios -->
           </div>
         </section>
       </section>
