@@ -41,9 +41,9 @@
                                             @endif
                                         </div>  -->
                                         
-                                        <div class="form-group{{ $errors->has('pagina_conteudo') ? ' has-error' : '' }}">
+                                        <div class="form-group{{ $errors->has('texto_ministerio') ? ' has-error' : '' }}">
                                             <label>Texto do Ministério</label>
-                                			<textarea class="ckeditor" name="texto_ministerio" id="texto_ministerio">{{ old('texto_ministerio') }}</textarea>
+                                			<textarea class="form-control" name="texto_ministerio" id="texto_ministerio">{{ old('texto_ministerio') }}</textarea>
                                 			@if ($errors->has('texto_ministerio'))
                                                 <span class="help-block">
                                                     <strong>{{ $errors->first('texto_ministerio') }}</strong>
@@ -100,8 +100,9 @@
  @section( 'dependencyJs' )
 
 	<!-- <script src="//cdn.ckeditor.com/4.7.1/standart/ckeditor.js"></script> -->
-	<script src="{{ url('/') }}/ckeditor/ckeditor.js"></script> 
+	<script src="{{ url('/layout-admin') }}/ckeditor/ckeditor.js"></script> 
 	<script type="text/javascript">
+	
 	CKEDITOR.replace('texto_ministerio', {
 	    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
 	    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',

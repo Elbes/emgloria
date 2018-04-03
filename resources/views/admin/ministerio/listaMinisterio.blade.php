@@ -42,7 +42,6 @@
                         {"sTitle": "TEXTO MINISTÉRIO", "width": "250px", "sName": "texto_ministerio", "mData": function(data){
                             return $("<div>"+ data.texto_ministerio + "</div>" ).text();
                             
-                            
                         	}
                     	},
                         {"sTitle": "LÍDER", "width": "100px", "sName": "lider_ministerio", "mData": "lider_ministerio"},

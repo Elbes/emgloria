@@ -80,7 +80,7 @@
                 @foreach($dev as $devocional)
                   <li id="20050">
                     <h1>{{ $devocional->titulo }}</h1><p></p>
-                    <p>{{ substr($devocional->texto , 0, 200)}} <a href="{{url('/devocional')}}/{{$devocional->id_devocional}}" title="Ver texto completo">...Ler Mais</a></p>
+                    <p><?php echo nl2br(substr($devocional->texto, 0, 200));?> <a href="{{url('/devocional')}}/{{$devocional->id_devocional}}" title="Ver texto completo">...Ler Mais</a></p>
                   </li>
                  @endforeach
                 </ul>

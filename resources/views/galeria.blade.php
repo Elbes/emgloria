@@ -1,8 +1,16 @@
 @extends('layout.layoutSite')
-@section('dependencyCss')
-<!-- Start JavaScript -->
 
-<!-- Start Player CSS -->
+@section('dependencyCss')
+<script type="text/javascript">
+function changeStyle(url) {
+document.getElementById('stylesheet').href ='css/'+url;
+}
+</script>
+
+<!-- End JavaScript -->
+<!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+<![endif]-->
 @endsection
 @section('content')
  <!-- Content -->

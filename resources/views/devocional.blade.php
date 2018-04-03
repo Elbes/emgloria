@@ -14,7 +14,7 @@
 			              <div class="prayer-box">
 			                <h4 class="prayer-heading">{{ mb_strtoupper($devo->titulo) }}</h4>
 			                <hr >
-			                <p>{{ $devo->texto }}</p>
+			                <p><?php echo nl2br($devo->texto);?></p>
 			              </div>
 		               </div>
 		             @endforeach

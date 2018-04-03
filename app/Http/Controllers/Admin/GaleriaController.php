@@ -55,18 +55,18 @@ class GaleriaController extends Controller
     			$galeria->nome_imagem =  $imageName;
     			$galeria->tipo_imagem =  $request->input('tipo_imagem');
     			$galeria->obs_imagem =  $request->input('obs_imagem');
-    			 
-    			if($extension != 'jpg' && $extension != 'png' && $extension != 'gif' && $extension && 'jpeg')
+    			/*  
+    			if($extension != 'jpg' || $extension != 'png' || $extension != 'gif' || $extension && 'jpeg' || $extension != 'JPG')
     			{
     				Session::flash('error', 'O arquivo em anexo deve ser uma imagem!!!');
-    			}else{
+    			}else{ */
     				if($galeria->save()){
     					$request->imagem_galeria->move(public_path('/imagens/galeria/'), $imageName);
     					Session::flash('success', 'Inserido com sucesso!!!');
     				}else{
     					Session::flash('error', 'Erro ao tentar inserir !!!Tente Novamente.');
     				}
-    			}
+    			/* } */
     			  		
     }
     return Redirect::to('/listaGaleria');

@@ -38,7 +38,11 @@
                 var dtColumnsLink = function() {
                     var columns = [
                         {"sTitle": "TÍTULO", "width": "25%", "sName": "titulo", "mData": "titulo"},
-                        {"sTitle": "TEXTO", "width": "50%", "sName": "texto", "mData": "texto"},
+                        {"sTitle": "TEXTO", "width": "50%", "sName": "texto", "mData": function(data){
+                            return $("<div>"+ data.texto + "</div>" ).text();
+                            
+                        	}
+                    	},
                         {"sTitle": "ATUALIZAÇÃO", "width": "15%", "sName": "dhs_atualizacao", "mData": "dhs_atualizacao"},
                         {"sTitle": "OPÇÕES", "width": "10%","searchable": false, "orderable":  false, "mData": function(data){
 

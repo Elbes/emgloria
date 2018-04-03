@@ -18,7 +18,7 @@
                        <!--  @include('notificacao') -->
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <form role="form" enctype="multipart/form-data" action="{{ url('/admin/sobre-igreja/altera-sobre') }}" method="post">
                                     {{ csrf_field() }} 
                                     	<input type="hidden" class="form-control" name="id_sobre" value="{{ $sobre->id_sobre }}"> 
@@ -33,7 +33,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Texto</label>
-                                            <textarea class="form-control" name="texto" rows="3" placeholder="Texto principal">{{ $sobre->texto}}</textarea>
+                                            <textarea class="form-control" name="texto" id="texto">{{ $sobre->texto}}</textarea>
                                         </div>
                                         <button type="submit" class="btn btn-default">Salvar</button>
                                         <a class="btn btn-default" href="{{ url('/listaMissaoVisao') }}" >Cancelar</a>
@@ -51,8 +51,19 @@
             <!-- /.row -->
    @endsection
    
-   @section( 'dependencyJs' )
-		<!-- DataTables JavaScript -->
-	   
+@section( 'dependencyJs' )
+
+	<!-- <script src="//cdn.ckeditor.com/4.7.1/standart/ckeditor.js"></script> -->
+	<script src="{{ url('/layout-admin') }}/ckeditor/ckeditor.js"></script> s
+	<script type="text/javascript">
+	
+	CKEDITOR.replace('texto', {
+	    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+	    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
+	    filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+	    filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}',
+	    height: 400
+	  });
+	  
+	</script>
 @endsection
-   

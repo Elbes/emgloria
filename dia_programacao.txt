@@ -1,2 +1,4 @@
 	
 ALTER TABLE tb_programacao ADD hora_programacao varchar(5) NULL after dia_programacao;
+
+ALTER TABLE tb_pastores MODIFY obs_pastor text;

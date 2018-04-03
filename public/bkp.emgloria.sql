@@ -74,7 +74,7 @@ CREATE TABLE `tb_devocional` (
 
 LOCK TABLES `tb_devocional` WRITE;
 /*!40000 ALTER TABLE `tb_devocional` DISABLE KEYS */;
-INSERT INTO `tb_devocional` VALUES (1,'A VIDA','at ultrices aenean quam dictum aliquet eu fermentum aliquam lacus, mollis himenaeos aliquet condimentum mauris nam vulputate. commodo nullam sapien placerat donec primis purus sem accumsan, orci nulla dictum eu et nibh etiam class mi, etiam fames orci sit magna elementum vulputate. Eget conubia nunc amet taciti phasellus pharetra sapien, adipiscing accumsan rutrum vel id convallis inceptos, potenti at felis gravida egestas at. mollis ac bibendum imperdiet proin aliquet adipiscing maecenas luctus ultrices aliquam, nec congue egestas turpis tempor porttitor primis lorem aliquam turpis, volutpat sem posuere convallis platea ornare vivamus ornare curabitur. urna neque ipsum velit etiam vitae sodales eget aliquam, aenean elementum facilisis ut nulla libero augue, quisque nunc tellus consectetur lobortis imperdiet etiam. magna ligula nullam at nibh dui vulputate, rhoncus habitant etiam magna tristique neque posuere, lorem facilisis eu blandit vehicula. Lacus lectus congue nam aenean sociosqu fringilla',NULL,'2018-02-13 16:35:30','2018-03-29 12:48:00',NULL),(2,'TíTULO DEVOCINAL 2','Lorem ipsum aptent diam congue ante curabitur cubilia porttitor, placerat morbi consequat auctor iaculis dictumst tortor integer, vitae dictum nostra morbi dictum consectetur nunc. vitae malesuada ultrices libero nullam porttitor dapibus ut primis rutrum tristique lobortis est ultricies, id elit et bibendum fermentum mollis quam tempor metus tristique lacus pellentesque. laoreet quis sociosqu accumsan massa auctor netus semper hac litora neque elit turpis id etiam urna elementum, tortor sed fermentum odio torquent quisque habitasse sollicitudin feugiat nulla torquent sapien eu facilisis venenatis. ac imperdiet vulputate purus habitasse dolor facilisis erat accumsan fermentum, mauris bibendum nibh laoreet nec cursus gravida volutpat sollicitudin facilisis, quisque laoreet nisi duis sollicitudin risus eget vivamus. \r\n\r\n	Aliquam quisque integer phasellus gravida ut in sed, pharetra quis litora elit vestibulum id, metus porttitor fringilla consequat habitasse etiam sed, nisl tempor convallis adipiscing curae. lobortis himenaeos eget pellentesque consectetur primis nec etiam neque, gravida et nulla leo ac quam elementum sapien mauris, bibendum quisque curabitur fermentum suscipit cursus massa. at ultrices aenean quam dictum aliquet eu fermentum aliquam lacus, mollis himenaeos aliquet condimentum mauris nam vulputate. commodo nullam sapien placerat donec primis purus sem accumsan, orci nulla dictum eu et nibh etiam class mi, etiam fames orci sit magna elementum vulputate.',NULL,'2018-02-13 16:57:39','2018-03-29 12:48:56',NULL);
+INSERT INTO `tb_devocional` VALUES (1,'A VIDA','<p><strong>at ultrices aenean quam dictum aliquet eu fermentum aliquam lacus</strong>, mollis himenaeos aliquet condimentum mauris nam vulputate. commodo nullam sapien placerat donec primis purus sem accumsan, orci nulla dictum eu et nibh etiam class mi, etiam fames orci sit magna elementum vulputate. Eget conubia nunc amet taciti phasellus pharetra sapien, adipiscing accumsan rutrum vel id convallis inceptos, potenti at felis gravida egestas at. mollis ac bibendum imperdiet proin aliquet adipiscing maecenas luctus ultrices aliquam, nec congue egestas turpis tempor porttitor primis lorem aliquam turpis, volutpat sem posuere convallis platea ornare vivamus ornare curabitur. urna neque ipsum velit etiam vitae sodales eget aliquam, aenean elementum facilisis ut nulla libero augue, quisque nunc tellus consectetur lobortis imperdiet etiam. magna ligula nullam at nibh dui vulputate, rhoncus habitant etiam magna tristique neque posuere, lorem facilisis eu blandit vehicula. Lacus lectus congue nam aenean sociosqu fringilla</p>',NULL,'2018-02-13 16:35:30','2018-04-03 10:27:25',NULL),(2,'TíTULO DEVOCINAL 2','Lorem ipsum aptent diam congue ante curabitur cubilia porttitor, placerat morbi consequat auctor iaculis dictumst tortor integer, vitae dictum nostra morbi dictum consectetur nunc. vitae malesuada ultrices libero nullam porttitor dapibus ut primis rutrum tristique lobortis est ultricies, id elit et bibendum fermentum mollis quam tempor metus tristique lacus pellentesque. laoreet quis sociosqu accumsan massa auctor netus semper hac litora neque elit turpis id etiam urna elementum, tortor sed fermentum odio torquent quisque habitasse sollicitudin feugiat nulla torquent sapien eu facilisis venenatis. ac imperdiet vulputate purus habitasse dolor facilisis erat accumsan fermentum, mauris bibendum nibh laoreet nec cursus gravida volutpat sollicitudin facilisis, quisque laoreet nisi duis sollicitudin risus eget vivamus. \r\n\r\n	Aliquam quisque integer phasellus gravida ut in sed, pharetra quis litora elit vestibulum id, metus porttitor fringilla consequat habitasse etiam sed, nisl tempor convallis adipiscing curae. lobortis himenaeos eget pellentesque consectetur primis nec etiam neque, gravida et nulla leo ac quam elementum sapien mauris, bibendum quisque curabitur fermentum suscipit cursus massa. at ultrices aenean quam dictum aliquet eu fermentum aliquam lacus, mollis himenaeos aliquet condimentum mauris nam vulputate. commodo nullam sapien placerat donec primis purus sem accumsan, orci nulla dictum eu et nibh etiam class mi, etiam fames orci sit magna elementum vulputate.',NULL,'2018-02-13 16:57:39','2018-03-29 12:48:56',NULL);
 /*!40000 ALTER TABLE `tb_devocional` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,7 +136,7 @@ CREATE TABLE `tb_ministerio` (
 
 LOCK TABLES `tb_ministerio` WRITE;
 /*!40000 ALTER TABLE `tb_ministerio` DISABLE KEYS */;
-INSERT INTO `tb_ministerio` VALUES (24,'LOUVOR','<p><strong>csdfsdf</strong></p>',NULL,'dfhdfh','dhdf',5,NULL,'2018-01-05 19:29:58','2018-01-05 19:40:42',NULL);
+INSERT INTO `tb_ministerio` VALUES (24,'LOUVOR','<p>fsdfhklsdf Donec augue sem, pellentesque at ullamcorper vitae, dictum eget nee. Integer nec magna urna, at fringilla turpis. Nam tincidunt lectus ut ante voutpat mattis at sed nisl. Etiam justo lacus, laoreet id posuere ac, cursuisl. Nulla ullamcorper volutpat sem vitae commodo. Curabitur volutpatn metus viverra condimentum. Nam adipiscing tellus et odio suscipit ut hendrerit metus aliquet.</p>',NULL,'dfhdfh','dhdf',5,NULL,'2018-01-05 19:29:58','2018-04-02 16:42:26',NULL);
 /*!40000 ALTER TABLE `tb_ministerio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,12 +152,12 @@ CREATE TABLE `tb_pastores` (
   `nome_pastor` varchar(100) DEFAULT NULL,
   `foto_pastor` varchar(150) DEFAULT NULL,
   `funcao_pastor` varchar(100) DEFAULT NULL,
-  `obs_pastor` varchar(200) DEFAULT NULL,
+  `obs_pastor` text,
   `dhs_cadastro` datetime DEFAULT NULL,
   `dhs_atualizacao` datetime DEFAULT NULL,
   `dhs_exclusao_logica` datetime DEFAULT NULL,
   PRIMARY KEY (`id_pastor`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -166,7 +166,7 @@ CREATE TABLE `tb_pastores` (
 
 LOCK TABLES `tb_pastores` WRITE;
 /*!40000 ALTER TABLE `tb_pastores` DISABLE KEYS */;
-INSERT INTO `tb_pastores` VALUES (1,'fsdfsd','1522353607_ch-19.jpg','sdfsdf','dsfsdf','2018-03-29 16:19:15','2018-03-29 17:00:07',NULL);
+INSERT INTO `tb_pastores` VALUES (3,'Cleydival','1522684283_ch-7.jpg','Pastor Titular','texto sobre Cleydival dsvf n hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 12:51:06','2018-04-02 15:07:10',NULL),(4,'Wesley','1522684318_ch-18.jpg','Pastor Substituto - Líder de Casais','hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae. hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 12:51:58','2018-04-03 15:19:02',NULL),(5,'Robson','1522692582_ch-20.jpg','Pastor da EBD','hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.\r\n hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 15:09:42','2018-04-02 15:09:42',NULL);
 /*!40000 ALTER TABLE `tb_pastores` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -225,7 +225,7 @@ CREATE TABLE `tb_programacao` (
 
 LOCK TABLES `tb_programacao` WRITE;
 /*!40000 ALTER TABLE `tb_programacao` DISABLE KEYS */;
-INSERT INTO `tb_programacao` VALUES (1,'Domingo',NULL,'CULTO EVANGELÍSTICO',1,NULL,'2018-02-22 18:54:17','2018-02-22 19:58:53',NULL),(2,'Domingo',NULL,'ESCOLA BÍBLICA DOMINICAL',2,NULL,'2018-02-22 19:00:10','2018-02-22 19:52:21',NULL),(3,'Sexta-Feira',NULL,'CULTO DOS JOVENS',3,NULL,'2018-02-22 19:00:36','2018-02-22 19:44:02',NULL);
+INSERT INTO `tb_programacao` VALUES (1,'Domingo','19:00','CULTO EVANGELÍSTICO',1,NULL,'2018-02-22 18:54:17','2018-04-02 16:15:00',NULL),(2,'Domingo','09:30','ESCOLA BÍBLICA DOMINICAL',2,NULL,'2018-02-22 19:00:10','2018-04-02 16:15:08',NULL),(3,'Sexta-Feira','22:00','CULTO DOS JOVENS',3,NULL,'2018-02-22 19:00:36','2018-04-02 16:15:43',NULL);
 /*!40000 ALTER TABLE `tb_programacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -254,7 +254,7 @@ CREATE TABLE `tb_sobre` (
 
 LOCK TABLES `tb_sobre` WRITE;
 /*!40000 ALTER TABLE `tb_sobre` DISABLE KEYS */;
-INSERT INTO `tb_sobre` VALUES (1,'Missão','Texto da Missão aqui',NULL,NULL,'2018-02-12 17:19:54',NULL),(2,'Visão','Texto da Visão aqui. Falta atulizar',NULL,NULL,'2018-02-12 17:33:37',NULL);
+INSERT INTO `tb_sobre` VALUES (1,'Missão','<p style=\"text-align: center;\"><span style=\"font-size:16px\">&ldquo;Ide por todo o mundo, pregai o evangelho a toda criatura&rdquo; (Marcos 16:15). &ldquo;Portanto, ide, ensinai todas as na&ccedil;&otilde;es . . . ensinando-as a guardar todas as coisas que eu vos tenho mandado; e eis que eu estou convosco todos os dias, at&eacute; &agrave; consuma&ccedil;&atilde;o dos s&eacute;culos&rdquo; (Mateus 28:19-20).</span></p>',NULL,NULL,'2018-04-03 11:33:52',NULL),(2,'Visão','<p style=\"text-align: center;\"><span style=\"font-size:16px\">A vis&atilde;o da nossa igreja est&aacute; pautada em sentimentos que Deus foi colocando ao longo do tempo no cora&ccedil;&atilde;o de sua lideran&ccedil;a. Queremos ser uma igreja que cresce em dire&ccedil;&atilde;o a Deus, num compromisso s&eacute;rio com Ele.</span></p>',NULL,NULL,'2018-04-03 15:11:10',NULL);
 /*!40000 ALTER TABLE `tb_sobre` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -329,4 +329,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-29 20:20:58
+-- Dump completed on 2018-04-03 19:50:21

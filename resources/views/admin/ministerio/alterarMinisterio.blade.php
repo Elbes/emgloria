@@ -95,7 +95,7 @@
 @section( 'dependencyJs' )
    <?php echo json_encode([ 'csrfToken' => csrf_token(), ]); ?> 
 	<!-- <script src="//cdn.ckeditor.com/4.7.1/standart/ckeditor.js"></script> -->
-	<script src="{{ url('/') }}/ckeditor/ckeditor.js"></script>
+	<script src="{{ url('/layout-admin') }}/ckeditor/ckeditor.js"></script>
 	<script type="text/javascript">
 	CKEDITOR.replace('texto_ministerio', {
 	    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
