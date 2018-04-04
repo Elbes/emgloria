@@ -1,7 +1,6 @@
 @extends('admin.layoutAdmin')
 
 	@section('content')
-        <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Lista de Usuários Cadastrados</h1>
@@ -14,7 +13,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Usuários com permissões na Intranet
+                            Usuários com permissões no Site
                         </div>
                          <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -27,8 +26,6 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
         
     <!-- Modal ajusta leito-->
 	<div class="modal fade" id="modalEditarMedicamento" tabindex="-1" role="dialog">
@@ -71,8 +68,8 @@
 									<div class="form-group col-md-12" style="padding: 5px;">
 											<select class="form-control" id="id_setor" name="id_setor">
 				                                <option selected="selected" value="txt_id_setor"></option>
-				                                @foreach ($setores as $setor)
-				                                	<option value="{{$setor->id_setor}}">{{$setor->nome_setor}}</option>
+				                                @foreach ($perfis as $perfil)
+				                                	<option value="{{$perfil->id_perfil}}">{{$perfil->nome_perfil}}</option>
 				                                @endforeach
 				                                </select>
 									</div>
@@ -106,16 +103,14 @@
 				 
                 var dtColumnsLink = function() {
                     var columns = [
-                        {"sTitle": "ID","width": "10%", "sName": "id_usuario", "mData": "id_usuario"},
                         {"sTitle": "Nome", "width": "25%", "sName": "nome", "mData": "nome"},
+                        {"sTitle": "TELEFONE", "sName": "telefone", "mData": "telefone"},
                         {"sTitle": "EMAIL", "sName": "email", "mData": "email"},
-                        {"sTitle": "MATRICULA", "sName": "matricula", "mData": "matricula"},
-                        {"sTitle": "SETOR", "sName": "sigla_setor", "mData": function( data){
-                            return data.setor.sigla_setor;
+                        {"sTitle": "PERFIL", "sName": "nome_perfil", "mData": function( data){
+                            return data.perfil.nome_perfil;
                         	}
                         },
                         {"sTitle": "DT CADASTRO", "sName": "dhs_cadastro", "mData": "dhs_cadastro"},
-                        {"sTitle": "DT ATUALIZAÇÃO", "sName": "dhs_atualizacao", "mData": "dhs_atualizacao"},
                         {"sTitle": "OPÇÕES", "width": "155px", "searchable": false, "orderable":  false, "data": function( data){
                             
                         	

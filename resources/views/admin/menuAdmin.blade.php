@@ -38,6 +38,7 @@
                         <li>
                             <a href="{{ url('/listaProgramacao') }}" ><i class="fa fa-table fa-fw"></i> Programação</a>
                         </li>
+                        
                          <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Galeria<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -51,6 +52,9 @@
                             <!-- /.nav-second-level -->
                         </li>
                         
+                        <li>
+                            <a href="{{ url('/listaUsuario') }}" ><i class="fa fa-table fa-fw"></i> Usuários</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

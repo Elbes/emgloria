@@ -12,18 +12,7 @@
           <div class="heading-holder">
             <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">NOSSA IGREJA</span><em class="h-right"></em></span></h3>
           </div>
-          <article class="column c-one-fourth service-box">
-            <div class="new-box">
-              <div class="ch-item ch-img-1">
-                <div class="ch-info">
-                  <h4><a href="{{ url('/pedidos-oracao') }}">PEDIDO DE ORAÇÃO</a></h4>
-                </div>
-              </div>
-            </div>
-            <div class="text">
-              <p>Deus sabe das necessidades de cada um e escuta o teu íntimo.</p>
-            </div>
-          </article>
+          
           <article class="column c-one-fourth service-box">
             <div class="new-box">
               <div class="ch-item ch-img-3">
@@ -37,6 +26,20 @@
               <p>Devocional com versículos bíblicos comentados.</p>
             </div>
           </article>
+          
+          <article class="column c-one-fourth service-box">
+            <div class="new-box">
+              <div class="ch-item ch-img-1">
+                <div class="ch-info">
+                  <h4><a href="{{ url('/pedidos-oracao') }}">PEDIDO DE ORAÇÃO</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="text">
+              <p>Deus sabe das necessidades de cada um e escuta o teu íntimo.</p>
+            </div>
+          </article>
+          
           <article class="column c-one-fourth service-box">
             <div class="new-box">
               <div class="ch-item ch-img-2">
@@ -50,6 +53,7 @@
               <p>“Quanto for possível, não deixe de fazer o bem a quem dele precisa”. (PV 3:27)</p>
             </div>
           </article>
+          
           <article class="column c-one-fourth service-box">
             <div class="new-box">
               <div class="ch-item ch-img-4">

@@ -72,7 +72,7 @@ class tb_usuarios extends Authenticatable
     
     //Rerorna usuários ativos e inativos para Datatable
     public function getDtUsuario(){
-    	$objReturn = $this::with('perfil')->withTrashed('dhs_exclusao_logica')->where('id_usuario','<>', Auth::user ()->id_usuario) 
+    	$objReturn = $this::with('perfil')->withTrashed('dhs_exclusao_logica') 
     	->get();
     	
     	return DataTables::collection($objReturn)

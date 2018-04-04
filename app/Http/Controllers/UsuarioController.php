@@ -30,10 +30,11 @@ class UsuarioController extends Controller {
 			Session::flash ( 'warning', 'Já existe usuário cadastrado com este endereço de email.' );
 		}else{
 			$usuario->nome = $request->input ( 'nome' );
+			$usuario->telefone = $request->input ( 'telefone' );
 			$usuario->email = $request->input ( 'email' );
 			$usuario->senha = Hash::make ( $request->input ( 'senha' ) );
 			$usuario->id_perfil = $request->input ( 'id_perfil' );
-			//$usuario->dhs_exclusao_logica = Carbon::now ();
+			$usuario->dhs_exclusao_logica = Carbon::now ();
 			
 			if ($usuario->save ()) {
 				Session::flash ( 'success', 'Usuário inserido com sucesso!!Agurde Liberação de acesso' );
@@ -46,25 +47,25 @@ class UsuarioController extends Controller {
 	}
 	
 	public function getListaUsuario() {
-		$usuario = \App\ta_usuarios::where ( 'id_usuario', Auth::user ()->id_usuario )->get ();
+		$usuario = \App\tb_usuarios::where ( 'id_usuario', Auth::user ()->id_usuario )->get ();
 		
-		$setor = new \App\ta_setor ();
-		$setores = $setor->getTodosSetores ();
+		$perfil= new \App\tb_perfil();
+		$perfis = $perfil->getTodosPerfis();
 		
-		return view ( 'usuario.listaUsuario', compact ( 'usuario', 'setores' ) );
+		return view ( 'usuario.listaUsuario', compact ( 'usuario', 'perfis' ) );
 	}
 	
 	public function getListaUsuarioJson() {
-		$usuario = new \App\ta_usuarios ();
-		return $usuario->getDtUsuario ();
+		$usuario = new \App\tb_usuarios ();
+		return $usuario->getDtUsuario();
 	}
 	
 	//LISTA DADOS DO USUARIO NA VIEW PARA ALTERAR
 	public function getAlterarUsuario($id_usuario )
 	{
-		$usuario = \App\ta_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
-		$setor = new \App\ta_setor ();
-		$setores = $setor->getTodosSetores ();
+		$usuario = \App\tb_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
+		$perfil = new \App\tb_perfil();
+		$perfis = $perfil->getTodosPerfis();
 		 
 		$use = \App\ta_usuarios::withTrashed()->find( $id_usuario );
 		 
@@ -73,7 +74,7 @@ class UsuarioController extends Controller {
 			Session::flash('warning', 'usuário não encontrado!!!');
 			return Redirect::to('/listaUsuario');
 		}else{
-			return view('usuario.alterarUsuario', compact('use', 'usuario', 'setores'));
+			return view('usuario.alterarUsuario', compact('use', 'usuario', 'perfis'));
 		}
 		 
 	}
@@ -83,18 +84,19 @@ class UsuarioController extends Controller {
 		 
 		$usuario = \App\ta_usuarios::withTrashed()->find( $request->input('id_usuario') );
 		 
-		$usuario->email =  $request->input('email');
-		$usuario->matricula =  $request->input('matricula');
-		$usuario->nome =  $request->input('nome');
-		$usuario->id_setor =  $request->input('id_setor');
+		$usuario->nome = $request->input ( 'nome' );
+		$usuario->telefone = $request->input ( 'telefone' );
+		$usuario->email = $request->input ( 'email' );
+		$usuario->senha = Hash::make ( $request->input ( 'senha' ) );
+		$usuario->id_perfil = $request->input ( 'id_perfil' );
 		 
 		if($usuario->save()){
 			Session::flash('success', 'Usuário alterado com sucesso!!!');
 		}else{
 			Session::flash('error', 'Erro ao tentar alterar o Usuário!!!Tente Novamente.');
 		}
-		  return Redirect::back();
-		//return Redirect::to('/listaUsuario');
+		  //return Redirect::back();
+		return Redirect::to('/listaUsuario');
 	}
 
 	
@@ -135,36 +137,36 @@ class UsuarioController extends Controller {
 	//VIEW PARA ALTERAR DADOS DO USUÁRIO LOGADO
 	public function getMeusDados()
 	{
-		$usuario = \App\ta_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
-		$setor = new \App\ta_setor ();
-		$setores = $setor->getTodosSetores ();
+		$usuario = \App\tb_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
+		$perfil = new \App\tb_perfil();
+		$perfis = $perfil->getTodosPerfis();
 		
-		$use = \App\ta_usuarios::withTrashed()->find( Auth::user()->id_usuario );
+		$use = \App\tb_usuarios::withTrashed()->find( Auth::user()->id_usuario );
 			
 		if ($usuario == null) {
 			// Está inativo no banco de dados =P
 			Session::flash('warning', 'Usuário não encontrado!!!');
 			return Redirect::back();
 		}else{
-			return view('usuario.meusDados', compact('use', 'usuario', 'setores'));
+			return view('usuario.meusDados', compact('use', 'usuario', 'perfis'));
 		}
 	}
 	
 	//VIEW ALTERAR SENHA USUÁRIO LOGADO
 	public function getAlterarSenha()
 	{
-		$usuario = \App\ta_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
-		$setor = new \App\ta_setor ();
-		$setores = $setor->getTodosSetores ();
+		$usuario = \App\tb_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
+		$perfil = new \App\tb_perfil();
+		$perfis = $perfil->getTodosPerfis();
 	
-		$use = \App\ta_usuarios::withTrashed()->find( Auth::user()->id_usuario );
+		$use = \App\tb_usuarios::withTrashed()->find( Auth::user()->id_usuario );
 			
 		if ($usuario == null) {
 			// Está inativo no banco de dados =P
 			Session::flash('warning', 'Usuário não encontrado!!!');
 			return Redirect::back();
 		}else{
-			return view('usuario.alterarSenha', compact('use', 'usuario', 'setores'));
+			return view('usuario.alterarSenha', compact('use', 'usuario', 'perfis'));
 		}
 	}
 	
@@ -176,7 +178,7 @@ class UsuarioController extends Controller {
 				'confirme_senha' => 'required|confirmed'
 		]); */
 		
-		$usuario = \App\ta_usuarios::withTrashed()->find( $request->input('id_usuario') );
+		$usuario = \App\tb_usuarios::withTrashed()->find( $request->input('id_usuario') );
 		$senha_atual = $request->input('senha_atual');
 		$nova_senha = $request->input('nova_senha');
 		$confirme_senha = $request->input('confirme_senha');

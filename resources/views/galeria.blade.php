@@ -1,11 +1,7 @@
 @extends('layout.layoutSite')
 
 @section('dependencyCss')
-<script type="text/javascript">
-function changeStyle(url) {
-document.getElementById('stylesheet').href ='css/'+url;
-}
-</script>
+<link rel="stylesheet" href="{{ url('/layout/') }}/lightbox/dist/css/lightbox.min.css">
 
 <!-- End JavaScript -->
 <!--[if lt IE 9]>
@@ -40,43 +36,33 @@ document.getElementById('stylesheet').href ='css/'+url;
         </article>
 	   	<section class="grid-holder">
         <section class="grid-galeria">
-         
-          <article class="column c-four-fifth-galery">
-
-            <section class="grid-holder">
-
-              <section class="grid lightbox gallery" id="catagory-item-holder">
-
-               
-              @foreach ($imagens as $imagem)
-                <figure class="column c-one-third-img-galery Landscape catagory-item">
-
-                  <div class="item alpha gallery-item">
-
-                    <div class="caption gallery-box">  <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" rel="prettyPhoto[gallery1]"> <img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="" class="pic"> <span class="hover-effect big zoom"></span></a></div>
-                    
-                    <!-- hover effect --> 
-                    
-                    <!-- <strong class="gallery-titel"><a href="gallery-singlepost.html">Our Churches</a></strong>
-                    <p>Sit amet, consectetur adipiscing </p> -->
-                    <strong></strong>
-                  </div>
-                  
-                  <!-- End --> 
-                  
-                </figure>
-               @endforeach
-               
-              </section>
-            </section>
-            
-           
-          </article>
-          
+        
           <article class="column c-three-fourth-galeria">
           	<section class="grid-holder">
         		<section class="grid">
-          			<article class="column c-four-fifth"> 
+          			<article class="column c-four-fifth  catagory-item "> 
+
+			            <!-- ========================= Light Box & Frame ========================= -->
+			
+			            <ul class="portfolio group All">
+ 							@foreach ($imagens as $imagem)
+                    			<li class="g-3-imagem item">
+                    				<a  href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-lightbox="example-set" data-title="{{$imagem->obs_imagem}}"><img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt=""/></a>
+                    			</li>
+                    		@endforeach
+                    	</ul>
+           			</article>
+ 
+        		</section>
+      		</section>
+           
+          </article>
+          
+          
+          <article class="column c-three-fourth-galeria ">
+          	<section class="grid-holder">
+        		<section class="grid">
+          			<article class="column c-four-fifth Videos catagory-item"> 
 
 			            <!-- ========================= Light Box & Frame ========================= -->
 			
@@ -97,6 +83,7 @@ document.getElementById('stylesheet').href ='css/'+url;
            
              <br clear="all">
           </article>
+          
         </section>
       </section>
 
@@ -104,5 +91,11 @@ document.getElementById('stylesheet').href ='css/'+url;
 
 @endsection
 @section('dependencyJs')
-
+<script src="{{ url('/layout/') }}/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 500,
+      'wrapAround': true
+    })
+</script>
 @endsection

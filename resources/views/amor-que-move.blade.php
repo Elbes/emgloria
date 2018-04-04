@@ -1,5 +1,5 @@
 @extends('layout.layoutSite')
-
+<link rel="stylesheet" href="{{ url('/layout/') }}/lightbox/dist/css/lightbox.min.css">
 @section('content')
      <!-- Content -->
     <div class="content mt0">
@@ -30,28 +30,23 @@
         <section class="grid-galeria">
          
           <article class="column c-three-fourth-galeria">
-            <section class="grid-holder">
-              <section class="grid lightbox gallery" id="catagory-item-holder">
-              
-              @foreach ($imagens as $imagem)
-                <figure class="column c-one-fourth gallery-col All catagory-item">
-                  <div class="item alpha gallery-item">
-                    <div class="caption gallery-box"> <a href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" rel="prettyPhoto[gallery1]"> <img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt="" class="pic"> <span class="hover-effect big zoom"></span></a></div>
-                    
-                    <!-- hover effect --> 
-                    
-                    <!-- <strong class="gallery-titel"><a href="gallery-singlepost.html">Our Churches</a></strong>
-                    <p>Sit amet, consectetur adipiscing </p> -->
-                    <strong></strong>
-                  </div>
-                  
-                  <!-- End --> 
-                  
-                </figure>
-               @endforeach
-               
-              </section>
-            </section>
+              <section class="grid-holder">
+        		<section class="grid">
+          			<article class="column c-four-fifth  catagory-item All"> 
+
+			            <!-- ========================= Light Box & Frame ========================= -->
+			
+			            <ul class="portfolio group ">
+ 							@foreach ($imagens as $imagem)
+                    			<li class="g-3-imagem item">
+                    				<a  href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-lightbox="example-set" data-title="{{$imagem->obs_imagem}}"><img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt=""/></a>
+                    			</li>
+                    		@endforeach
+                    	</ul>
+           			</article>
+ 
+        		</section>
+      		</section>
             
            
             <br clear="all">
@@ -90,5 +85,5 @@
 
 @endsection
 @section('dependencyJs')
-
+<script src="{{ url('/layout/') }}/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
 @endsection

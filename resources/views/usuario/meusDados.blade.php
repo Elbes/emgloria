@@ -2,7 +2,6 @@
 
 	@section('content')
 	
-	<div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Meus dados cadastrais</h1>
@@ -34,6 +33,18 @@
 				                                    </span>
 				                                @endif
 				                        </div>
+				                        
+				                        <div class="form-group{{ $errors->has('telefone') ? ' has-error' : '' }}">
+				                            <label>Matricula</label>
+				
+				                                <input id="telefone" type="text" class="form-control" name="telefone" value="{{ $use->telefone }}" required>
+				
+				                                @if ($errors->has('telefone'))
+				                                    <span class="help-block">
+				                                        <strong>{{ $errors->first('telefone') }}</strong>
+				                                    </span>
+				                                @endif
+				                        </div>
 				
 				                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 				                            <label>E-Mail</label>
@@ -46,29 +57,17 @@
 				                                @endif
 				                        </div>
 				                        
-				                        <div class="form-group{{ $errors->has('matricula') ? ' has-error' : '' }}">
-				                            <label>Matricula</label>
-				
-				                                <input id="matricula" type="text" class="form-control" name="matricula" value="{{ $use->matricula }}" required>
-				
-				                                @if ($errors->has('matricula'))
-				                                    <span class="help-block">
-				                                        <strong>{{ $errors->first('matricula') }}</strong>
-				                                    </span>
-				                                @endif
-				                        </div>
-				                        
-				                        <div class="form-group{{ $errors->has('lotacao') ? ' has-error' : '' }}">
+				                        <div class="form-group{{ $errors->has('id_perfil') ? ' has-error' : '' }}">
 				                            <label>Setor</label>
-				                                <select class="form-control" id="id_setor" name="id_setor">
-				                                <option selected="selected" value="{{$use->setor->id_setor}}">{{$use->setor->nome_setor}}</option>
-				                                @foreach ($setores as $setor)
-				                                	<option value="{{$setor->id_setor}}">{{$setor->nome_setor}}</option>
+				                                <select class="form-control" id="id_perfil" name="id_perfil">
+				                                <option selected="selected" value="{{$use->perfil->id_perfil}}">{{$use->perfil->nome_perfil}}</option>
+				                                @foreach ($perfis as $perfil)
+				                                	<option value="{{$perfil->id_perfil}}">{{$perfil->nome_perfil}}</option>
 				                                @endforeach
 				                                </select>
-				                                @if ($errors->has('id_setor'))
+				                                @if ($errors->has('id_perfil'))
 				                                    <span class="help-block">
-				                                        <strong>{{ $errors->first('id_setor') }}</strong>
+				                                        <strong>{{ $errors->first('id_perfil') }}</strong>
 				                                    </span>
 				                                @endif
 				                        </div>
@@ -82,10 +81,7 @@
                             <!-- /.row (nested) -->
                         </div>
                     <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
+
 @endsection

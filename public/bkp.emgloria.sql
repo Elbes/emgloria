@@ -94,7 +94,7 @@ CREATE TABLE `tb_galeria` (
   `dhs_atualizacao` timestamp NULL DEFAULT NULL,
   `dhs_exclusao_logica` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_galeria`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -103,7 +103,7 @@ CREATE TABLE `tb_galeria` (
 
 LOCK TABLES `tb_galeria` WRITE;
 /*!40000 ALTER TABLE `tb_galeria` DISABLE KEYS */;
-INSERT INTO `tb_galeria` VALUES (13,'1518529690_img-4.jpg','Amor que move','asdsa','2018-02-13 11:48:10','2018-02-13 11:49:37',NULL),(14,'1518529727_img-3.jpg','Geral','adasd','2018-02-13 11:48:47','2018-02-13 11:48:47',NULL),(15,'1518529741_img-2.jpg','Geral','sda','2018-02-13 11:49:01','2018-02-13 11:49:01',NULL),(16,'1518530483_gallery-img-7.jpg','Geral','sdada','2018-02-13 12:01:23','2018-03-13 14:02:49',NULL),(17,'1520961973_ch-15.jpg','Geral',NULL,'2018-03-13 14:26:13','2018-03-13 14:26:13',NULL),(18,'1520961980_ch-26.jpg','Geral',NULL,'2018-03-13 14:26:20','2018-03-13 14:26:20',NULL),(19,'1520961988_ch-14.jpg','Geral',NULL,'2018-03-13 14:26:28','2018-03-13 14:26:28',NULL);
+INSERT INTO `tb_galeria` VALUES (13,'1518529690_img-4.jpg','Amor que move','asdsa','2018-02-13 11:48:10','2018-02-13 11:49:37',NULL),(14,'1518529727_img-3.jpg','Geral','adasd','2018-02-13 11:48:47','2018-02-13 11:48:47',NULL),(15,'1518529741_img-2.jpg','Geral','sda','2018-02-13 11:49:01','2018-02-13 11:49:01',NULL),(16,'1518530483_gallery-img-7.jpg','Geral','sdada','2018-02-13 12:01:23','2018-03-13 14:02:49',NULL),(17,'1520961973_ch-15.jpg','Geral',NULL,'2018-03-13 14:26:13','2018-03-13 14:26:13',NULL),(18,'1520961980_ch-26.jpg','Geral',NULL,'2018-03-13 14:26:20','2018-03-13 14:26:20',NULL),(19,'1520961988_ch-14.jpg','Geral',NULL,'2018-03-13 14:26:28','2018-03-13 14:26:28',NULL),(20,'1522785641_IMG_9586[1].JPG','Geral','casf','2018-04-03 17:00:41','2018-04-03 17:00:41',NULL);
 /*!40000 ALTER TABLE `tb_galeria` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -185,7 +185,7 @@ CREATE TABLE `tb_perfil` (
   `dhs_atualizacao` datetime DEFAULT NULL,
   `dhs_exclusao_logica` datetime DEFAULT NULL,
   PRIMARY KEY (`id_perfil`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -194,7 +194,7 @@ CREATE TABLE `tb_perfil` (
 
 LOCK TABLES `tb_perfil` WRITE;
 /*!40000 ALTER TABLE `tb_perfil` DISABLE KEYS */;
-INSERT INTO `tb_perfil` VALUES (1,'Administrador Geral','ADMG','2017-12-13 00:00:00',NULL,NULL);
+INSERT INTO `tb_perfil` VALUES (1,'Administrador Geral','ADMG','2017-12-13 00:00:00',NULL,NULL),(2,'Administrador do Site','ADM Site',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `tb_perfil` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -278,7 +278,7 @@ CREATE TABLE `tb_usuarios` (
   PRIMARY KEY (`id_usuario`),
   KEY `fk_tb_usuarios_tb_perfil_idx` (`id_perfil`),
   CONSTRAINT `fk_tb_usuarios_tb_perfil` FOREIGN KEY (`id_perfil`) REFERENCES `tb_perfil` (`id_perfil`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -287,7 +287,7 @@ CREATE TABLE `tb_usuarios` (
 
 LOCK TABLES `tb_usuarios` WRITE;
 /*!40000 ALTER TABLE `tb_usuarios` DISABLE KEYS */;
-INSERT INTO `tb_usuarios` VALUES (5,'Elbes',NULL,'elbes2009@gmail.com','$2y$10$KDxAQLZQrMLqvcHhzHoIvueJVcl4bqQsEpxldNcp1SAOjhaEsSW2C',1,'2017-12-14 08:50:06','2017-12-14 08:50:06',NULL);
+INSERT INTO `tb_usuarios` VALUES (5,'Elbes','61-991068109','elbes2009@gmail.com','$2y$10$48Ifdme8RWjgE/bv.A9Y0.ftmvwmISqoKQ9tnGov3dbRjrc2DZ71i',1,'2017-12-14 08:50:06','2018-04-04 16:58:49',NULL),(6,'Stephane da Cunha Franco','61993142436','stephanebio@gmail.com','$2y$10$SVCn6jpWH.H5UjTw/b/IW.yv3B16BppwtSA5bFDVcyaEOalKKzoqm',2,'2018-04-04 16:35:39','2018-04-04 16:59:13',NULL);
 /*!40000 ALTER TABLE `tb_usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -329,4 +329,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-03 19:50:21
+-- Dump completed on 2018-04-04 20:06:12
