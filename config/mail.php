@@ -56,9 +56,11 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'naoresponder@saude.df.gov.br'),
-        'name' => env('MAIL_FROM_NAME', 'Intranet SESDF'),
+        'address' => env('MAIL_FROM_ADDRESS', 'elbes2009@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'IBG - Igreja Batista em Glória'),
     ],
+		
+		
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +73,7 @@ return [
     |
     */
 
-//     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -87,19 +89,6 @@ return [
     'username' => env('MAIL_USERNAME'),
 
     'password' => env('MAIL_PASSWORD'),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Sendmail System Path
-    |--------------------------------------------------------------------------
-    |
-    | When using the "sendmail" driver to send e-mails, we will need to know
-    | the path to where Sendmail lives on this server. A default path has
-    | been provided here, which will work well on most of your systems.
-    |
-    */
-
-    'sendmail' => '/usr/sbin/sendmail -bs',
 
     /*
     |--------------------------------------------------------------------------

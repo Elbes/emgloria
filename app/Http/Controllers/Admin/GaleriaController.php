@@ -119,7 +119,10 @@ class GaleriaController extends Controller
     //EXCLUIR IMAGEM DEFINITIVAMENTE
     public function excluirGaleria($id_galeria )
     {  
-    	$galeria = \App\tb_galeria::withTrashed()->find( $id_galeria )->get()->first();
+    	//$galeria = \App\tb_galeria::withTrashed()->find( $id_galeria )->get()->first();
+    	
+    	$galeria = \App\tb_galeria::where('id_galeria', $id_galeria )->get()->first();
+    	
         if($galeria->forceDelete()){
         	unlink(public_path('/imagens/galeria/'.$galeria->nome_imagem));
         	Session::flash('success', 'Imagem '.$galeria->nome_imagem.' excluída com sucesso!!!');

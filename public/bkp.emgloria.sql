@@ -230,6 +230,36 @@ INSERT INTO `tb_programacao` VALUES (1,'Domingo','19:00','CULTO EVANGELÍSTICO',
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tb_recupera_senha`
+--
+
+DROP TABLE IF EXISTS `tb_recupera_senha`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_recupera_senha` (
+  `id_troca_sehna` int(11) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(11) DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `utilizado` tinyint(1) DEFAULT NULL,
+  `dhs_cadastro` timestamp NULL DEFAULT NULL,
+  `dhs_atualizacao` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id_troca_sehna`),
+  KEY `tb_recupera_senha_email_index` (`email`(191))
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_recupera_senha`
+--
+
+LOCK TABLES `tb_recupera_senha` WRITE;
+/*!40000 ALTER TABLE `tb_recupera_senha` DISABLE KEYS */;
+INSERT INTO `tb_recupera_senha` VALUES (11,5,'elbes2009@gmail.com','16288942905ac65b488c27e4.26747934',0,'2018-04-05 14:22:16','2018-04-05 14:22:16'),(12,5,'elbes2009@gmail.com','4806456735ac65c3c9eb9c1.21682611',0,'2018-04-05 14:26:20','2018-04-05 14:26:20'),(13,5,'elbes2009@gmail.com','15859274165ac65e132f4686.44696228',0,'2018-04-05 14:34:11','2018-04-05 14:34:11'),(14,5,'elbes2009@gmail.com','4107986935ac65e648eebf5.71263554',0,'2018-04-05 14:35:32','2018-04-05 14:35:32'),(15,5,'elbes2009@gmail.com','17546863735ac65e73b691c3.20301789',0,'2018-04-05 14:35:47','2018-04-05 14:35:47'),(16,5,'elbes2009@gmail.com','12128692125ac65e928e9819.99662665',0,'2018-04-05 14:36:18','2018-04-05 14:36:18'),(17,5,'elbes2009@gmail.com','11040990115ac65eccd980e7.63410217',0,'2018-04-05 14:37:16','2018-04-05 14:37:16'),(18,5,'elbes2009@gmail.com','6351643625ac65f2cbd9ab3.57203449',0,'2018-04-05 14:38:52','2018-04-05 14:38:52'),(19,5,'elbes2009@gmail.com','18250604315ac65f8f879b89.17374637',0,'2018-04-05 14:40:31','2018-04-05 14:40:31'),(20,5,'elbes2009@gmail.com','12937665225ac66019647555.87406353',0,'2018-04-05 14:42:49','2018-04-05 14:42:49'),(21,5,'elbes2009@gmail.com','426021405ac6602f5b5901.59181094',0,'2018-04-05 14:43:11','2018-04-05 14:43:11'),(22,5,'elbes2009@gmail.com','4216433465ac66034ab1be1.13966993',0,'2018-04-05 14:43:16','2018-04-05 14:43:16'),(23,5,'elbes2009@gmail.com','7389920345ac660452410b3.71868520',0,'2018-04-05 14:43:33','2018-04-05 14:43:33'),(24,5,'elbes2009@gmail.com','18195501735ac66077828d93.20590597',0,'2018-04-05 14:44:23','2018-04-05 14:44:23');
+/*!40000 ALTER TABLE `tb_recupera_senha` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tb_sobre`
 --
 
@@ -329,4 +359,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-04 20:06:12
+-- Dump completed on 2018-04-05 19:23:52

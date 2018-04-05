@@ -212,9 +212,9 @@ class UsuarioController extends Controller {
 	}
 	
 	public function enviaEmail(Request $request) {
-		$pesq_usuario = \App\ta_usuarios::where ( 'email', '=', $request->input ( 'email' ) )->get ()->first ();
+		$pesq_usuario = \App\tb_usuarios::where ( 'email', '=', $request->input ( 'email' ) )->get ()->first ();
 		
-		$recupera = new \App\ta_recupera_senha ();
+		$recupera = new \App\tb_recupera_senha();
 		$recupera->id_usuario = $pesq_usuario->id_usuario;
 		$recupera->email = $request->input ( 'email' );
 		$recupera->utilizado = 0;
@@ -260,7 +260,7 @@ class UsuarioController extends Controller {
 			if ((! is_null ( $id_usuario )) && (! is_null ( $token ))) {
 				
 				// Busca a solicitação pelo token e pelo id_usuaro
-				$recupera = \App\ta_recupera_senha::where('id_usuario', $id_usuario)->where('token', $token)
+				$recupera = \App\tb_recupera_senha::where('id_usuario', $id_usuario)->where('token', $token)
 				        ->get ()->last ();
 				
 				// Verifica se encontrou
@@ -291,7 +291,7 @@ class UsuarioController extends Controller {
 						if ($DIFF_SOLICITACAO > 0) {
 							
 							// Busca ultimo token gerado para o usuario
-							$objUltimoToken = \App\ta_recupera_senha::where('id_usuario', $id_usuario)->where('token', $token)->get()
+							$objUltimoToken = \App\tb_recupera_senha::where('id_usuario', $id_usuario)->where('token', $token)->get()
 									->max ( 'dhs_cadastro' );
 							
 							// Verifica se foi o último token gerado pelo usuario
@@ -337,7 +337,7 @@ class UsuarioController extends Controller {
 		if ($request->isMethod ( 'post' )) {
 		
 			// Pesquisa na tabela usuario o login digitado
-			$usuario = \App\ta_usuarios::where ( 'email', $request->input('email') )->get ()->first ();
+			$usuario = \App\tb_usuarios::where ( 'email', $request->input('email') )->get ()->first ();
 		    $id_usuario_banco = $usuario->id_usuario;
 			// Verifica se encontrou
 			if (! is_null ( $usuario )) {
@@ -346,7 +346,7 @@ class UsuarioController extends Controller {
 						
 					if ($request->input('senha') == $request->input('confirme_senha') ) {
 		
-						$objToken = \App\ta_recupera_senha::where('id_usuario', $id_usuario_banco)->get()->first();
+						$objToken = \App\tb_recupera_senha::where('id_usuario', $id_usuario_banco)->get()->first();
 		
 						// dd($objUsuario);
 						$usuario->senha = Hash::make ($request->input('senha'));
@@ -355,7 +355,7 @@ class UsuarioController extends Controller {
 						if ($usuario->save()) {
 							// Busca a solicitação pelo token e pelo cod_usuario
 								
-							$objToken = \App\ta_recupera_senha::where ('id_usuario', $id_usuario)->where('token', $token)->get()->first();
+							$objToken = \App\tb_recupera_senha::where ('id_usuario', $id_usuario)->where('token', $token)->get()->first();
 									
 								
 							$objToken->utilizado = true;

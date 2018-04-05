@@ -70,7 +70,7 @@
 							@foreach ($videos as $video)
 				              <li class="g-3 item">
 				
-				                <div class="video-holder slide-1"><video controls > <source src="{{ url('/videos/galeria/') }}/{{$video->nome_video}}" /></video></div>
+				                <div class="video-holder slide-1"><video controls > <source src="{{ url('/videos/galeria/') }}/{{$video->nome_video}}" type="video/mp4"/></video></div>
 				
 				              </li>
 			                @endforeach
