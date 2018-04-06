@@ -230,13 +230,13 @@ class UsuarioController extends Controller {
 					'usuario_nome' => $pesq_usuario->nome,
 					'usuario_id' => $pesq_usuario->id_usuario,
 					'email' => $request->input ( 'email' ),
-					'link' => 'http://intranet-ses.app/recuperar-senha/' . $pesq_usuario->id_usuario . '/' . $token 
+					'link' => 'http://emgloria.site/recuperar-senha/' . $pesq_usuario->id_usuario . '/' . $token 
 			);
 			
 			if ($recupera->save ()) {
 				// Envia o email de recuperação de senha
-				Mail::send ( 'usuario.email-recuperar-senha', $data, function ($message) use ($recupera) {
-					$message->to ( $recupera->email, 'Intranet - SESDF' )->subject ( 'Recuperação de Senha' );
+				Mail::send ('usuario.email-recuperar-senha', $data, function ($message) use ($recupera) {
+					$message->to($recupera->email, 'IBG - Igreja Batista em Glória' )->subject( 'Recuperação de Senha' );
 				} );
 				
 				Session::flash ( 'success', 'Foi enviado para seu email link de recuperação de senha!!!' );

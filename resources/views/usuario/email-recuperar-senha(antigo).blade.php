@@ -81,27 +81,21 @@
         <div class="position-ref full-height">
             <div class="content">
                 <div class="titulo">
-                    EF Consultoria - Contato
+                    Intranet - SESDF / Recuperação de Senha
                 </div>
 
                 <div class="texto">
                     <p>
-                        <strong>Você recebeu uma nova mensagem pela página de contato,</strong>
+                        <strong>Olá {{$usuario_nome}},</strong>
 						<br/>
 						<br/>
-                        <strong>Nome:</strong> {{$nome}}
+                        Você solicitou a recuperação da sua senha na Intranet - SESDF. Para dar prosseguimento ao processo acesse o link:
                         <br />
-                        <strong>Telefone:</strong> {{$telefone}}
-                        <br />
-                        <strong>Email:</strong> {{$email}}
-                        <br />
-                        <strong>Mensagem:</strong> {{$mensagem}}
-                        <br />
-                        <p>Mensagem enviado pelo site:</p>
-                         <strong>{{$link}}</strong>
+                         <strong>{{$link}}</strong>.
 						<br/>
+                    </p>
                     <p>
-                        <strong> “O amor é paciente e bondoso. O amor não é ciumento, nem orgulhoso, nem vaidoso. O amor tudo sofre, tudo crê, tudo espera, tudo suporta.” -  1 Coríntios 13:4-8</strong>
+                        <strong> Por favor não responda essa mensagem. Este é um email automático.</strong>
                     </p>
                 </div>
             </div>

@@ -4,10 +4,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+        <br /><br /><br />
+         @include('notificacao')
+         <br /><br />
             <div class="panel panel-default">
                 <div class="panel-heading">Recuperar senha - Digite o email de acesso a intranet</div>
                 <div class="panel-body">
-                    @include('notificacao')
+                   
 
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/envia-reseta-senha') }}">
                         {{ csrf_field() }}

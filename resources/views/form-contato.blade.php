@@ -36,8 +36,9 @@
                 </div>
               </div>
               <div class="blog-holder contact"> <strong class="name">Deixe um recado</strong>
+              @include('notificacao-site')
                 <div class="contact-flied">
-                  <form name="contactform" method="post" action="#">
+                  <form name="contactform" method="post" action="{{ url('/envia-contato') }}">
                   {{ csrf_field() }}
                     <fieldset>
                       <div class="row">

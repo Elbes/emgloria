@@ -46,6 +46,10 @@ Route::any('/pastores', [
 		'uses' => 'SiteController@getPastores'
 ]);
 
+Route::any('/envia-contato', [
+		'uses' => 'SiteController@enviaContato'
+]);
+
 /* ROTAS DE AUTENTICACAO DO SISTEMA*/
 Route::any('/login', [
 		'as' => 'auth.login',
