@@ -26,8 +26,7 @@
 
     <!-- Custom Fonts -->
     <link href="{{ url('/layout-admin') }}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="{{ url('/layout/') }}/img/favicon/favicon.ico" type="image/x-icon">
-	
+	<link rel="icon" type="image/png" href="{{ url('/layout/') }}/images/favicon.png">	
 		<!-- DataTables CSS -->
     <link href="{{ url('/layout-admin') }}/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
 
