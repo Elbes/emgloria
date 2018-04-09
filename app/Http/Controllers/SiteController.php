@@ -240,14 +240,18 @@ class SiteController extends Controller
     			'mensagem' => $request->input('mensagem'),
     			'link' => 'www.emgloria.com'
     	);
-    	$envia = Mail::send ( 'email-envia-contato', $data, function ($message) use ($data) {
+    	Mail::send ( 'email-envia-contato', $data, function ($message) use ($data) {
     		$message->to ('elbes2009@gmail.com', 'IBG - Igreja Batista em Glória' )->subject ( 'Contato Site - EM GLÓRIA' );
+    		
+    		if ($message){
+    			Session::flash ( 'success', 'Mensagem enviada com sucesso!!!' );
+    		}else{
+    			Session::flash ( 'error', 'Erro ao enviar mensagem! Tente Novamente.');
+    		}
+    		
     	} );
-    	if ($envia){
-    		Session::flash ( 'success', 'Mensagem enviada com sucesso!!!' );
-    	}else{
-    		Session::flash ( 'error', 'Erro ao enviar mensagem! Tente Novamente.');
-    	}
+    	
+    	
     	return Redirect::to ( '/form-contato' );
     }
     

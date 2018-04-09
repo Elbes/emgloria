@@ -11,8 +11,9 @@
 		            <div class="blog-post">
 		              <br class="clear" />
 		              <div class="blog-holder contact">
+		              @include('notificacao-site')
 		                <div class="contact-flied">
-		                  <form name="contactform" method="post" action="#">
+		                  <form name="contactform" method="post" action="{{ url('/envia-oracao') }}">
 		                  {{ csrf_field() }}
 		                    <fieldset>
 		                      <div class="row">

@@ -50,6 +50,10 @@ Route::any('/envia-contato', [
 		'uses' => 'SiteController@enviaContato'
 ]);
 
+Route::any('/envia-oracao', [
+		'uses' => 'Admin\PedidosOracaoController@enviaOracao'
+]);
+
 /* ROTAS DE AUTENTICACAO DO SISTEMA*/
 Route::any('/login', [
 		'as' => 'auth.login',
