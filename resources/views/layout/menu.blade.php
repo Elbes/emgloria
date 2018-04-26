@@ -11,15 +11,15 @@
 				@endif
 				
 				@if(Request::segment(1) == 'sobre-igreja')
-					<li class="active"><a href="{{url('/sobre-igreja')}}">EM GLÓRIA</a></li>
+					<li class="active"><a href="{{url('/sobre-igreja')}}#MISSÃO">EM GLÓRIA</a></li>
 				@else
-				    <li class="fullwidth"><a href="{{url('/sobre-igreja')}}">EM GLÓRIA</a></li>
+				    <li class="fullwidth"><a href="{{url('/sobre-igreja')}}#MISSÃO">EM GLÓRIA</a></li>
 				@endif
 				
 				@if(Request::segment(1) == 'ministerios')
-					<li class="active"><a href="{{url('/ministerios')}}/{{$minAtivo->id_ministerio}}">MINISTÉRIOS</a></li>
+					<li class="active"><a href="{{url('/ministerios')}}/{{$minAtivo->id_ministerio}}#MINISTÉRIOS">MINISTÉRIOS</a></li>
 				@else
-				    <li class="fullwidth"><a href="{{url('/ministerios')}}/{{$minAtivo->id_ministerio}}">MINISTÉRIOS</a></li>
+				    <li class="fullwidth"><a href="{{url('/ministerios')}}/{{$minAtivo->id_ministerio}}#MINISTÉRIOS">MINISTÉRIOS</a></li>
 				@endif
 				
 				<!-- @if(Request::segment(1) == 'programacao')
@@ -29,23 +29,23 @@
 				@endif -->
 				
 				@if(Request::segment(1) == 'devocional')
-					<li class="active"><a href="{{url('/devocional')}}/{{$devAtivo->id_devocional}}">DEVOCIONAL</a></li>
+					<li class="active"><a href="{{url('/devocional')}}/{{$devAtivo->id_devocional}}#DEVOCIONAL">DEVOCIONAL</a></li>
 				@else
-					<li class="fullwidth"><a href="{{url('/devocional')}}/{{$devAtivo->id_devocional}}">DEVOCIONAL</a></li>
+					<li class="fullwidth"><a href="{{url('/devocional')}}/{{$devAtivo->id_devocional}}#DEVOCIONAL">DEVOCIONAL</a></li>
 				@endif
 				
 				@if(Request::segment(1) == 'amor-que-move')
-					<li class="active"><a href="{{ url('/amor-que-move') }}">AMOR QUE MOVE</a></li>
+					<li class="active"><a href="{{ url('/amor-que-move') }}#AMOR">AMOR QUE MOVE</a></li>
 				@else
-					<li class="fullwidth"><a href="{{ url('/amor-que-move') }}">AMOR QUE MOVE</a></li>
+					<li class="fullwidth"><a href="{{ url('/amor-que-move') }}#AMOR">AMOR QUE MOVE</a></li>
 				@endif
 				
 				 <!-- <li class="fullwidth"><a href="#">LOJA</a></li> -->
 				 
 				@if(Request::segment(1) == 'form-contato')
-					<li class="active"><a href="{{url('/form-contato')}}">CONTATO</a></li>
+					<li class="active"><a href="{{url('/form-contato')}}#CONTATO">CONTATO</a></li>
 				@else
-					<li class="fullwidth"><a href="{{url('/form-contato')}}">CONTATO</a></li>
+					<li class="fullwidth"><a href="{{url('/form-contato')}}#CONTATO">CONTATO</a></li>
 				@endif
 
               </ul>

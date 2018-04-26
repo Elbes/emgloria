@@ -1,6 +1,7 @@
 @extends('layout.layoutSite')
 
 @section('content')
+<a name="ONLINE"></a>
 <!-- Content -->
 
     <div class="content mt0">
@@ -12,7 +13,7 @@
 			<iframe width="800" height="415" src="https://www.youtube.com/embed/VDlNaZVC5JM" 
 			frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-        
+        <br>
         </section>
       </section>
     </div>

@@ -1,6 +1,7 @@
 @extends('layout.layoutSite')
 <link rel="stylesheet" href="{{ url('/layout/') }}/lightbox/dist/css/lightbox.min.css">
 @section('content')
+<a name="AMOR"></a>
      <!-- Content -->
     <div class="content mt0">
       <section class="grid-holder">

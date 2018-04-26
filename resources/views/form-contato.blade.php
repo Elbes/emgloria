@@ -1,6 +1,7 @@
 @extends('layout.layoutSite')
 
 @section('content')
+<a name="CONTATO"></a>
  <!-- Content -->
     
     <div class="content mt0">

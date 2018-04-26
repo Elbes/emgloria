@@ -17,7 +17,7 @@
             <div class="new-box">
               <div class="ch-item ch-img-3">
                 <div class="ch-info">
-                  <h4><a href="{{url('/pastores')}}">PASTORES</a></h4>
+                  <h4><a href="{{url('/pastores')}}#PASTORES">PASTORES</a></h4>
                   <p></p>
                 </div>
               </div>
@@ -31,7 +31,7 @@
             <div class="new-box">
               <div class="ch-item ch-img-1">
                 <div class="ch-info">
-                  <h4><a href="{{ url('/pedidos-oracao') }}">PEDIDO DE ORAÇÃO</a></h4>
+                  <h4><a href="{{ url('/pedidos-oracao') }}#ORAÇÃO">PEDIDO DE ORAÇÃO</a></h4>
                 </div>
               </div>
             </div>
@@ -44,7 +44,7 @@
             <div class="new-box">
               <div class="ch-item ch-img-2">
                 <div class="ch-info">
-                  <h4><a href="{{ url('/doacoes') }}">DOAÇÕES</a></h4>
+                  <h4><a href="{{ url('/doacoes') }}#DOAÇÕES">DOAÇÕES</a></h4>
                   <p></p>
                 </div>
               </div>
@@ -58,7 +58,7 @@
             <div class="new-box">
               <div class="ch-item ch-img-4">
                 <div class="ch-info">
-                  <h4><a href="{{ url('/culto-online') }}" >CULTO ONLINE</a></h4>
+                  <h4><a href="{{ url('/culto-online') }}#ONLINE">CULTO ONLINE</a></h4>
                 </div>
               </div>
             </div>

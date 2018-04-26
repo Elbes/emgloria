@@ -1,6 +1,7 @@
 @extends('layout.layoutSite')
 
 @section('content')
+<a name="DEVOCIONAL"></a>
 <!-- Content -->
  <div class="content mt0">
       <section class="grid-holder">

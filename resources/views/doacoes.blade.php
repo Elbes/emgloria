@@ -1,6 +1,7 @@
 @extends('layout.layoutSite')
 
 @section('content')
+<a name="DOAÇÕES"></a>
 <!-- Content -->
     <div class="content mt0" >
     	<div class="heading-holder">
