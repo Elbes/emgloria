@@ -2,3 +2,9 @@
 ALTER TABLE tb_programacao ADD hora_programacao varchar(5) NULL after dia_programacao;
 
 ALTER TABLE tb_pastores MODIFY obs_pastor text;
+
+CREATE USER 'elbes'@'localhost' IDENTIFIED BY '091190';
+
+GRANT ALL PRIVILEGES ON * . * TO 'elbes'@'localhost';
+
+FLUSH PRIVILEGES;

@@ -47,8 +47,8 @@ class VideoController extends Controller
     			$extension = $imagem_galeria->getClientOriginalExtension(); */
     			$video = new \App\tb_video();
     			
-    			
-    			$nome_original = Input::file('nome_video')->getClientOriginalName();
+
+    			$nome_original = str_replace(" ","_",preg_replace("/&([a-z])[a-z]+;/i", "$1", htmlentities(trim( Input::file('nome_video')->getClientOriginalName()))));
     			$videoName = time().'_'. $nome_original;
     			$extension = Input::file('nome_video')->getClientOriginalExtension();
     			

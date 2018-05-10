@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.21, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
 --
 -- Host: localhost    Database: emgloria
 -- ------------------------------------------------------
--- Server version	5.7.21-0ubuntu0.16.04.1
+-- Server version	5.7.22-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -360,14 +360,14 @@ DROP TABLE IF EXISTS `tb_video`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_video` (
   `id_video` int(11) NOT NULL AUTO_INCREMENT,
-  `nome_video` varchar(60) DEFAULT NULL,
+  `nome_video` varchar(150) DEFAULT NULL,
   `tipo_video` varchar(45) DEFAULT NULL,
   `obs_video` varchar(250) DEFAULT NULL,
   `dhs_cadastro` timestamp NULL DEFAULT NULL,
   `dhs_atualizacao` timestamp NULL DEFAULT NULL,
   `dhs_exclusao_logica` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_video`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -376,7 +376,7 @@ CREATE TABLE `tb_video` (
 
 LOCK TABLES `tb_video` WRITE;
 /*!40000 ALTER TABLE `tb_video` DISABLE KEYS */;
-INSERT INTO `tb_video` VALUES (18,'1520961584_papo_de_saude.mp4','Geral',NULL,'2018-03-13 14:19:44','2018-03-16 13:53:29',NULL),(19,'1520961592_papo_de_saude.mp4','Amor que move',NULL,'2018-03-13 14:19:52','2018-03-16 16:30:18',NULL),(20,'1520961602_Curso SEI Parte I - Apresentação do curso SEI.mp4','Geral',NULL,'2018-03-13 14:20:02','2018-03-16 16:13:39',NULL),(21,'1520961640_Curso SEI Parte II - Estrutura do SEI.mp4','Geral',NULL,'2018-03-13 14:20:40','2018-03-13 14:20:40',NULL);
+INSERT INTO `tb_video` VALUES (19,'1520961592_papo_de_saude.mp4','Amor que move',NULL,'2018-03-13 14:19:52','2018-03-16 16:30:18',NULL),(21,'1520961640_Curso SEI Parte II - Estrutura do SEI.mp4','Geral',NULL,'2018-03-13 14:20:40','2018-03-13 14:20:40',NULL),(22,'1525976200_Curso SEI Parte II - Estruturcao basica do SEI.mp4','Geral','sfasfas hkjsdhf','2018-05-10 15:16:40','2018-05-10 15:16:40',NULL),(23,'1525976254_Curso_SEI_Parte_II_-_Estruturcao_basica_do_SEI.mp4','Geral','gfhgfh','2018-05-10 15:17:34','2018-05-10 15:17:34',NULL);
 /*!40000 ALTER TABLE `tb_video` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -389,4 +389,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-09 20:18:47
+-- Dump completed on 2018-05-10 19:55:01
