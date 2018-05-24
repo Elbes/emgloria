@@ -45,8 +45,8 @@ class PastoresController extends Controller
     		$nome_original = Input::file('foto_pastor')->getClientOriginalName();
     		$imageName = time().'_'. $nome_original;
     		$extension = Input::file('foto_pastor')->getClientOriginalExtension();
-    		 
     		$pastores->nome_pastor =  $request->input('nome_pastor');
+            $pastores->esposa_pastor =  $request->input('esposa_pastor');
     		$pastores->foto_pastor =  $imageName;
     		$pastores->funcao_pastor =  $request->input('funcao_pastor');
     		$pastores->obs_pastor =  $request->input('obs_pastor');
@@ -130,6 +130,7 @@ class PastoresController extends Controller
     	   $pastores= \App\tb_pastores::withTrashed()->find( $request->input('id_pastor') );
     	   
     	   $pastores->nome_pastor =  $request->input('nome_pastor');
+           $pastores->esposa_pastor =  $request->input('esposa_pastor');
     	   $pastores->funcao_pastor =  $request->input('funcao_pastor');
     	   $pastores->obs_pastor =  $request->input('obs_pastor');
     	   

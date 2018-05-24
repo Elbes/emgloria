@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.21, for Linux (x86_64)
 --
 -- Host: localhost    Database: emgloria
 -- ------------------------------------------------------
--- Server version	5.7.22-0ubuntu0.16.04.1
+-- Server version	5.7.21-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -150,6 +150,7 @@ DROP TABLE IF EXISTS `tb_pastores`;
 CREATE TABLE `tb_pastores` (
   `id_pastor` int(11) NOT NULL AUTO_INCREMENT,
   `nome_pastor` varchar(100) DEFAULT NULL,
+  `esposa_pastor` varchar(150) DEFAULT NULL,
   `foto_pastor` varchar(150) DEFAULT NULL,
   `funcao_pastor` varchar(100) DEFAULT NULL,
   `obs_pastor` text,
@@ -166,7 +167,7 @@ CREATE TABLE `tb_pastores` (
 
 LOCK TABLES `tb_pastores` WRITE;
 /*!40000 ALTER TABLE `tb_pastores` DISABLE KEYS */;
-INSERT INTO `tb_pastores` VALUES (3,'Cleydival','1522684283_ch-7.jpg','Pastor Titular','texto sobre Cleydival dsvf n hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 12:51:06','2018-04-02 15:07:10',NULL),(4,'Wesley','1522684318_ch-18.jpg','Pastor Substituto - Líder de Casais','hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae. hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 12:51:58','2018-04-03 15:19:02',NULL),(5,'Robson','1522692582_ch-20.jpg','Pastor da EBD','hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.\r\n hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 15:09:42','2018-04-02 15:09:42',NULL);
+INSERT INTO `tb_pastores` VALUES (3,'Cleydival','Ceciia','1522684283_ch-7.jpg','Presidente','texto sobre Cleydival dsvf n hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 12:51:06','2018-05-24 12:00:13',NULL),(4,'Wesley','Inaiara','1522684318_ch-18.jpg','Vice Presidente','hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae. hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 12:51:58','2018-05-24 12:12:06',NULL),(5,'Robson',NULL,'1522692582_ch-20.jpg','Pastor da EBD','hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.\r\n hac habitasse platea dictumst. Aliquam dictum felis a purus cursus inorttitor libero vulputate. Vestibulum ante ipsum primis in faucibus orci luctus etultric posuere cubilia Curae.','2018-04-02 15:09:42','2018-04-02 15:09:42',NULL);
 /*!40000 ALTER TABLE `tb_pastores` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -389,4 +390,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-10 19:55:01
+-- Dump completed on 2018-05-24 15:13:56

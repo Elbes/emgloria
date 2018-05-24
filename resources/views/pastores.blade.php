@@ -16,12 +16,11 @@
 	          <article class="column c-one-third ">
 	            <div class="about-box">
 	              <div class="img-holder-pastor"><img src="{{url('/imagens/pastores/')}}/{{$pastores->foto_pastor}}" width="250px" height="180px" alt="image" /></div>
-	              <strong class="name">{{$pastores->nome_pastor}}</strong> <span class="title">{{$pastores->funcao_pastor}}</span>
+	              <strong class="name">Pr. {{$pastores->nome_pastor}}<span class="title">{{$pastores->funcao_pastor}}</span></strong>
+                <span class="title">Esposa:<b>{{$pastores->esposa_pastor}}</b></span>
 	              <p style="text-align: justify; min-height: 200px;">{{$pastores->obs_pastor}} </p>
-	             
 	            </div><hr />
 	          </article>
-	          
           @endforeach
         </section>
       </section>

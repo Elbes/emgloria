@@ -35,4 +35,4 @@ Total: R$53,98
 
 mysqldump -uroot emgloria > /home/vagrant/Code/emgloria/public/bkp.emgloria.sql
 
-source /home/vagrant/Code/emgloria/public/bkp.emgloria.sql
+source /home/vagrant/code/emgloria/public/bkp.emgloria.sql

@@ -20,9 +20,8 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <form role="form" enctype="multipart/form-data" action="{{ url('/admin/pastores/inserir-pastores') }}" method="post">
-                                    {{ csrf_field() }} 
-                                        <input type="hidden" class="form-control" name="id_usuario" value="{{ Auth::user()->id_usuario }}"> 
-                                       
+                                    {{ csrf_field() }}
+                                        <input type="hidden" class="form-control" name="id_usuario" value="{{ Auth::user()->id_usuario }}">
                                         <div class="form-group{{ $errors->has('tipo_imagem') ? ' has-error' : '' }}">
                                             <label>Nome</label>
 	                                        <input class="form-control" name="nome_pastor" maxlength="150" placeholder="Entre com o nome do pastor" value="{{ old('nome_pastor') }}" required="required">
@@ -39,6 +38,15 @@
                                                 <span class="help-block">
                                                     <strong>{{ $errors->first('funcao_pastor') }}</strong>
                                                 </span>
+                                            @endif
+                                        </div>
+                                         <div class="form-group{{ $errors->has('esposa_pastor') ? ' has-error' : '' }}">
+                                            <label>Esposa do Pastor</label>
+                                            <input class="form-control" name="esposa_pastor" maxlength="100" placeholder="Entre com a função do pastor" value="{{ old('esposa_pastor') }}" >
+                                            @if ($errors->has('esposa_pastor'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('esposa_pastor') }}</strong>
+                                                </span> 
                                             @endif
                                         </div>
                                         <div class="form-group{{ $errors->has('obs_pastor') ? ' has-error' : '' }}">
@@ -70,4 +78,3 @@
             </div>
             <!-- /.row -->
    @endsection
-  
