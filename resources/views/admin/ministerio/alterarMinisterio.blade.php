@@ -71,9 +71,18 @@
                                                 </span>
                                             @endif
                                         </div>
+                                        <div class="form-group">
+                                            <label>Imagem Atual</label><br />   
+                                            <img alt="" width="200" height="200" src="{{url('/imagens/ministerios/')}}/{{$ministerio->foto_ministerio}}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nova Imagem</label>
+                                            <input type="hidden" name="foto_ministerio_antiga" value="{{$ministerio->foto_ministerio}}">
+                                            <input type="file" name="foto_ministerio_nova">
+                                        </div>
 	
                                         <button type="submit" class="btn btn-default">Alterar</button>
-                                        <button type="reset" class="btn btn-default">Limpar</button>
+                                        <a class="btn btn-default" href="{{ url('/listaMinisterio') }}" >Cancelar</a>
                                     </form>
                                 </div>
                             </div>

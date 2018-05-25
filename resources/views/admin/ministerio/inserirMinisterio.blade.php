@@ -40,7 +40,6 @@
                                                 </span>
                                             @endif
                                         </div>  -->
-                                        
                                         <div class="form-group{{ $errors->has('texto_ministerio') ? ' has-error' : '' }}">
                                             <label>Texto do Ministério</label>
                                 			<textarea class="form-control" name="texto_ministerio" id="texto_ministerio">{{ old('texto_ministerio') }}</textarea>
@@ -60,7 +59,6 @@
                                                 </span>
                                             @endif
                                         </div>
-                                        
                                         <div class="form-group{{ $errors->has('lider_ministerio') ? ' has-error' : '' }}">
                                             <label>Líder do Ministério</label>
                                             <input class="form-control" name="lider_ministerio" placeholder="Entre com o nome do Líder do Ministério" value="{{ old('lider_ministerio') }}" required="required">
@@ -70,7 +68,6 @@
                                                 </span>
                                             @endif
                                         </div>
-                                        
                                         <div class="form-group{{ $errors->has('colider_ministerio') ? ' has-error' : '' }}">
                                             <label>Colíder do Ministério</label>
                                             <input class="form-control" name="colider_ministerio" placeholder="Entre com o nome do Colíder do Ministério" value="{{ old('colider_ministerio') }}" required="required">
@@ -80,7 +77,10 @@
                                                 </span>
                                             @endif
                                         </div>
-	
+                                        <div class="form-group">
+                                            <label>Imagem</label>
+                                            <input type="file" name="foto_ministerio">
+                                        </div>
                                         <button type="submit" class="btn btn-default">Cadastrar</button>
                                         <button type="reset" class="btn btn-default">Limpar</button>
                                     </form>
@@ -96,13 +96,13 @@
             </div>
             <!-- /.row -->
    @endsection
-   
+
  @section( 'dependencyJs' )
 
 	<!-- <script src="//cdn.ckeditor.com/4.7.1/standart/ckeditor.js"></script> -->
 	<script src="{{ url('/layout-admin') }}/ckeditor/ckeditor.js"></script> 
 	<script type="text/javascript">
-	
+
 	CKEDITOR.replace('texto_ministerio', {
 	    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
 	    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
@@ -110,7 +110,6 @@
 	    filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}',
 	    height: 400
 	  });
-	  
+
 	</script>
 @endsection
-   

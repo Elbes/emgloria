@@ -31,8 +31,11 @@
 	                <h4 class="prayer-heading">{{ mb_strtoupper($minist->nome_ministerio) }}</h4>
 	                <hr >
 	                <p><?php echo nl2br($minist->texto_ministerio);?></p>
-					<p style="text-align: left;"><b>Líder: </b>{{$minist->lider_ministerio}}</p>
-					<p style="text-align: left;"><b>Colíder: </b>{{$minist->colider_ministerio}}</p>
+					         <p style="text-align: left;"><b>Líder: </b>{{$minist->lider_ministerio}}</p>
+					         <p style="text-align: left;"><b>Colíder: </b>{{$minist->colider_ministerio}}</p>
+                  @if($minist->foto_ministerio)
+                    <p style="text-align: center;"><img alt="" width="300" height="200" src="{{url('/imagens/ministerios/')}}/{{$minist->foto_ministerio}}"></p>
+                  @endif
 	              </div>
                </div>
              @endforeach
@@ -42,12 +45,12 @@
            <article class="column c-one-third">
             <div class="about-box"><div class="right-sidebar">
                 <div class="sidebar-h"><strong class="right-heading"><span>Ministérios</span></strong></div>
-                <ul class="archives">
-                @foreach ($ministerios as $ministerio)
-                  <li><a href="{{url('/ministerios')}}/{{strtolower($ministerio->id_ministerio)}}" class="worship">{{ mb_strtoupper($ministerio->nome_ministerio) }}</a></li>
-                @endforeach
-                </ul>
-              </div>
+                  <ul class="archives">
+                    @foreach ($ministerios as $ministerio)
+                      <li><a href="{{url('/ministerios')}}/{{strtolower($ministerio->id_ministerio)}}" class="worship">{{ mb_strtoupper($ministerio->nome_ministerio) }}</a></li>
+                    @endforeach
+                  </ul>
+                </div>
             </div>
           </article>
           <!-- Fim Menu Ministérios -->

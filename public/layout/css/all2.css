@@ -119,6 +119,7 @@ input, select, textarea {
 	float: left;
 	margin:0 0 30px 30px;
 }
+
 /*------ #2 column--------- */
 
 .c-one-half {
@@ -133,6 +134,9 @@ input, select, textarea {
 	width: 280px;
 }
 .c-one-third-galeria {
+	max-width: 460px;
+}
+.c-one-third-pastor {
 	max-width: 460px;
 }
 
@@ -1142,7 +1146,7 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
 
 .img-holder-pastor {
 	position:relative;
-	margin:0 0 20px 0;
+	margin:0 0 20px 0px;
 	
 	
 }

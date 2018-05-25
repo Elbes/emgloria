@@ -144,7 +144,11 @@ class PastoresController extends Controller
     	   		}
     	   }
     	   else {
-	    	   	unlink(public_path('/imagens/pastores/'.$pastores->foto_pastor));
+            
+                if($pastores->foto_pastor){
+                    unlink(public_path('/imagens/pastores/'.$pastores->foto_pastor));
+                }
+	    	   	
 	    	   	$imageName = $pastores->foto_pastor_nova;
 	    	   	$nome_original = Input::file('foto_pastor_nova')->getClientOriginalName();
 	    	   	$imageName = time().'_'. $nome_original;

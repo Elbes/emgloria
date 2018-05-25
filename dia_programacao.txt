@@ -8,3 +8,5 @@ CREATE USER 'elbes'@'localhost' IDENTIFIED BY '091190';
 GRANT ALL PRIVILEGES ON * . * TO 'elbes'@'localhost';
 
 FLUSH PRIVILEGES;
+
+ALTER TABLE tb_ministerio ADD foto_ministerio varchar(150) NULL after colider_ministerio

@@ -33,6 +33,8 @@ Sub Total: R$53,98
 Crédito: R$0,00
 Total: R$53,98
 
-mysqldump -uroot emgloria > /home/vagrant/Code/emgloria/public/bkp.emgloria.sql
+ALTER TABLE tb_pastores ADD esposa_pastor varchar(150) NULL after nome_pastor;
+
+mysqldump -uroot emgloria > /home/vagrant/code/emgloria/public/bkp.emgloria.sql
 
 source /home/vagrant/code/emgloria/public/bkp.emgloria.sql

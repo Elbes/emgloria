@@ -45,7 +45,7 @@
 			            <!-- ========================= Light Box & Frame ========================= -->
 			
 			            <ul class="portfolio group All">
- 							@foreach ($imagens as $imagem)
+ 							        @foreach ($imagens as $imagem)
                     			<li class="g-3-imagem item">
                     				<a  href="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" data-lightbox="example-set" data-title="{{$imagem->obs_imagem}}"><img src="{{ url('/imagens/galeria/') }}/{{ $imagem->nome_imagem }}" alt=""/></a>
                     			</li>
