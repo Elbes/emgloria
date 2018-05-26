@@ -128,7 +128,7 @@ CREATE TABLE `tb_ministerio` (
   `dhs_atualizacao` timestamp NULL DEFAULT NULL,
   `dhs_exclusao_logica` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_ministerio`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -189,7 +189,7 @@ CREATE TABLE `tb_pedidos_oracao` (
   `dhs_atualizacao` datetime DEFAULT NULL,
   `dhs_exclusao_logica` datetime DEFAULT NULL,
   PRIMARY KEY (`id_pedidos_oracao`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -198,7 +198,7 @@ CREATE TABLE `tb_pedidos_oracao` (
 
 LOCK TABLES `tb_pedidos_oracao` WRITE;
 /*!40000 ALTER TABLE `tb_pedidos_oracao` DISABLE KEYS */;
-INSERT INTO `tb_pedidos_oracao` VALUES (1,'dfsdf','sdfsdf','sdfsd','sdfsdf','2018-04-09 15:50:52','2018-04-09 15:50:52',NULL),(2,'dfsdf','sdfsdf','sdfsd','sdfsdf','2018-04-09 15:52:18','2018-04-09 15:52:18',NULL),(3,'dfsdf','sdfsd','sdfsd','sdfsdf','2018-04-09 15:53:18','2018-04-09 15:53:18',NULL),(4,'dfsdf','sdfsd','sdfsd','sdfsdf','2018-04-09 15:53:28','2018-04-09 15:53:28',NULL),(5,'dsd','asdasd','asdsa','asdasd','2018-04-09 15:54:12','2018-04-09 15:54:12',NULL),(6,'dsd','asdasd','asdsa','asdasd','2018-04-09 15:56:54','2018-04-09 15:56:54',NULL);
+INSERT INTO `tb_pedidos_oracao` VALUES (4,'dfsdf','sdfsd','sdfsd','sdfsdf','2018-04-09 15:53:28','2018-04-09 15:53:28',NULL),(5,'dsd','asdasd','asdsa','asdasd','2018-04-09 15:54:12','2018-04-09 15:54:12',NULL),(6,'dsd','asdasd','asdsa','asdasd','2018-04-09 15:56:54','2018-04-09 15:56:54',NULL),(7,'Elbes','566','gnfgfgn','gnfgnfgn','2018-05-25 19:17:28','2018-05-25 19:17:28',NULL),(8,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:17:54','2018-05-25 19:17:54',NULL),(9,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:21:00','2018-05-25 19:21:00',NULL),(10,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:23:33','2018-05-25 19:23:33',NULL),(11,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:24:57','2018-05-25 19:24:57',NULL),(12,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:26:33','2018-05-25 19:26:33',NULL),(13,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:28:01','2018-05-25 19:28:01',NULL),(14,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:29:49','2018-05-25 19:29:49',NULL),(15,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:30:52','2018-05-25 19:30:52',NULL),(16,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:31:24','2018-05-25 19:31:24',NULL),(17,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:31:51','2018-05-25 19:31:51',NULL),(18,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:32:42','2018-05-25 19:32:42',NULL),(19,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:33:34','2018-05-25 19:33:34',NULL),(20,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:34:15','2018-05-25 19:34:15',NULL),(21,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:34:38','2018-05-25 19:34:38',NULL),(22,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:35:36','2018-05-25 19:35:36',NULL),(23,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:38:23','2018-05-25 19:38:23',NULL),(24,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:39:55','2018-05-25 19:39:55',NULL),(25,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:41:03','2018-05-25 19:41:03',NULL),(26,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:42:08','2018-05-25 19:42:08',NULL),(27,'Elbes','566','elbes2009@gmail.com','gnfgnfgn','2018-05-25 19:42:56','2018-05-25 19:42:56',NULL),(28,'Elbes','566','elbes2009@gmail.com','sasasfassf','2018-05-25 19:44:06','2018-05-25 19:44:06',NULL),(29,'Elbes','566','elbes2009@gmail.com','sfdfsdf','2018-05-25 20:11:52','2018-05-25 20:11:52',NULL),(30,'Elbes','566','elbes2009@gmail.com','asdafasf','2018-05-25 20:22:49','2018-05-25 20:22:49',NULL),(31,'Elbes','566','elbes2009@gmail.com','asdafasf','2018-05-25 20:27:55','2018-05-25 20:27:55',NULL),(32,'Elbes','566','elbes2009@gmail.com','asdafasf','2018-05-25 20:30:59','2018-05-25 20:30:59',NULL),(33,'Elbes','566','elbes2009@gmail.com','asdafasf','2018-05-25 20:31:26','2018-05-25 20:31:26',NULL),(34,'Elbes','566','elbes2009@gmail.com','asdafasf','2018-05-25 20:33:48','2018-05-25 20:33:48',NULL),(35,'Elbes','566','elbes2009@gmail.com','ssaasfasfasf','2018-05-25 20:37:09','2018-05-25 20:37:09',NULL),(36,'Elbes','566','elbes2009@gmail.com','ssasas','2018-05-25 20:37:56','2018-05-25 20:37:56',NULL),(37,'Elbes','566','elbes2009@gmail.com','ssasas','2018-05-25 20:38:19','2018-05-25 20:38:19',NULL),(38,'Elbes','566','elbes2009@gmail.com','asasas sasfasf','2018-05-25 20:39:16','2018-05-25 20:39:16',NULL),(39,'Elbes','566','elbes2009@gmail.com','asasas sasfasf','2018-05-25 20:51:13','2018-05-25 20:51:13',NULL),(40,'Elbes','566','elbes2009@gmail.com','asasas sasfasf','2018-05-25 20:51:35','2018-05-25 20:51:35',NULL),(41,'Elbes','566','elbes2009@gmail.com','asasas sasfasf','2018-05-25 20:53:02','2018-05-25 20:53:02',NULL),(42,'Elbes','566','elbes2009@gmail.com','asasas sasfasf','2018-05-25 20:57:32','2018-05-25 20:57:32',NULL),(43,'Elbes','566','elbes2009@gmail.com','asasas sasfasf','2018-05-25 21:20:44','2018-05-25 21:20:44',NULL),(44,'Elbes','566','elbes2009@gmail.com','asasas sasfasf','2018-05-25 21:21:21','2018-05-25 21:21:21',NULL),(45,'Elbes','566','elbes2009@gmail.com','scas','2018-05-25 21:30:51','2018-05-25 21:30:51',NULL);
 /*!40000 ALTER TABLE `tb_pedidos_oracao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -391,4 +391,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-25  2:11:59
+-- Dump completed on 2018-05-26  2:54:34

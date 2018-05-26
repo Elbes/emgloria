@@ -29,8 +29,8 @@ class tb_pedidos_oracao extends Model
 	
 		return DataTables::collection($objReturn)
 		 
-		->addColumn('dhs_atualizacao', function($model){
-			return date('d/m/Y', strtotime($model->dhs_atualizacao));
+		->addColumn('dhs_acadastro', function($model){
+			return date('d/m/Y', strtotime($model->dhs_cadastro));
 		})
 		->make(true);
 	}

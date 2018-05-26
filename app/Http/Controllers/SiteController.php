@@ -204,33 +204,6 @@ class SiteController extends Controller
 		return view('/pastores', compact('minAtivo', 'imagens', 'img_primeira', 'banners', 'videos', 'devAtivo', 'pastor'));
 	}
 	
-    public function guardaContato(Request $request){
-    	$usuario = new \App\contato();
-    	$usuario->nome = $request->input('nome');
-		$usuario->email = $request->input('email');
-		$usuario->telefone = $request->input('telefone');
-		$usuario->assunto = $request->input('assunto');
-		$usuario->mensagem = $request->input('mensagem');
-
-		if ($usuario->save ()) {
-			$data = array (
-				'nome' => $request->input('nome'),
-				'email' => $request->input('email'),
-				'assunto' => $request->input('assunto'),
-				'mensagem' => $request->input('mensagem'),
-				'link' => 'http://efconsultoria.site'
-			);
-				Mail::send ( 'email-envia-contato', $data, function ($message) use ($data) {
-						$message->to ('elbes2009@gmail.com', 'EF Consultoria' )->subject ( 'Teste' );
-				} );
-			     Session::flash ( 'success', 'Mensagem enviada com sucesso!!!' );
-			} else {
-				Session::flash ( 'error', 'Erro ao tentar inserir o Usuario!!!Tente Novamente.');
-			}
-
-		return Redirect::to ( '/' );
-    }
-    
     public function enviaContato(Request $request) {
     	
     	$data = array (
@@ -241,7 +214,7 @@ class SiteController extends Controller
     			'link' => 'www.emgloria.com'
     	);
     	Mail::send ( 'email-envia-contato', $data, function ($message) use ($data) {
-    		$message->to ('elbes2009@gmail.com', 'IBG - Igreja Batista em Glória' )->subject ( 'Contato Site - EM GLÓRIA' );
+    		$message->to ('secretaria@emgloria.com', 'IBG - Igreja Batista em Glória' )->subject ( 'Contato Site - EM GLÓRIA' );
     		
     		if ($message){
     			Session::flash ( 'success', 'Mensagem enviada com sucesso!!!' );
@@ -252,7 +225,7 @@ class SiteController extends Controller
     	} );
     	
     	
-    	return Redirect::to ( '/form-contato' );
+    	return Redirect::to ( '/form-contato#RECADO' );
     }
     
     

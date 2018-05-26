@@ -596,6 +596,27 @@ Route::group(['prefix' => '/admin/devocional'], function () {
 		
 			
 		});
+
+		//ROTAS DOS PEDIDOS DE ORAÇÃO
+		
+		Route::any('/listaPedidosOracao', [
+				'as' => 'admin.pedidos-oracao.listaPedidosOracao',
+				'uses' => 'Admin\PedidosOracaoController@getListaPedido'
+		]);
+
+	Route::group(['prefix' => '/admin/pedidos-oracao'], function () {
+		
+		  //Listar em DataTable
+			Route::any('/lista-oracoes.json', [
+					'as' => 'admin.pedidos-oracao.lista-oracao.json',
+					'uses' => 'Admin\PedidosOracaoController@getListaPedidosJson'
+			]);
+			
+			Route::any('/excluir-oracao/{id_pedidos_oracao?}', [
+					'uses' => 'Admin\PedidosOracaoController@excluirPedidos'
+			]);
+			
+	});
 	
 	//SETOR
 	//Listar Setor em DataTable

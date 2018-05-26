@@ -17,7 +17,7 @@
                   <iframe width="602" height="253" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.0488953470567!2d-48.05866418558295!3d-16.010969988916926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2a9e113e6641%3A0x2971d41fa31296eb!2sIgreja+Batista+em+Gl%C3%B3ria!5e0!3m2!1spt-PT!2sbr!4v1514728478534" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
               </div>
-              <br class="clear" />
+              <br class="clear" /><a name="RECADO"></a>
               <div class="blog-holder">
                 <div class="left"> <strong class="name">ENTRE EM CONTATO CONOSCO!</strong>
                   <div class="contact-box">
@@ -31,12 +31,13 @@
 						CEP: 72425-030 </p>
                     <ul class="list">
                       <li>Fone:: (61) xxx xxxxx</li>
-                      <li>Email: <a href="mailto:elbes2009@gmail.com">elbes2009@gmail.com</a></li>
+                      <li>Email: <a href="mailto:secretaria@emgloria.com">secretaria@emgloria.com</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div class="blog-holder contact"> <strong class="name">Deixe um recado</strong>
+                
               @include('notificacao-site')
                 <div class="contact-flied">
                   <form name="contactform" method="post" action="{{ url('/envia-contato') }}">

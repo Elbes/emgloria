@@ -8,14 +8,11 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Auth;
 
 class PedidosOracaoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function enviaOracao(Request $request){
     	
     	$oracao = new tb_pedidos_oracao();
@@ -24,38 +21,37 @@ class PedidosOracaoController extends Controller
 		$oracao->email_solicitante = $request->input('email');
 		$oracao->oracao_pedido = $request->input('oracao_pedido');
          
-		
-		
 		if ($oracao->save()) {
 			$data = array (
 				'nome_solicitante' => $request->input('nome'),
-				'telefone_solicitante' => $request->input('email'),
-				'email_solicitante' => $request->input('assunto'),
+				'telefone_solicitante' => $request->input('telefone'),
+				'email_solicitante' => $request->input('email'),
 				'oracao_pedido' => $request->input('oracao_pedido'),
 				'link' => 'www.emglora.com'
 			);
 			
-				Mail::send ( 'email-envia-oracao', $data, function ($message) use ($data) {
-					$message->to ('elbes2009@gmail.com', 'IBG - Igreja Batista em Glória' )->subject ( 'Pedido de Oração - EM GLÓRIA' );
+			Mail::send ( 'email-envia-oracao', $data, function ($message) use ($data) {
+				$message->to ('secretaria@emgloria.com', 'IBG - Igreja Batista em Glória' )->subject ( 'Pedido de Oração - EM GLÓRIA' );
 							
-					if($message){
-						
-						
-						Mail::send ( 'email-envia-automatico', $data, function ($message_automatica) use ($data) {
-							$email_solicitante = $request->input('email');
-							$message_automatica->to ($email_solicitante, 'IBG - Igreja Batista em Glória' )->subject ( 'Pedido de Oração - EM GLÓRIA' );
-						} );
-						Session::flash ( 'success', 'Pedido enviado com sucesso!!!' );
-					}else {
-						Session::flash ( 'error', 'Erro ao tentar enviar pedido! Tente Novamente.');
-					}
-				} );
-			     
-			} else {
-				Session::flash ( 'error', 'Erro ao tentar inserir o Pedido!!!Tente Novamente.');
-			}
+    			if($message){
+    						
+    				/*Mail::send ( 'envia-email-automatico', $data, function ($message_automatica) use ($data) {
+    					$email_solicitante = $request->input('email');
+    					$message_automatica->to ($email_solicitante, 'IBG - Igreja Batista em Glória' )->subject ( 'Pedido de Oração - EM GLÓRIA' );
+    					} );
+                        */
 
-		return Redirect::to ( '/pedidos-oracao' );
+    					Session::flash ( 'success', 'Pedido enviado com sucesso!!!' );
+    			}else {
+    					Session::flash ( 'error', 'Erro ao tentar enviar pedido! Tente Novamente.');
+    				}
+			} );
+			     
+		} else {
+				Session::flash ( 'error', 'Erro ao tentar inserir o Pedido!!!Tente Novamente.');
+		}
+
+		return Redirect::to ( '/pedidos-oracao#ORAÇÃO' );
     }
 
     /**
@@ -63,20 +59,11 @@ class PedidosOracaoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function getListaPedido()
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        $usuario = \App\ta_usuarios::where('id_usuario', Auth::user()->id_usuario)->get();
+        
+        return view('admin.pedidos-oracao.listaPedidosOracao', compact('usuario'));
     }
 
     /**
@@ -85,33 +72,12 @@ class PedidosOracaoController extends Controller
      * @param  \App\tb_pedidos_oracao  $tb_pedidos_oracao
      * @return \Illuminate\Http\Response
      */
-    public function show(tb_pedidos_oracao $tb_pedidos_oracao)
+    public function getListaPedidosJson()
     {
-        //
+        $pedidos = new \App\tb_pedidos_oracao();
+        return $pedidos->getDtPedidosOracao();
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\tb_pedidos_oracao  $tb_pedidos_oracao
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(tb_pedidos_oracao $tb_pedidos_oracao)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\tb_pedidos_oracao  $tb_pedidos_oracao
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, tb_pedidos_oracao $tb_pedidos_oracao)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.
@@ -119,8 +85,15 @@ class PedidosOracaoController extends Controller
      * @param  \App\tb_pedidos_oracao  $tb_pedidos_oracao
      * @return \Illuminate\Http\Response
      */
-    public function destroy(tb_pedidos_oracao $tb_pedidos_oracao)
-    {
-        //
+   //EXCLUIR PASTOR DEFINITIVAMENTE
+    public function excluirPedidos($id_pedidos_oracao)
+    {  
+        $pedidos = \App\tb_pedidos_oracao::withTrashed()->find( $id_pedidos_oracao )->get()->first();
+        if($pedidos->forceDelete()){
+            Session::flash('success', 'Pedido excluído com sucesso!!!');
+        }else{
+            Session::flash('error', ' Erro ao tentar excluir !');
+        }
+        return Redirect::to('/listaPedidosOracao');
     }
 }

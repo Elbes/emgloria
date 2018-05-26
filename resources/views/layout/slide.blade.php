@@ -3,6 +3,7 @@
           <div class="gholder"> <a class="btn-prev" href="#">próximo</a>
             <div class="gmask">
               <ul>
+                <li><img src="{{ url('/layout/images') }}/banner-img-2.jpg" alt="image" /></li>
               	@foreach ($banners as $banner)
                 	<li><img src="{{ url('/imagens/banners') }}//{{ $banner->imagen_banner }}" alt="image" /></li>
                 @endforeach
